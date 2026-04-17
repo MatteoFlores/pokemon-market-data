@@ -6,6 +6,16 @@ Pokemon Market Data is a comprehensive data collection and analysis system that 
 ## Session Summary
 The project has established a robust data pipeline with working scrapers for eBay sold listings and TCGPlayer data, implemented YOLOv11-based image detection for PSA grading certificates, and accumulated extensive historical pricing snapshots and sold listing data across 150+ Pokemon card sets. Current focus appears to be on improving certificate extraction accuracy and expanding historical data coverage.
 
+## Features Registry
+- eBay sold listings scraper with set-based organization (base1 through me3 sets)
+- TCGPlayer CSV data fetching and card mapping system
+- Image download pipeline for eBay listings with progress tracking
+- YOLOv11 model training for PSA grading certificate detection with validation dataset
+- Certificate extraction and OCR pipeline with success/failure categorization
+- Price snapshot collection system with historical tracking (2026-04-11 onwards)
+- Data persistence layer with JSON caching for eBay tokens and card mappings
+- Unmatched sets tracking and error handling across scraping operations
+
 ## Completed
 - [x] eBay sold listings scraper with set-based organization (base1 through me3 sets)
 - [x] TCGPlayer CSV data fetching and card mapping system
