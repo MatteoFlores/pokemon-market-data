@@ -1,0 +1,22 @@
+names:
+- bgs_label
+- bgs_label_auto
+- bgs_label_black
+- bgs_slab
+- card
+- cgc_label
+- cgc_label_old
+- cgc_slab
+- psa_label
+- psa_label_old
+- psa_slab
+nc: 11
+roboflow:
+  license: CC BY 4.0
+  project: hxyt5pv7
+  url: https://universe.roboflow.com/hxyt5pv6/hxyt5pv7/dataset/1
+  version: 1
+  workspace: hxyt5pv6
+test: F:\Pokemon Market Data\HXYT5PV7.v1i.yolov11\test\images
+train: F:\Pokemon Market Data\HXYT5PV7.v1i.yolov11\train\images
+val: F:\Pokemon Market Data\HXYT5PV7.v1i.yolov11\valid\images

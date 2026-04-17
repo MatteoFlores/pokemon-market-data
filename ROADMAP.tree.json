@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "nodes": [
+    {
+      "id": "root",
+      "label": "Pokemon Market Data",
+      "parentId": null,
+      "completed": false
+    },
+    {
+      "id": "n-data-pipeline",
+      "label": "Data Pipeline & Collection",
+      "parentId": "root",
+      "completed": false
+    },
+    {
+      "id": "n-ebay-scraping",
+      "label": "eBay Sold Listings",
+      "parentId": "n-data-pipeline",
+      "completed": true
+    },
+    {
+      "id": "n-price-tracking",
+      "label": "Price Snapshots & History",
+      "parentId": "n-data-pipeline",
+      "completed": true
+    },
+    {
+      "id": "n-image-processing",
+      "label": "Image Processing & Storage",
+      "parentId": "n-data-pipeline",
+      "completed": true
+    },
+    {
+      "id": "n-cert-extraction",
+      "label": "Certification Extraction",
+      "parentId": "root",
+      "completed": false
+    },
+    {
+      "id": "n-ocr-verification",
+      "label": "OCR & Manual Verification",
+      "parentId": "n-cert-extraction",
+      "completed": true
+    },
+    {
+      "id": "n-extraction-accuracy",
+      "label": "Accuracy Improvement",
+      "parentId": "n-cert-extraction",
+      "completed": false
+    },
+    {
+      "id": "n-ml-models",
+      "label": "ML & Detection",
+      "parentId": "root",
+      "completed": false
+    },
+    {
+      "id": "n-yolo-training",
+      "label": "YOLOv11 Label Detection",
+      "parentId": "n-ml-models",
+      "completed": true
+    },
+    {
+      "id": "n-model-refinement",
+      "label": "Model Refinement & Retraining",
+      "parentId": "n-ml-models",
+      "completed": false
+    },
+    {
+      "id": "n-analytics-ui",
+      "label": "Analytics & Visualization",
+      "parentId": "root",
+      "completed": false
+    },
+    {
+      "id": "n-dashboard",
+      "label": "Market Dashboard",
+      "parentId": "n-analytics-ui",
+      "completed": false
+    },
+    {
+      "id": "n-predictive-pricing",
+      "label": "Pricing Models & Reports",
+      "parentId": "n-analytics-ui",
+      "completed": false
+    },
+    {
+      "id": "n-data-infrastructure",
+      "label": "Data Infrastructure",
+      "parentId": "root",
+      "completed": false
+    },
+    {
+      "id": "n-database-backend",
+      "label": "Database & Storage",
+      "parentId": "n-data-infrastructure",
+      "completed": false
+    },
+    {
+      "id": "n-api-layer",
+      "label": "API & Data Export",
+      "parentId": "n-data-infrastructure",
+      "completed": false
+    },
+    {
+      "id": "n-data-quality",
+      "label": "Data Quality & Monitoring",
+      "parentId": "n-data-infrastructure",
+      "completed": false
+    }
+  ],
+  "collapsed": [
+    "n-data-pipeline"
+  ],
+  "positions": {
+    "n-ocr-verification": {
+      "x": 231.92433728609623,
+      "y": 176.4262307543927
+    }
+  }
+}

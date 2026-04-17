@@ -1,0 +1,9 @@
+node_modules/
+release/
+dist/
+.env
+*.log
+
+
+# Auto-ignored: files locked by a running process
+data/

@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 11
+names: ['bgs_label', 'bgs_label_auto', 'bgs_label_black', 'bgs_slab', 'card', 'cgc_label', 'cgc_label_old', 'cgc_slab', 'psa_label', 'psa_label_old', 'psa_slab']
+
+roboflow:
+  workspace: hxyt5pv6
+  project: hxyt5pv7
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/hxyt5pv6/hxyt5pv7/dataset/1
