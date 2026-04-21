@@ -346,6 +346,14 @@ const HTML = `<!DOCTYPE html>
     </div>
     <div id="scraping-issues"></div>
     <hr class="divider">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;">
+      <span style="font-size:12px;color:var(--muted)" id="set-count"></span>
+      <button id="hide-complete-btn" onclick="toggleHideComplete()"
+        style="font-size:11px;padding:3px 10px;border-radius:4px;border:1px solid var(--border);
+               background:var(--surface);color:var(--muted);cursor:pointer;">
+        Hide Complete
+      </button>
+    </div>
     <table class="set-table">
       <thead><tr><th>Set</th><th>Name</th><th colspan="2">Progress</th></tr></thead>
       <tbody id="set-rows"></tbody>
@@ -416,6 +424,43 @@ const HTML = `<!DOCTYPE html>
 <script>
 const POLL_INTERVAL = 10; // seconds
 let countdown = POLL_INTERVAL;
+let hideComplete = false;
+
+function toggleHideComplete() {
+  hideComplete = !hideComplete;
+  const btn = document.getElementById('hide-complete-btn');
+  btn.textContent = hideComplete ? 'Show All' : 'Hide Complete';
+  btn.style.color = hideComplete ? 'var(--blue)' : 'var(--muted)';
+  btn.style.borderColor = hideComplete ? 'var(--blue)' : 'var(--border)';
+  renderSetRows();
+}
+
+function renderSetRows() {
+  const sets = window._lastSets || [];
+  const tbody = document.getElementById('set-rows');
+  if (!tbody) return;
+  const visible = hideComplete ? sets.filter(s => s.done < s.total) : sets;
+  const countEl = document.getElementById('set-count');
+  if (countEl) countEl.textContent = hideComplete
+    ? (sets.length - visible.length) + ' complete hidden'
+    : sets.length + ' sets';
+  tbody.innerHTML = '';
+  for (const s of visible) {
+    const pct  = s.total > 0 ? s.done / s.total * 100 : 0;
+    const cls  = s.done === s.total ? 'complete' : s.done > 0 ? 'partial' : 'pending';
+    const redo = s.needsRedo > 0 ? '<span class="redo">(' + s.needsRedo + ' redo)</span>' : '';
+    const barW = Math.round(pct);
+    tbody.innerHTML +=
+      '<tr>' +
+      '<td>' + s.id + '</td>' +
+      '<td>' +
+        '<span class="mini-bar fill-green" style="width:' + barW + 'px;background:' + (cls==='complete'?'#3fb950':cls==='partial'?'#d29922':'#30363d') + '"></span>' +
+        '<span class="' + cls + '">' + s.name + '</span>' + redo +
+      '</td>' +
+      '<td style="text-align:right">' + s.done + ' / ' + s.total + '</td>' +
+      '</tr>';
+  }
+}
 let timer;
 
 function fmt(n) { return n == null ? '—' : Number(n).toLocaleString(); }
@@ -465,23 +510,8 @@ function applyStatus(data) {
   issues.innerHTML = parts.join('');
 
   // Set rows
-  const tbody = document.getElementById('set-rows');
-  tbody.innerHTML = '';
-  for (const s of scraping.sets) {
-    const pct  = s.total > 0 ? s.done / s.total * 100 : 0;
-    const cls  = s.done === s.total ? 'complete' : s.done > 0 ? 'partial' : 'pending';
-    const redo = s.needsRedo > 0 ? '<span class="redo">(' + s.needsRedo + ' redo)</span>' : '';
-    const barW = Math.round(pct);
-    tbody.innerHTML +=
-      '<tr>' +
-      '<td>' + s.id + '</td>' +
-      '<td>' +
-        '<span class="mini-bar fill-green" style="width:' + barW + 'px;background:' + (cls==='complete'?'#3fb950':cls==='partial'?'#d29922':'#30363d') + '"></span>' +
-        '<span class="' + cls + '">' + s.name + '</span>' + redo +
-      '</td>' +
-      '<td style="text-align:right">' + s.done + ' / ' + s.total + '</td>' +
-      '</tr>';
-  }
+  window._lastSets = scraping.sets;
+  renderSetRows();
 
   // ── Images ────────────────────────────────────────────────────────────────
   const totalExpected = scraping.done; // rough proxy: each scraped card has some graded listings

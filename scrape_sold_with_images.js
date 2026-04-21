@@ -51,6 +51,27 @@ const urlLib        = require('url');
 
 puppeteer.use(StealthPlugin());
 
+// ── Coordinator (optional) ────────────────────────────────────────────────────
+// If config.json exists the scraper uses Google Sheets to coordinate with other
+// machines.  Without it, the scraper runs in standalone mode (original behaviour).
+
+const CONFIG_PATH = path.join(__dirname, 'config.json');
+let coordinator   = null;
+let coordRowNum   = null;   // row in the sheet for the set we claimed
+
+function loadCoordinator() {
+  if (!fs.existsSync(CONFIG_PATH)) return null;
+  try {
+    const config = JSON.parse(fs.readFileSync(CONFIG_PATH, 'utf8'));
+    const { Coordinator } = require('./coordinator');
+    return new Coordinator(config);
+  } catch (e) {
+    console.warn(`WARN: Could not load coordinator — ${e.message}`);
+    console.warn('      Running in standalone mode.\n');
+    return null;
+  }
+}
+
 // ── Config ────────────────────────────────────────────────────────────────────
 
 const DATA_DIR       = path.join(__dirname, 'data');
@@ -59,6 +80,7 @@ const IMAGES_DIR     = path.join(DATA_DIR, 'images');
 const SOLD_PROG_F    = path.join(SOLD_DIR,   '_progress.json');
 const IMG_PROG_F     = path.join(IMAGES_DIR, '_progress.json');
 
+// In coordinator mode this is ignored (the sheet picks the set).
 const STOP_AFTER_ARG  = process.argv[2] || 'Black & White';
 const DELAY_MIN       = 2000;   // scrape search-page delay (ms)
 const DELAY_MAX       = 4000;
@@ -93,6 +115,7 @@ function ensureDir(d)    { if (!fs.existsSync(d)) fs.mkdirSync(d, { recursive: t
 function sleep(ms)       { return new Promise(r => setTimeout(r, ms)); }
 function randDelay()     { return sleep(DELAY_MIN     + Math.random() * (DELAY_MAX     - DELAY_MIN)); }
 function randImgDelay()  { return sleep(IMG_DELAY_MIN + Math.random() * (IMG_DELAY_MAX - IMG_DELAY_MIN)); }
+function ts()            { return new Date().toTimeString().slice(0, 8); } // HH:MM:SS
 
 function loadJSON(f, fallback) {
   return fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')) : fallback;
@@ -289,7 +312,9 @@ function buildQueries(card, setName) {
 
 // ── Scrape sold listings for one card ────────────────────────────────────────
 
-async function scrapeCard(tab, card, set) {
+// cutoffDate: YYYY-MM-DD string.  When set, stops paginating a query once
+// every listing on a page is older than this date (eBay is newest-first).
+async function scrapeCard(tab, card, set, cutoffDate = null) {
   const setName = set.name;
   const seen    = new Set();
   const rawList = [];
@@ -300,12 +325,19 @@ async function scrapeCard(tab, card, set) {
       try {
         const html = await fetchPage(tab, query, page);
         const { listings, hasNext } = parseListings(html);
+        let hitCutoff = false;
         for (const item of listings) {
           if (seen.has(item.itemId)) continue;
           seen.add(item.itemId);
           rawList.push(item);
         }
-        if (!hasNext) break;
+        // If every result on this page predates our cutoff we've caught up —
+        // no need to fetch deeper pages for this query.
+        if (cutoffDate && listings.length > 0 &&
+            listings.every(l => l.soldDate && l.soldDate <= cutoffDate)) {
+          hitCutoff = true;
+        }
+        if (!hasNext || hitCutoff) break;
       } catch (err) {
         console.warn(`\n    WARN [${card.id}] q="${query}" pg=${page}: ${err.message}`);
         break;
@@ -478,26 +510,82 @@ async function downloadImagesForListing(tab, listing, cardMeta, imgProgress) {
   }
 }
 
+// ── Work queue builders ───────────────────────────────────────────────────────
+
+// Returns the newest soldDate from an existing card JSON file, or null.
+function newestSoldDate(cardJsonPath) {
+  if (!fs.existsSync(cardJsonPath)) return null;
+  try {
+    const data = JSON.parse(fs.readFileSync(cardJsonPath, 'utf8'));
+    const dates = (data.listings || []).map(l => l.soldDate).filter(Boolean).sort();
+    return dates.length ? dates[dates.length - 1] : null;
+  } catch (_) { return null; }
+}
+
+// Build work queue for a specific set.
+//   - Fresh cards (never scraped) get cutoffDate = null → full scrape.
+//   - Stale cards (scraped >STALE_SCRAPE_DAYS ago) get cutoffDate = newest
+//     existing soldDate so we only fetch newer listings.
+//   - Also re-queues failed image downloads for all cards in the set.
+function buildSetWorkQueue(setId, soldProgress, imgProgress, allCards, allSets) {
+  const { STALE_SCRAPE_DAYS } = require('./coordinator');
+  const set     = allSets.find(s => s.id === setId);
+  if (!set) throw new Error(`Unknown setId: ${setId}`);
+  const setTotal = set.printedTotal || set.total;
+  const setCards = allCards.filter(c => c.setId === setId);
+  const nowMs    = Date.now();
+
+  const scrapeQueue = [];   // { card, set, cutoffDate }
+  const imgRetries  = [];   // { listing, cardMeta } — failed image downloads
+
+  for (const card of setCards) {
+    card.setTotal = setTotal;
+    const prog = soldProgress[card.id];
+
+    if (!prog?.done) {
+      // Never successfully scraped
+      scrapeQueue.push({ card, set, cutoffDate: null });
+    } else {
+      const scrapedMs = prog.scrapedAt ? new Date(prog.scrapedAt).getTime() : 0;
+      const daysAgo   = (nowMs - scrapedMs) / 86_400_000;
+      if (daysAgo >= STALE_SCRAPE_DAYS) {
+        // Stale — incremental re-scrape from newest listing we already have
+        const cardJsonPath = path.join(SOLD_DIR, setId, `${card.id}.json`);
+        const cutoffDate   = newestSoldDate(cardJsonPath);
+        scrapeQueue.push({ card, set, cutoffDate });
+      }
+      // Either way, recover failed image downloads for this card
+      const cardJsonPath = path.join(SOLD_DIR, setId, `${card.id}.json`);
+      if (fs.existsSync(cardJsonPath)) {
+        try {
+          const data = JSON.parse(fs.readFileSync(cardJsonPath, 'utf8'));
+          const cardMeta = { cardId: card.id, cardName: card.name, setId, setName: set.name };
+          for (const l of (data.listings || [])) {
+            if ((l.grader === 'PSA' || l.grader === 'BGS' || l.grader === 'CGC') &&
+                l.outlierDirection !== 'low' && !l.potentialMismatch &&
+                !imgProgress[l.itemId]?.done) {
+              imgRetries.push({ listing: l, cardMeta });
+            }
+          }
+        } catch (_) {}
+      }
+    }
+  }
+
+  return { scrapeQueue, imgRetries, set };
+}
+
 // ── Main ──────────────────────────────────────────────────────────────────────
 
 async function main() {
   ensureDir(SOLD_DIR);
   ensureDir(IMAGES_DIR);
 
-  // Validate stop-after argument
-  if (STOP_AFTER_ARG !== 'all' && !SERIES_LAST_SET[STOP_AFTER_ARG]) {
-    console.error(`Unknown series: "${STOP_AFTER_ARG}"`);
-    console.error('Valid options:', Object.keys(SERIES_LAST_SET).join(', '), 'all');
-    process.exit(1);
-  }
-
-  // Worker counts.  Scraper workers do eBay search queries (need the bigger
-  // 2-4s delay).  Image workers just visit listing pages + download files
-  // (faster, lighter delay).  Defaults: 2 scrape + 3 image = 5 tabs total.
-  //   node scrape_sold_with_images.js all 2 4   → 2 scrape, 4 image workers
+  // Worker counts: default 2 scrape + 3 image workers.
+  //   Standalone:    node scrape_sold_with_images.js all 2 3
+  //   Coordinator:   node scrape_sold_with_images.js       (no args needed)
   const SCRAPE_WORKERS = Math.max(1, parseInt(process.argv[3]) || 2);
   const IMG_WORKERS    = Math.max(1, parseInt(process.argv[4]) || 3);
-  const stopLastSetId = STOP_AFTER_ARG === 'all' ? null : SERIES_LAST_SET[STOP_AFTER_ARG];
 
   const allCards = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'cards.json'), 'utf8'));
   const allSets  = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'sets.json'),  'utf8'));
@@ -505,26 +593,84 @@ async function main() {
   const soldProgress = loadJSON(SOLD_PROG_F, {});
   const imgProgress  = loadJSON(IMG_PROG_F,  {});
 
-  // ── Build flat work queue: one entry per pending card ─────────────────────
-  const workQueue = [];
-  for (const set of allSets) {
-    const setCards = allCards.filter(c => c.setId === set.id);
-    const setTotal = set.printedTotal || set.total;
-    for (const card of setCards) {
-      if (!soldProgress[card.id]?.done) {
-        card.setTotal = setTotal;
-        workQueue.push({ card, set });
-      }
+  // ── Coordinator mode (config.json exists) ─────────────────────────────────
+  coordinator = loadCoordinator();
+
+  let workQueue;           // { card, set, cutoffDate }[]
+  let activeSetId  = null;
+  let activeSetName = null;
+
+  if (coordinator) {
+    await coordinator.init();
+
+    // Find the best unclaimed / stale set
+    const best = await coordinator.findBestSet();
+    if (!best) {
+      console.log('\nAll sets are up to date or currently being scraped by another machine.\n');
+      return;
     }
-    if (stopLastSetId && set.id === stopLastSetId) break;
+
+    // Claim it — re-check to handle race conditions with other scrapers
+    const claimed = await coordinator.claimSet(best.rowNum);
+    if (!claimed) {
+      console.log(`\nSet ${best.setId} was just claimed by another scraper. Re-run to pick a different set.\n`);
+      return;
+    }
+
+    coordRowNum   = best.rowNum;
+    activeSetId   = best.setId;
+    const setObj  = allSets.find(s => s.id === activeSetId);
+    activeSetName = setObj?.name || activeSetId;
+
+    console.log(`\n  Coordinator mode — claimed set: ${activeSetName} (${activeSetId})`);
+    if (best.lastScrapedAt) {
+      console.log(`  Last scraped: ${best.lastScrapedAt} — incremental re-scrape`);
+    }
+
+    ensureDir(path.join(SOLD_DIR, activeSetId));
+    const { scrapeQueue, imgRetries } = buildSetWorkQueue(
+      activeSetId, soldProgress, imgProgress, allCards, allSets
+    );
+    // Pre-load image retry queue; scrape queue is the work queue
+    workQueue = scrapeQueue;
+    // Seed imgQueue with retries after browser is up (see below)
+    coordinator._imgRetries = imgRetries;
+
+  } else {
+    // ── Standalone mode (original behaviour) ──────────────────────────────
+    if (STOP_AFTER_ARG !== 'all' && !SERIES_LAST_SET[STOP_AFTER_ARG]) {
+      console.error(`Unknown series: "${STOP_AFTER_ARG}"`);
+      console.error('Valid options:', Object.keys(SERIES_LAST_SET).join(', '), 'all');
+      process.exit(1);
+    }
+    const stopLastSetId = STOP_AFTER_ARG === 'all' ? null : SERIES_LAST_SET[STOP_AFTER_ARG];
+
+    workQueue = [];
+    for (const set of allSets) {
+      const setCards = allCards.filter(c => c.setId === set.id);
+      const setTotal = set.printedTotal || set.total;
+      for (const card of setCards) {
+        if (!soldProgress[card.id]?.done) {
+          card.setTotal = setTotal;
+          workQueue.push({ card, set, cutoffDate: null });
+        }
+      }
+      if (stopLastSetId && set.id === stopLastSetId) break;
+    }
   }
 
-  if (!workQueue.length) {
-    console.log('\nAll cards already fully scraped.\n');
+  if (!workQueue.length && !(coordinator?._imgRetries?.length)) {
+    console.log('\nNothing to scrape for this set — all cards are up to date.\n');
+    if (coordRowNum) {
+      await coordinator.releaseSet(coordRowNum, {
+        cardsDone: Object.values(soldProgress).filter(v => v.done).length,
+        listingsTotal: 0, failedCards: 0,
+      }).catch(() => {});
+    }
     return;
   }
 
-  // Pre-create output directories (safe to do up front)
+  // Pre-create output directories
   const seenSetDirs = new Set();
   for (const { set } of workQueue) {
     if (!seenSetDirs.has(set.id)) {
@@ -535,10 +681,14 @@ async function main() {
 
   const totalQueued = workQueue.length;
 
+  const modeLabel = coordinator
+    ? `Coordinator mode — set: ${activeSetName}`
+    : `Standalone mode — stop after: ${STOP_AFTER_ARG}`;
+
   console.log('\n── scrape_sold_with_images.js ────────────────────────────────');
+  console.log(`  Mode               : ${modeLabel}`);
   console.log(`  Scrape workers     : ${SCRAPE_WORKERS}  (search queries, 2-4s delay each)`);
   console.log(`  Image workers      : ${IMG_WORKERS}  (listing pages, 0.4-0.9s delay, parallel DL)`);
-  console.log(`  Stop after series  : ${STOP_AFTER_ARG}${stopLastSetId ? ` (last set: ${stopLastSetId})` : ' (no limit)'}`);
   console.log(`  Cards pending      : ${totalQueued.toLocaleString()}`);
 
   // ── Serialised file saves (promise-chain mutex) ────────────────────────────
@@ -557,7 +707,8 @@ async function main() {
 
   // ── Shared image download queue (producer-consumer) ────────────────────────
   // Scrape workers push here; image workers drain it concurrently.
-  const imgQueue    = [];   // { listing, cardMeta }
+  // Pre-seed with any failed image retries from coordinator mode.
+  const imgQueue    = coordinator?._imgRetries ? [...coordinator._imgRetries] : [];
   let scrapersDone  = false;
 
   // ── Launch browser ─────────────────────────────────────────────────────────
@@ -585,26 +736,70 @@ async function main() {
 
   // ── Shared counters ────────────────────────────────────────────────────────
   let totalCards = 0, totalListings = 0, totalImgDownloads = 0, completed = 0;
+  let totalFailed = 0;
+
+  // Heartbeat: update coordinator every 10 completed cards so the 2-hour
+  // stale-claim timer resets and progress is visible in the sheet.
+  const HEARTBEAT_EVERY = 10;
+  async function maybeHeartbeat() {
+    if (!coordinator || !coordRowNum) return;
+    if (completed % HEARTBEAT_EVERY !== 0) return;
+    try {
+      await coordinator.heartbeat(coordRowNum, {
+        cardsDone:     completed,
+        listingsTotal: totalListings,
+        failedCards:   totalFailed,
+      });
+    } catch (_) {} // non-fatal — don't crash the scraper over a sheet write
+  }
+
+  // Recover a tab after eBay detection (detached frame / bot check).
+  // Navigates back to eBay homepage and waits for things to settle.
+  async function recoverTab(tab, tag) {
+    console.log(`[${ts()}] ${tag} Tab recovery — reloading eBay...`);
+    try {
+      await tab.goto('https://www.ebay.com', { waitUntil: 'domcontentloaded', timeout: 30000 });
+      await sleep(5000 + Math.random() * 5000); // 5-10s cooldown
+    } catch (_) {}
+  }
 
   // ── Scrape workers: search eBay, save listings, push to imgQueue ───────────
   async function scraperWorker(tab, id) {
     const tag = `[S${id}]`;
+    let consecutiveDetached = 0;  // track repeated detached-frame errors
     while (workQueue.length > 0) {
       const item = workQueue.shift();
       if (!item) break;
-      const { card, set } = item;
-      if (soldProgress[card.id]?.done) continue;
+      const { card, set, cutoffDate } = item;
 
-      console.log(`${tag} ${card.id.padEnd(14)} ${card.name.padEnd(22)} scraping...`);
+      // In standalone mode skip if already done; in coordinator mode
+      // cutoffDate being set means we intentionally re-scrape for new listings.
+      if (!cutoffDate && soldProgress[card.id]?.done) continue;
+
+      const modeTag = cutoffDate ? ` (since ${cutoffDate})` : '';
+      console.log(`[${ts()}] ${tag} ${card.id.padEnd(14)} ${card.name.padEnd(22)} scraping...${modeTag}`);
       try {
-        const listings = await scrapeCard(tab, card, set);
+        const newListings = await scrapeCard(tab, card, set, cutoffDate);
+        consecutiveDetached = 0; // reset on success
+
+        // Incremental merge: keep existing listings, prepend newly found ones
+        let listings = newListings;
+        const cardJsonPath = path.join(SOLD_DIR, set.id, `${card.id}.json`);
+        if (cutoffDate && fs.existsSync(cardJsonPath)) {
+          try {
+            const existing    = JSON.parse(fs.readFileSync(cardJsonPath, 'utf8'));
+            const existingIds = new Set((existing.listings || []).map(l => l.itemId));
+            const truly_new   = newListings.filter(l => !existingIds.has(l.itemId));
+            listings = [...truly_new, ...(existing.listings || [])];
+          } catch (_) {}
+        }
 
         const output = {
           cardId: card.id, name: card.name, setId: card.setId, setName: set.name,
           number: card.number, rarity: card.rarity,
           scrapedAt: new Date().toISOString(), totalListings: listings.length, listings,
         };
-        fs.writeFileSync(path.join(SOLD_DIR, set.id, `${card.id}.json`), JSON.stringify(output, null, 2));
+        fs.writeFileSync(cardJsonPath, JSON.stringify(output, null, 2));
         soldProgress[card.id] = { done: true, count: listings.length, scrapedAt: output.scrapedAt };
         saveSold();
 
@@ -621,11 +816,30 @@ async function main() {
         );
         for (const listing of eligible) imgQueue.push({ listing, cardMeta });
 
-        console.log(`${tag} ${card.id.padEnd(14)} ${card.name.padEnd(22)} ✓ ${listings.length} sold | ${eligible.length} queued for imgs  [${completed}/${totalQueued}]`);
+        console.log(`[${ts()}] ${tag} ${card.id.padEnd(14)} ${card.name.padEnd(22)} ✓ ${listings.length} sold | ${eligible.length} queued for imgs  [${completed}/${totalQueued}]`);
+        await maybeHeartbeat();
       } catch (err) {
-        console.warn(`${tag} ERROR [${card.id}]: ${err.message}`);
-        soldProgress[card.id] = { done: false, error: err.message };
-        saveSold();
+        const isDetached = err.message?.includes('detached') || err.message?.includes('Execution context');
+        if (isDetached) {
+          consecutiveDetached++;
+          console.warn(`[${ts()}] ${tag} WARN [${card.id}]: detached frame (${consecutiveDetached} in a row)`);
+          // Put the card back so it gets retried after recovery
+          workQueue.unshift(item);
+          await recoverTab(tab, tag);
+          // If still failing after 3 recovery attempts, skip and mark as failed
+          if (consecutiveDetached >= 3) {
+            workQueue.shift(); // remove it for real
+            soldProgress[card.id] = { done: false, error: 'detached frame after recovery' };
+            totalFailed++;
+            consecutiveDetached = 0;
+            saveSold();
+          }
+        } else {
+          console.warn(`[${ts()}] ${tag} ERROR [${card.id}]: ${err.message}`);
+          soldProgress[card.id] = { done: false, error: err.message };
+          totalFailed++;
+          saveSold();
+        }
       }
     }
     console.log(`${tag} Done.`);
@@ -640,7 +854,7 @@ async function main() {
       if (!item) {
         if (scrapersDone && imgQueue.length === 0) break;
         await sleep(500);   // wait for scrapers to produce more
-        if (++idle % 20 === 0) console.log(`${tag} waiting for image queue...`);
+        if (++idle % 20 === 0) console.log(`[${ts()}] ${tag} waiting for image queue...`);
         continue;
       }
       idle = 0;
@@ -652,7 +866,7 @@ async function main() {
           saveImgs();
         }
       } catch (err) {
-        console.warn(`${tag} img ERROR [${listing.itemId}]: ${err.message}`);
+        console.warn(`[${ts()}] ${tag} img ERROR [${listing.itemId}]: ${err.message}`);
       }
     }
     console.log(`${tag} Done.`);
@@ -671,17 +885,36 @@ async function main() {
   await imgSaveLock;
   await browser.close();
 
+  // ── Release coordinator claim ──────────────────────────────────────────────
+  if (coordinator && coordRowNum) {
+    try {
+      await coordinator.releaseSet(coordRowNum, {
+        cardsDone:     completed,
+        listingsTotal: totalListings,
+        failedCards:   totalFailed,
+        notes:         totalFailed > 0 ? `${totalFailed} cards failed` : '',
+      });
+      console.log(`\n  Coordinator: released set "${activeSetName}" as done.`);
+    } catch (e) {
+      console.warn(`  WARN: could not update coordinator sheet — ${e.message}`);
+    }
+  }
+
   console.log('\n── Complete ─────────────────────────────────────────────────');
   console.log(`  Scrape workers       : ${SCRAPE_WORKERS}`);
   console.log(`  Image workers        : ${IMG_WORKERS}`);
   console.log(`  Cards scraped        : ${totalCards}`);
+  console.log(`  Failed cards         : ${totalFailed}`);
   console.log(`  Total listings found : ${totalListings.toLocaleString()}`);
   console.log(`  Graded image sets    : ${totalImgDownloads.toLocaleString()}  (PSA/BGS/CGC)`);
   console.log(`  Images folder size   : ${dirSizeMB(IMAGES_DIR)} MB`);
   console.log(`  Sold data size       : ${dirSizeMB(SOLD_DIR)} MB`);
-  if (STOP_AFTER_ARG !== 'all') {
+  if (!coordinator && STOP_AFTER_ARG !== 'all') {
     console.log(`\n  Stopped after "${STOP_AFTER_ARG}" series as requested.`);
     console.log(`  Re-run with next series name (or "all") to continue.`);
+  }
+  if (coordinator) {
+    console.log(`\n  Re-run to pick up the next available set from the sheet.`);
   }
   console.log();
 }
