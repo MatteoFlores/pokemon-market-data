@@ -5,5 +5,15 @@ dist/
 *.log
 
 
-# Auto-ignored: files locked by a running process
-data/
+# Scraped data — large, machine-specific, not committed
+# (sets.json and cards.json are kept — small static catalog everyone needs)
+data/ebay_sold/
+data/ebay_listings/
+data/images/
+data/cert_results/
+data/eval_samples/
+data/raw/
+data/price_snapshots/
+data/*.json
+!data/sets.json
+!data/cards.json
