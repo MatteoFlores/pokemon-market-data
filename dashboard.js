@@ -16,6 +16,39 @@ const path = require('path');
 const PORT     = 3000;
 const DATA_DIR = path.join(__dirname, 'data');
 
+// ── Coordinator cache (reads Google Sheet, refreshed every 60s) ───────────────
+
+let _coordCache     = null;
+let _coordCacheTime = 0;
+const COORD_TTL_MS  = 60_000;
+
+async function getCoordinatorStatus() {
+  if (_coordCache && Date.now() - _coordCacheTime < COORD_TTL_MS) return _coordCache;
+  try {
+    const configPath = path.join(__dirname, 'config.json');
+    if (!fs.existsSync(configPath)) return null;
+    const config = JSON.parse(fs.readFileSync(configPath, 'utf8'));
+    const { Coordinator } = require('./coordinator');
+    const coord = new Coordinator(config);
+    await coord.init();
+    const rows = await coord.getAllStatuses();
+
+    const totalSets     = rows.length;
+    const done          = rows.filter(r => r.status === 'done').length;
+    const activeScraping = rows
+      .filter(r => r.status === 'scraping')
+      .map(r => ({ setName: r.setName, claimedBy: r.claimedBy, cardsDone: r.cardsDone, totalCards: r.totalCards }));
+    const totalListings  = rows.reduce((a, r) => a + r.listingsTotal, 0);
+
+    _coordCache = { totalSets, done, pending: totalSets - done - activeScraping.length, activeScraping, totalListings, syncedAt: new Date().toISOString() };
+    _coordCacheTime = Date.now();
+  } catch (e) {
+    _coordCache = { error: e.message };
+    _coordCacheTime = Date.now(); // still cache briefly so one bad auth doesn't spam the API
+  }
+  return _coordCache;
+}
+
 // ── Cache large static files once on startup ──────────────────────────────────
 
 function loadJSON(p, fallback) {
@@ -98,7 +131,7 @@ function getStatus() {
     const done   = ids.filter(id => soldProg[id]?.done && soldProg[id]?.count > 0).length;
     const redone = ids.filter(id => soldProg[id]?.done && soldProg[id]?.count === 0).length;
     return { id: setId, name: SET_MAP[setId]?.name || setId, done, needsRedo: redone, total: ids.length };
-  });
+  }).filter(s => s.total > 0);
 
   // ── Images ──────────────────────────────────────────────────────────────────
   const imgValues  = Object.values(imgProg);
@@ -314,6 +347,27 @@ const HTML = `<!DOCTYPE html>
     Last update: <b id="last-update">—</b>
   </div>
 </header>
+
+<!-- GLOBAL PROGRESS (Google Sheet) -->
+<div class="card" id="card-global" style="margin-bottom:16px">
+  <div class="card-header">
+    <h2>Global Progress</h2>
+    <span style="font-size:11px;color:var(--muted)" id="coord-synced">syncing...</span>
+  </div>
+  <div style="display:flex;gap:32px;align-items:flex-end;flex-wrap:wrap;margin-bottom:16px">
+    <div>
+      <div class="big-number" id="coord-sets-done">—</div>
+      <div class="big-sub" id="coord-sets-sub">of — sets complete</div>
+    </div>
+    <div>
+      <div class="big-number" id="coord-listings">—</div>
+      <div class="big-sub">total listings (both machines)</div>
+    </div>
+  </div>
+  <div class="progress-track"><div class="progress-fill fill-green" id="coord-bar" style="width:0%"></div></div>
+  <div id="coord-active" style="margin-top:12px"></div>
+  <div id="coord-error" style="color:var(--red);font-size:12px;margin-top:8px"></div>
+</div>
 
 <div class="grid">
 
@@ -553,6 +607,43 @@ function applyStatus(data) {
   ).join('');
 }
 
+async function pollCoordinator() {
+  try {
+    const res  = await fetch('/api/coordinator');
+    const data = await res.json();
+    const errEl = document.getElementById('coord-error');
+    if (data.error) {
+      errEl.textContent = '⚠ Sheet unavailable: ' + data.error;
+      document.getElementById('coord-synced').textContent = 'error';
+      return;
+    }
+    errEl.textContent = '';
+    const pct = data.totalSets > 0 ? data.done / data.totalSets * 100 : 0;
+    document.getElementById('coord-sets-done').textContent = fmt(data.done);
+    document.getElementById('coord-sets-sub').textContent  = 'of ' + fmt(data.totalSets) + ' sets complete (' + pct.toFixed(1) + '%)';
+    document.getElementById('coord-listings').textContent  = fmt(data.totalListings);
+    document.getElementById('coord-bar').style.width       = Math.min(100, pct).toFixed(2) + '%';
+    document.getElementById('coord-synced').textContent    = 'synced ' + fmtAgo(data.syncedAt);
+
+    const activeEl = document.getElementById('coord-active');
+    if (data.activeScraping && data.activeScraping.length > 0) {
+      activeEl.innerHTML = '<div style="font-size:12px;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:.04em">Currently scraping</div>' +
+        data.activeScraping.map(s =>
+          '<div style="display:flex;justify-content:space-between;font-size:13px;padding:4px 0;border-bottom:1px solid #1c2128">' +
+          '<span><b style="color:var(--blue)">' + s.claimedBy + '</b> — ' + s.setName + '</span>' +
+          '<span style="color:var(--muted)">' + fmt(s.cardsDone) + ' / ' + fmt(s.totalCards) + ' cards</span>' +
+          '</div>'
+        ).join('');
+    } else {
+      activeEl.innerHTML = '<span style="font-size:12px;color:var(--muted)">No active scrapers</span>';
+    }
+  } catch (e) {
+    console.warn('Coordinator poll failed:', e.message);
+  }
+}
+
+let coordCountdown = 0; // poll immediately on first tick
+
 async function poll() {
   try {
     const res  = await fetch('/api/status');
@@ -571,9 +662,15 @@ function tick() {
     countdown = POLL_INTERVAL;
     poll();
   }
+  coordCountdown--;
+  if (coordCountdown <= 0) {
+    coordCountdown = 60; // refresh sheet every 60s
+    pollCoordinator();
+  }
 }
 
 poll();
+pollCoordinator();
 timer = setInterval(tick, 1000);
 </script>
 </body>
@@ -581,12 +678,24 @@ timer = setInterval(tick, 1000);
 
 // ── HTTP server ───────────────────────────────────────────────────────────────
 
-const server = http.createServer((req, res) => {
+const server = http.createServer(async (req, res) => {
   if (req.url === '/api/status') {
     try {
       const status = getStatus();
       res.writeHead(200, { 'Content-Type': 'application/json' });
       res.end(JSON.stringify(status));
+    } catch (err) {
+      res.writeHead(500, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ error: err.message }));
+    }
+    return;
+  }
+
+  if (req.url === '/api/coordinator') {
+    try {
+      const data = await getCoordinatorStatus();
+      res.writeHead(200, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify(data));
     } catch (err) {
       res.writeHead(500, { 'Content-Type': 'application/json' });
       res.end(JSON.stringify({ error: err.message }));

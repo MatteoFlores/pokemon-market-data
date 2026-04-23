@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "pokemon-data-493623",
+  "private_key_id": "79ded5aba1c47af5411adbb025fce1b112995a2d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDG8TSNtTJ2TwDA\n44Uve+Ei1InCECNyzeS9FbrQzz5xnwZ0aI+5tUVQod9BHOm3B0vbDYpUtkC/GDPn\nTXPWel7/12/PR4uIERACNWHawX+7DY+TLviBzxSfWvgs0VHU+a+s/El3M/5Mfr+K\nmcxnBpoDsbHxh0rKREZW+hboyQhlshlVEM7wBIjV755oXSTmL13A00Oi6/+jd+gh\nGeGMqcKg4xGOPrHWlxqR0wn/OdljixKzHLs2yFz6uQsNQp0wqqdZpzCRGtl+XH0k\n+blb2S73xJjUFip1uKFyDtVbo1Vv1+f8VR1qHvVJEWfvEfARdzA5sBcbXtg+s7+d\nl+9C62ZZAgMBAAECggEAIYIWDnpDFh9HarXHxJAygvnWfCvYtKkOSnTjAvGtPFkD\nLs8/yhFIrASfxGlYyj293pcAwjTyYd1zPJXUmX8CCkigqgKMc24gSqbwJPbrizeF\nA87pB4A4IoEhhPb6uAsYNmRGAYBt6Dd/DprKDV5UyaN/68UUaU4npNW5zxqxQeN5\n/QYInbvY7RVQBxOFYKbQ5gllxa97kJjHoFHq1dcWBlJfX27tjPsOLZC793jVxQQ6\n6ouvCVPnFqKgT/HVJS53+fYH06ctQnR+BiNTLp2P9sQfN4YE2TB/6Lkt8iJ0usLY\noFJdb+qxUaC5bgwWQv/gVNVv2zB8sIu8IBBlsXXT8wKBgQDr3Wxiw9iEGf+0ehPG\nnl1e15fqxOgZKlGDSkjrB4+uB4nIhhgWW1nTJZvm5jMgIIddLFjV3NmyYTrW4BQ+\nx1Y5I2Cu523ezd0brT9DU3mKtiB9WTJx3JoZ7V3eLVaorF6huhwZyh2AQXxForJR\n7wDQ35pKwyDE6Vli0q7y1LENXwKBgQDX7OAFiDhXUiSx+N9WaiOp5OxEs0RszAFi\n+ErRxFXiDh7iaehocFwtlaM1gc9w5V3y8V/earCJxWO+U7Lt/XOel1rojEHTHyCH\nGsS9NX+q1c9WOItsFZeEdqWQHzQ+5m7pEjRthdHFFFY/rP04ahkQrmdHAH1Ai2oM\nLvU8oMvvRwKBgQCIEcVldPaDvzv1MjgWbWYQQPAzUEVVv0QnKcPHUyVgkJi8Rh+/\nRhQb66Z1HniAIEP3TI4zUqWEcvMu4zbKwNTNQcuVG44W60yTmu7UOGP10fwMVFj1\ntv5v1rBAbIeB527wfh2YAzHhu+Wlhqa4/djKpzSrzMYq0zPt/v1OucUqoQKBgA+G\nUHUVXjepCEpjgmtMJlRIyVQHL5xC7raW84oxe5tNOJs+0h7wNTBx2dI3Cxsq4p5d\nDG+JbDf7oThF/E9wMaftafPeYb00N7p/CjYwaoV16fphBmU3CDXV8gFyvObo2oCX\ndn2JaZOp6qmZXnt35WV1pKdOObMyUuWdWrSJOyBxAoGAE4WpMDDqYv34FF5ELC6v\nkufiQJNNIiy7qAFaBQKpFKnhGAfM/gDnV37cHINdtZRp+FNK42pQDG78FQbgSgHK\n4P1XdcpzEtFiHYB9s/p8xIKCwdzzu8TeHwG0c2HjQjM5NqZOhFJbXX5W/HveAQlH\n0AgCcruUF8glK1hJSIe2mbA=\n-----END PRIVATE KEY-----\n",
+  "client_email": "pokemon-market-data@pokemon-data-493623.iam.gserviceaccount.com",
+  "client_id": "100373809321613452518",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/pokemon-market-data%40pokemon-data-493623.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

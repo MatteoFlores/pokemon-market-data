@@ -4,7 +4,7 @@
 Pokemon Market Data is a comprehensive data collection and analysis system that scrapes Pokemon trading card prices and sales data from eBay and TCGPlayer. It uses web scraping, image processing, and machine learning to extract card information, grading certificates, and market pricing trends across multiple Pokemon card sets spanning from Base Set to recent releases.
 
 ## Session Summary
-The project has established a robust data pipeline with working scrapers for eBay sold listings and TCGPlayer data, implemented YOLOv11-based image detection for PSA grading certificates, and accumulated extensive historical pricing snapshots and sold listing data across 150+ Pokemon card sets. Current focus appears to be on improving certificate extraction accuracy and expanding historical data coverage.
+Implemented a distributed scraping coordinator using Google Sheets as a lightweight task queue system, enabling multiple scrapers to run simultaneously without claiming the same set. Updated configuration to support Google Sheets integration with credential-based authentication. This infrastructure enables scalable, coordinated data collection across the Pokemon card catalog.
 
 ## Features Registry
 - eBay sold listings scraper with set-based organization (base1 through me3 sets)
@@ -15,6 +15,8 @@ The project has established a robust data pipeline with working scrapers for eBa
 - Price snapshot collection system with historical tracking (2026-04-11 onwards)
 - Data persistence layer with JSON caching for eBay tokens and card mappings
 - Unmatched sets tracking and error handling across scraping operations
+- Distributed scraping coordinator using Google Sheets for task queue management
+- Multi-scraper synchronization with claim tracking and stale claim detection
 
 ## Completed
 - [x] eBay sold listings scraper with set-based organization (base1 through me3 sets)
@@ -25,11 +27,13 @@ The project has established a robust data pipeline with working scrapers for eBa
 - [x] Price snapshot collection system with historical tracking (2026-04-11 onwards)
 - [x] Data persistence layer with JSON caching for eBay tokens and card mappings
 - [x] Unmatched sets tracking and error handling across scraping operations
+- [x] Distributed scraping coordinator using Google Sheets for task queue management
 
 ## In Progress
 - [ ] Certificate OCR accuracy improvement and digit extraction refinement
 - [ ] PSA grading label detection model evaluation and hyperparameter tuning
 - [ ] Expansion of cert_results categorization (ocr_success, verify_later, unextractable)
+- [ ] Multi-scraper synchronization and claim tracking implementation
 
 ## To Do
 - [ ] Implement automated price trend analysis and anomaly detection across sets

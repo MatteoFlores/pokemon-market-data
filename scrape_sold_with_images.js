@@ -616,14 +616,27 @@ async function main() {
 
     if (coordinator) {
       // Find the best unclaimed / stale set
-      const best = await coordinator.findBestSet();
+      let best;
+      try {
+        best = await coordinator.findBestSet();
+      } catch (e) {
+        console.error(`\n  Coordinator error (findBestSet): ${e.message}`);
+        console.error('  If you see "invalid_grant", sync your system clock and restart.\n');
+        break;
+      }
       if (!best) {
         console.log('\nAll sets are up to date or currently being scraped by another machine.\n');
         break;
       }
 
       // Claim it — re-check to handle race conditions with other scrapers
-      const claimed = await coordinator.claimSet(best.rowNum);
+      let claimed;
+      try {
+        claimed = await coordinator.claimSet(best.rowNum);
+      } catch (e) {
+        console.error(`\n  Coordinator error (claimSet): ${e.message}\n`);
+        break;
+      }
       if (!claimed) {
         console.log(`\nSet ${best.setId} was just claimed by another scraper. Retrying in 10s...\n`);
         await sleep(10000);
