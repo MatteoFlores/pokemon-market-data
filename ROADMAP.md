@@ -28,12 +28,12 @@ Implemented a distributed scraping coordinator using Google Sheets as a lightwei
 - [x] Data persistence layer with JSON caching for eBay tokens and card mappings
 - [x] Unmatched sets tracking and error handling across scraping operations
 - [x] Distributed scraping coordinator using Google Sheets for task queue management
+- [x] Multi-scraper synchronization with claim tracking and stale claim detection
 
 ## In Progress
 - [ ] Certificate OCR accuracy improvement and digit extraction refinement
 - [ ] PSA grading label detection model evaluation and hyperparameter tuning
 - [ ] Expansion of cert_results categorization (ocr_success, verify_later, unextractable)
-- [ ] Multi-scraper synchronization and claim tracking implementation
 
 ## To Do
 - [ ] Implement automated price trend analysis and anomaly detection across sets
