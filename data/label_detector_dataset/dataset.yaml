@@ -1,0 +1,6 @@
+path: F:/Programs/Pokemon Market Data/data/label_detector_dataset
+train: train/images
+val:   valid/images
+
+nc: 4
+names: ['PSA', 'CGC', 'BGS', 'ACE']

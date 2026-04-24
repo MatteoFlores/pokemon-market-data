@@ -38,7 +38,7 @@ from ultralytics import YOLO
 _BASE         = Path(__file__).resolve().parent
 DATASET_YAML  = str(_BASE / "HXYT5PV7.v1i.yolov11" / "data.yaml")
 MODELS_DIR    = _BASE / "models"
-RUN_NAME      = "grading_labels_v1"
+RUN_NAME      = "grading_labels_v2"
 
 # Training hyperparameters — tuned for your 3080 Ti (12 GB VRAM)
 EPOCHS        = 150

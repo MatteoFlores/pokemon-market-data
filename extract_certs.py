@@ -72,7 +72,7 @@ def suppress_c_stderr():
 _BASE        = Path(__file__).resolve().parent
 IMAGES_DIR   = _BASE / "data" / "images"
 RESULTS_DIR  = _BASE / "data" / "cert_results"
-MODEL_PATH   = _BASE / "models" / "grading_labels.pt"
+MODEL_PATH   = _BASE / "models" / "grading_labels_v3.pt"
 PROGRESS_F   = RESULTS_DIR / "_progress.json"
 CERT_JSON    = RESULTS_DIR / "cert_numbers.json"
 
@@ -80,10 +80,9 @@ CERT_JSON    = RESULTS_DIR / "cert_numbers.json"
 YOLO_CONF_THRESHOLD = 0.50   # minimum to even attempt OCR on this crop
 HIGH_CONF_THRESHOLD = 0.95   # cert_extracted — images deleted
 
-# Label class indices we care about (from dataset):
-#   8=psa_label, 9=psa_label_old, 5=cgc_label, 6=cgc_label_old,
-#   0=bgs_label, 1=bgs_label_auto, 2=bgs_label_black, 10=psa_slab, 3=bgs_slab, 7=cgc_slab
-LABEL_CLASSES = {0, 1, 2, 3, 5, 6, 7, 8, 9, 10}
+# Label class indices for grading_labels_v3:
+#   0=PSA, 1=CGC, 2=BGS, 3=ACE
+LABEL_CLASSES = {0, 1, 2, 3}
 
 # Cert number pattern: exactly 8 consecutive digits
 CERT_RE = re.compile(r'\b(\d{8})\b')

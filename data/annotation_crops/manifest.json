@@ -1,0 +1,5723 @@
+{
+  "117029240213_1.jpg": {
+    "itemId": "117029240213",
+    "grader": "PSA",
+    "cardName": "Mow Rotom",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.947,
+    "annotated": false,
+    "skipped": true
+  },
+  "298100636173_1.jpg": {
+    "itemId": "298100636173",
+    "grader": "CGC",
+    "cardName": "Maractus",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.947,
+    "annotated": false,
+    "skipped": true
+  },
+  "117051187139_1.jpg": {
+    "itemId": "117051187139",
+    "grader": "PSA",
+    "cardName": "Wobbuffet",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.937,
+    "annotated": false,
+    "skipped": true
+  },
+  "366264730895_1.jpg": {
+    "itemId": "366264730895",
+    "grader": "BGS",
+    "cardName": "Blissey",
+    "detectedClass": 3,
+    "detectedName": "ACE",
+    "confidence": 0.919,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 1,
+      "cx": 0.8152389482438744,
+      "cy": 0.14733261725742924,
+      "w": 0.1813703537841469,
+      "h": 0.03759398496240604
+    }
+  },
+  "127729189844_1.jpg": {
+    "itemId": "127729189844",
+    "grader": "CGC",
+    "cardName": "Snorlax",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.953,
+    "annotated": false,
+    "skipped": true
+  },
+  "117078573027_1.jpg": {
+    "itemId": "117078573027",
+    "grader": "BGS",
+    "cardName": "Growlithe",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.948,
+    "annotated": false,
+    "skipped": true
+  },
+  "116605706347_1.jpg": {
+    "itemId": "116605706347",
+    "grader": "PSA",
+    "cardName": "Charizard",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.921,
+    "annotated": false,
+    "skipped": true
+  },
+  "116987668578_1.jpg": {
+    "itemId": "116987668578",
+    "grader": "PSA",
+    "cardName": "Marill",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.938,
+    "annotated": false,
+    "skipped": true
+  },
+  "326874180934_1.jpg": {
+    "itemId": "326874180934",
+    "grader": "CGC",
+    "cardName": "Articuno",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.95,
+    "annotated": false,
+    "skipped": true
+  },
+  "188154289586_1.jpg": {
+    "itemId": "188154289586",
+    "grader": "CGC",
+    "cardName": "Mew",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.938,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5551487414187642,
+      "cy": 0.759861642041772,
+      "w": 0.16247139588100684,
+      "h": 0.13482361344426663
+    }
+  },
+  "117034390797_1.jpg": {
+    "itemId": "117034390797",
+    "grader": "CGC",
+    "cardName": "Mismagius",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.94,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5480549199084668,
+      "cy": 0.7476608187134504,
+      "w": 0.16384439359267733,
+      "h": 0.09691075514874137
+    }
+  },
+  "117071274881_1.jpg": {
+    "itemId": "117071274881",
+    "grader": "PSA",
+    "cardName": "Misdreavus",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.943,
+    "annotated": false,
+    "skipped": true
+  },
+  "117053868832_1.jpg": {
+    "itemId": "117053868832",
+    "grader": "PSA",
+    "cardName": "Croconaw",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.933,
+    "annotated": false,
+    "skipped": true
+  },
+  "116974117183_1.jpg": {
+    "itemId": "116974117183",
+    "grader": "PSA",
+    "cardName": "Team Rocket's Articuno",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.951,
+    "annotated": false,
+    "skipped": true
+  },
+  "117080002722_1.jpg": {
+    "itemId": "117080002722",
+    "grader": "PSA",
+    "cardName": "Cinderace ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.941,
+    "annotated": false,
+    "skipped": true
+  },
+  "178041911339_1.jpg": {
+    "itemId": "178041911339",
+    "grader": "CGC",
+    "cardName": "Sandy Shocks ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.942,
+    "annotated": false,
+    "skipped": true
+  },
+  "147250707924_1.jpg": {
+    "itemId": "147250707924",
+    "grader": "CGC",
+    "cardName": "Mew",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.946,
+    "annotated": false,
+    "skipped": true
+  },
+  "306652725297_1.jpg": {
+    "itemId": "306652725297",
+    "grader": "CGC",
+    "cardName": "Ethan's Ho-Oh ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.953,
+    "annotated": false,
+    "skipped": true
+  },
+  "116904507110_1.jpg": {
+    "itemId": "116904507110",
+    "grader": "PSA",
+    "cardName": "Kangaskhan",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.944,
+    "annotated": false,
+    "skipped": true
+  },
+  "336427223072_1.jpg": {
+    "itemId": "336427223072",
+    "grader": "BGS",
+    "cardName": "Rapidash",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.963,
+    "annotated": false,
+    "skipped": true
+  },
+  "306863292932_1.jpg": {
+    "itemId": "306863292932",
+    "grader": "CGC",
+    "cardName": "Pignite",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.899,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5403468625797905,
+      "cy": 0.25921947726459005,
+      "w": 0.12680442525076996,
+      "h": 0.02148227712137485
+    }
+  },
+  "116995853968_1.jpg": {
+    "itemId": "116995853968",
+    "grader": "PSA",
+    "cardName": "Meganium",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.945,
+    "annotated": false,
+    "skipped": true
+  },
+  "117024129180_1.jpg": {
+    "itemId": "117024129180",
+    "grader": "PSA",
+    "cardName": "Zygarde",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.933,
+    "annotated": false,
+    "skipped": true
+  },
+  "198253644498_1.jpg": {
+    "itemId": "198253644498",
+    "grader": "CGC",
+    "cardName": "Oricorio",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.946,
+    "annotated": false,
+    "skipped": true
+  },
+  "317937426961_1.jpg": {
+    "itemId": "317937426961",
+    "grader": "CGC",
+    "cardName": "Celebi",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.954,
+    "annotated": false,
+    "skipped": true
+  },
+  "287237873996_1.jpg": {
+    "itemId": "287237873996",
+    "grader": "CGC",
+    "cardName": "Snorlax",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.959,
+    "annotated": false,
+    "skipped": true
+  },
+  "116715598378_1.jpg": {
+    "itemId": "116715598378",
+    "grader": "PSA",
+    "cardName": "Blastoise",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.95,
+    "annotated": false,
+    "skipped": true
+  },
+  "117003481456_1.jpg": {
+    "itemId": "117003481456",
+    "grader": "PSA",
+    "cardName": "Ethan's Ho-Oh ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.941,
+    "annotated": false,
+    "skipped": true
+  },
+  "117043872874_1.jpg": {
+    "itemId": "117043872874",
+    "grader": "CGC",
+    "cardName": "Komala",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.95,
+    "annotated": false,
+    "skipped": true
+  },
+  "117098759695_1.jpg": {
+    "itemId": "117098759695",
+    "grader": "CGC",
+    "cardName": "Golbat",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.942,
+    "annotated": false,
+    "skipped": true
+  },
+  "377122462347_1.jpg": {
+    "itemId": "377122462347",
+    "grader": "CGC",
+    "cardName": "Torkoal",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.96,
+    "annotated": false,
+    "skipped": true
+  },
+  "157752336356_1.jpg": {
+    "itemId": "157752336356",
+    "grader": "CGC",
+    "cardName": "Mewtwo & Mew-GX",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.949,
+    "annotated": false,
+    "skipped": true
+  },
+  "117001133738_1.jpg": {
+    "itemId": "117001133738",
+    "grader": "PSA",
+    "cardName": "Haunter",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.944,
+    "annotated": false,
+    "skipped": true
+  },
+  "117071427295_1.jpg": {
+    "itemId": "117071427295",
+    "grader": "PSA",
+    "cardName": "Frosmoth",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.934,
+    "annotated": false,
+    "skipped": true
+  },
+  "117032413178_1.jpg": {
+    "itemId": "117032413178",
+    "grader": "PSA",
+    "cardName": "Applin",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.941,
+    "annotated": false,
+    "skipped": true
+  },
+  "306673073021_1.jpg": {
+    "itemId": "306673073021",
+    "grader": "CGC",
+    "cardName": "Snorlax",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.959,
+    "annotated": false,
+    "skipped": true
+  },
+  "117070814251_1.jpg": {
+    "itemId": "117070814251",
+    "grader": "PSA",
+    "cardName": "Croconaw",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.949,
+    "annotated": false,
+    "skipped": true
+  },
+  "116715599210_1.jpg": {
+    "itemId": "116715599210",
+    "grader": "PSA",
+    "cardName": "Venusaur",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.948,
+    "annotated": false,
+    "skipped": true
+  },
+  "267641754951_1.jpg": {
+    "itemId": "267641754951",
+    "grader": "CGC",
+    "cardName": "Suicune",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.94,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5508009153318079,
+      "cy": 0.8002672720829804,
+      "w": 0.14004576659038903,
+      "h": 0.07727466560959062
+    }
+  },
+  "188281954834_1.jpg": {
+    "itemId": "188281954834",
+    "grader": "BGS",
+    "cardName": "Team Rocket's Mewtwo ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.961,
+    "annotated": false,
+    "skipped": true
+  },
+  "198262865867_1.jpg": {
+    "itemId": "198262865867",
+    "grader": "CGC",
+    "cardName": "Oricorio",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.949,
+    "annotated": false,
+    "skipped": true
+  },
+  "116882677078_1.jpg": {
+    "itemId": "116882677078",
+    "grader": "PSA",
+    "cardName": "Maractus",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.945,
+    "annotated": false,
+    "skipped": true
+  },
+  "116945816730_1.jpg": {
+    "itemId": "116945816730",
+    "grader": "PSA",
+    "cardName": "Great Tusk ex",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.935,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5663459598988508,
+      "cy": 0.2377372001432152,
+      "w": 0.16079138516662694,
+      "h": 0.02506265664160401
+    }
+  },
+  "147149525118_1.jpg": {
+    "itemId": "147149525118",
+    "grader": "CGC",
+    "cardName": "Magmar",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.943,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5558899088664223,
+      "cy": 0.22699606158252775,
+      "w": 0.134709011113941,
+      "h": 0.02506265664160401
+    }
+  },
+  "116991131681_1.jpg": {
+    "itemId": "116991131681",
+    "grader": "PSA",
+    "cardName": "Clobbopus",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.948,
+    "annotated": false,
+    "skipped": true
+  },
+  "206176935050_1.jpg": {
+    "itemId": "206176935050",
+    "grader": "CGC",
+    "cardName": "Oricorio",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.964,
+    "annotated": false,
+    "skipped": true
+  },
+  "116989908565_1.jpg": {
+    "itemId": "116989908565",
+    "grader": "PSA",
+    "cardName": "Cinderace VMAX",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.963,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5366719474270961,
+      "cy": 0.23549946294307192,
+      "w": 0.1349527665317139,
+      "h": 0.0259577515216613
+    }
+  },
+  "137055078233_1.jpg": {
+    "itemId": "137055078233",
+    "grader": "CGC",
+    "cardName": "Tulip",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.951,
+    "annotated": false,
+    "skipped": true
+  },
+  "287121879416_1.jpg": {
+    "itemId": "287121879416",
+    "grader": "CGC",
+    "cardName": "Pikachu",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.944,
+    "annotated": false,
+    "skipped": true
+  },
+  "127560991786_1.jpg": {
+    "itemId": "127560991786",
+    "grader": "CGC",
+    "cardName": "Milotic ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.954,
+    "annotated": false,
+    "skipped": true
+  },
+  "117070017910_1.jpg": {
+    "itemId": "117070017910",
+    "grader": "PSA",
+    "cardName": "Rapidash",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.932,
+    "annotated": false,
+    "skipped": true
+  },
+  "177992755990_1.jpg": {
+    "itemId": "177992755990",
+    "grader": "CGC",
+    "cardName": "Baltoy",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.943,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.548741418764302,
+      "cy": 0.7713569592731031,
+      "w": 0.14599542334096105,
+      "h": 0.10042344162075467
+    }
+  },
+  "117000624699_1.jpg": {
+    "itemId": "117000624699",
+    "grader": "PSA",
+    "cardName": "Team Rocket's Meowth",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.954,
+    "annotated": false,
+    "skipped": true
+  },
+  "116948317162_1.jpg": {
+    "itemId": "116948317162",
+    "grader": "PSA",
+    "cardName": "Applin",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.941,
+    "annotated": false,
+    "skipped": true
+  },
+  "117044583828_12.jpg": {
+    "itemId": "117044583828",
+    "grader": "PSA",
+    "cardName": "Wo-Chien",
+    "detectedClass": 10,
+    "detectedName": "10",
+    "confidence": 0.892,
+    "annotated": false,
+    "skipped": true
+  },
+  "317966279603_1.jpg": {
+    "itemId": "317966279603",
+    "grader": "BGS",
+    "cardName": "Mew",
+    "detectedClass": 3,
+    "detectedName": "ACE",
+    "confidence": 0.95,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 1,
+      "cx": 0.7739332407451751,
+      "cy": 0.1800035803795202,
+      "w": 0.1636484295360786,
+      "h": 0.02774794128177585
+    }
+  },
+  "177991362174_1.jpg": {
+    "itemId": "177991362174",
+    "grader": "CGC",
+    "cardName": "Yveltal",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.951,
+    "annotated": false,
+    "skipped": true
+  },
+  "327047173538_1.jpg": {
+    "itemId": "327047173538",
+    "grader": "CGC",
+    "cardName": "Snover",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.952,
+    "annotated": false,
+    "skipped": true
+  },
+  "117057758443_1.jpg": {
+    "itemId": "117057758443",
+    "grader": "PSA",
+    "cardName": "Kilowattrel",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.95,
+    "annotated": false,
+    "skipped": true
+  },
+  "116920754046_1.jpg": {
+    "itemId": "116920754046",
+    "grader": "CGC",
+    "cardName": "Latios",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.953,
+    "annotated": false,
+    "skipped": true
+  },
+  "136967809834_1.jpg": {
+    "itemId": "136967809834",
+    "grader": "BGS",
+    "cardName": "Quaxly",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.945,
+    "annotated": false,
+    "skipped": true
+  },
+  "406831389803_1.jpg": {
+    "itemId": "406831389803",
+    "grader": "CGC",
+    "cardName": "Mightyena",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.954,
+    "annotated": false,
+    "skipped": true
+  },
+  "287182385468_1.jpg": {
+    "itemId": "287182385468",
+    "grader": "CGC",
+    "cardName": "Breloom",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.938,
+    "annotated": false,
+    "skipped": true
+  },
+  "117045733516_1.jpg": {
+    "itemId": "117045733516",
+    "grader": "PSA",
+    "cardName": "Venomoth-GX",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.928,
+    "annotated": false,
+    "skipped": true
+  },
+  "117066541504_10.jpg": {
+    "itemId": "117066541504",
+    "grader": "PSA",
+    "cardName": "Maushold",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.944,
+    "annotated": false,
+    "skipped": true
+  },
+  "227283100750_1.jpg": {
+    "itemId": "227283100750",
+    "grader": "CGC",
+    "cardName": "Celebi",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.928,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5300970767530179,
+      "cy": 0.21670247046186897,
+      "w": 0.13133269855862356,
+      "h": 0.03311851056211956
+    }
+  },
+  "117071451912_1.jpg": {
+    "itemId": "117071451912",
+    "grader": "PSA",
+    "cardName": "Slowking ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.942,
+    "annotated": false,
+    "skipped": true
+  },
+  "306846801148_1.jpg": {
+    "itemId": "306846801148",
+    "grader": "CGC",
+    "cardName": "Thundurus",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.946,
+    "annotated": false,
+    "skipped": true
+  },
+  "116720171076_1.jpg": {
+    "itemId": "116720171076",
+    "grader": "PSA",
+    "cardName": "Dugtrio",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.935,
+    "annotated": false,
+    "skipped": true
+  },
+  "336507372876_1.jpg": {
+    "itemId": "336507372876",
+    "grader": "CGC",
+    "cardName": "Oricorio",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.95,
+    "annotated": false,
+    "skipped": true
+  },
+  "127647635324_1.jpg": {
+    "itemId": "127647635324",
+    "grader": "CGC",
+    "cardName": "Yungoos",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.97,
+    "annotated": false,
+    "skipped": true
+  },
+  "277731505857_1.jpg": {
+    "itemId": "277731505857",
+    "grader": "CGC",
+    "cardName": "Virizion",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.94,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5700228832951946,
+      "cy": 0.7864317493977198,
+      "w": 0.17391304347826086,
+      "h": 0.088473127227095
+    }
+  },
+  "298084344583_1.jpg": {
+    "itemId": "298084344583",
+    "grader": "BGS",
+    "cardName": "Quaxly",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.942,
+    "annotated": false,
+    "skipped": true
+  },
+  "117008332555_1.jpg": {
+    "itemId": "117008332555",
+    "grader": "PSA",
+    "cardName": "Mow Rotom",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.941,
+    "annotated": false,
+    "skipped": true
+  },
+  "226989056030_1.jpg": {
+    "itemId": "226989056030",
+    "grader": "CGC",
+    "cardName": "Tentacruel",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.954,
+    "annotated": false,
+    "skipped": true
+  },
+  "267521328940_1.jpg": {
+    "itemId": "267521328940",
+    "grader": "CGC",
+    "cardName": "Mela",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.945,
+    "annotated": false,
+    "skipped": true
+  },
+  "117078610896_1.jpg": {
+    "itemId": "117078610896",
+    "grader": "PSA",
+    "cardName": "Miraidon ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.934,
+    "annotated": false,
+    "skipped": true
+  },
+  "306744159702_1.jpg": {
+    "itemId": "306744159702",
+    "grader": "CGC",
+    "cardName": "Steelix",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.943,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5322654462242563,
+      "cy": 0.7488905745045671,
+      "w": 0.12494279176201367,
+      "h": 0.07882434680621864
+    }
+  },
+  "318041147772_1.jpg": {
+    "itemId": "318041147772",
+    "grader": "CGC",
+    "cardName": "Toxtricity",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.907,
+    "annotated": false,
+    "skipped": true
+  },
+  "287166942431_1.jpg": {
+    "itemId": "287166942431",
+    "grader": "CGC",
+    "cardName": "Charmander",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.948,
+    "annotated": false,
+    "skipped": true
+  },
+  "117078610895_12.jpg": {
+    "itemId": "117078610895",
+    "grader": "PSA",
+    "cardName": "Mega Signal",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.556,
+    "annotated": false,
+    "skipped": true
+  },
+  "168167117027_1.jpg": {
+    "itemId": "168167117027",
+    "grader": "CGC",
+    "cardName": "Snorlax",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.959,
+    "annotated": false,
+    "skipped": true
+  },
+  "366324997565_10.jpg": {
+    "itemId": "366324997565",
+    "grader": "CGC",
+    "cardName": "Snorunt",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.673,
+    "annotated": false,
+    "skipped": true
+  },
+  "327015599097_1.jpg": {
+    "itemId": "327015599097",
+    "grader": "CGC",
+    "cardName": "Mew",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.941,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5478260869565217,
+      "cy": 0.77998439174085,
+      "w": 0.1405034324942792,
+      "h": 0.07723707358368281
+    }
+  },
+  "306792690264_1.jpg": {
+    "itemId": "306792690264",
+    "grader": "CGC",
+    "cardName": "Mew",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.943,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5469107551487414,
+      "cy": 0.791375697426272,
+      "w": 0.1395881006864989,
+      "h": 0.09406191345486337
+    }
+  },
+  "117041398149_1.jpg": {
+    "itemId": "117041398149",
+    "grader": "PSA",
+    "cardName": "Team Rocket's Weezing",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.946,
+    "annotated": false,
+    "skipped": true
+  },
+  "287214837615_1.jpg": {
+    "itemId": "287214837615",
+    "grader": "CGC",
+    "cardName": "Charmander",
+    "detectedClass": 3,
+    "detectedName": "ACE",
+    "confidence": 0.958,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 1,
+      "cx": 0.7603161057771511,
+      "cy": 0.1844790547798066,
+      "w": 0.1419906031511733,
+      "h": 0.0259577515216613
+    }
+  },
+  "297840265297_1.jpg": {
+    "itemId": "297840265297",
+    "grader": "CGC",
+    "cardName": "Vulpix",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.958,
+    "annotated": false,
+    "skipped": true
+  },
+  "117053544111_1.jpg": {
+    "itemId": "117053544111",
+    "grader": "PSA",
+    "cardName": "Unown [J]",
+    "detectedClass": 10,
+    "detectedName": "10",
+    "confidence": 0.885,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 0,
+      "cx": 0.7777233590114849,
+      "cy": 0.15986394557823125,
+      "w": 0.2251811019012041,
+      "h": 0.0322234156820623
+    }
+  },
+  "117012292707_1.jpg": {
+    "itemId": "117012292707",
+    "grader": "CGC",
+    "cardName": "Forretress ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.951,
+    "annotated": false,
+    "skipped": true
+  },
+  "127633955029_1.jpg": {
+    "itemId": "127633955029",
+    "grader": "CGC",
+    "cardName": "Celebi",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.807,
+    "annotated": false,
+    "skipped": true
+  },
+  "198098880624_1.jpg": {
+    "itemId": "198098880624",
+    "grader": "CGC",
+    "cardName": "Gyarados",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.942,
+    "annotated": false,
+    "skipped": true
+  },
+  "116948936335_1.jpg": {
+    "itemId": "116948936335",
+    "grader": "PSA",
+    "cardName": "Venusaur & Snivy-GX",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.93,
+    "annotated": false,
+    "skipped": true
+  },
+  "197929213203_1.jpg": {
+    "itemId": "197929213203",
+    "grader": "CGC",
+    "cardName": "Celebi",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.954,
+    "annotated": false,
+    "skipped": true
+  },
+  "389788163306_1.jpg": {
+    "itemId": "389788163306",
+    "grader": "BGS",
+    "cardName": "Sneasel",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.949,
+    "annotated": false,
+    "skipped": true
+  },
+  "236323726924_1.jpg": {
+    "itemId": "236323726924",
+    "grader": "CGC",
+    "cardName": "Sandy Shocks ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.948,
+    "annotated": false,
+    "skipped": true
+  },
+  "287139242821_1.jpg": {
+    "itemId": "287139242821",
+    "grader": "CGC",
+    "cardName": "Camerupt",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.933,
+    "annotated": false,
+    "skipped": true
+  },
+  "117022802458_1.jpg": {
+    "itemId": "117022802458",
+    "grader": "PSA",
+    "cardName": "Mow Rotom",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.941,
+    "annotated": false,
+    "skipped": true
+  },
+  "117012924781_1.jpg": {
+    "itemId": "117012924781",
+    "grader": "PSA",
+    "cardName": "Beautifly",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.963,
+    "annotated": false,
+    "skipped": true
+  },
+  "236618364166_1.jpg": {
+    "itemId": "236618364166",
+    "grader": "CGC",
+    "cardName": "Zygarde",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.946,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5530892448512585,
+      "cy": 0.7737958363565329,
+      "w": 0.14279176201372995,
+      "h": 0.08251381369648936
+    }
+  },
+  "116998175842_1.jpg": {
+    "itemId": "116998175842",
+    "grader": "PSA",
+    "cardName": "Snorlax-GX",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.932,
+    "annotated": false,
+    "skipped": true
+  },
+  "137190748019_1.jpg": {
+    "itemId": "137190748019",
+    "grader": "CGC",
+    "cardName": "Mega Dragonite ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.906,
+    "annotated": false,
+    "skipped": true
+  },
+  "227250268080_1.jpg": {
+    "itemId": "227250268080",
+    "grader": "CGC",
+    "cardName": "Sneasel",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.958,
+    "annotated": false,
+    "skipped": true
+  },
+  "117004508115_1.jpg": {
+    "itemId": "117004508115",
+    "grader": "PSA",
+    "cardName": "Pikachu ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.945,
+    "annotated": false,
+    "skipped": true
+  },
+  "117053366142_1.jpg": {
+    "itemId": "117053366142",
+    "grader": "PSA",
+    "cardName": "Team Rocket's Tarountula",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.937,
+    "annotated": false,
+    "skipped": true
+  },
+  "117068681175_1.jpg": {
+    "itemId": "117068681175",
+    "grader": "PSA",
+    "cardName": "Victini",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.867,
+    "annotated": false,
+    "skipped": true
+  },
+  "117044997746_1.jpg": {
+    "itemId": "117044997746",
+    "grader": "PSA",
+    "cardName": "Kilowattrel",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.95,
+    "annotated": false,
+    "skipped": true
+  },
+  "336459430227_1.jpg": {
+    "itemId": "336459430227",
+    "grader": "CGC",
+    "cardName": "Helioptile",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.945,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5646767689111571,
+      "cy": 0.2435553168635875,
+      "w": 0.1174589596317569,
+      "h": 0.022377372001432166
+    }
+  },
+  "116830581440_1.jpg": {
+    "itemId": "116830581440",
+    "grader": "PSA",
+    "cardName": "Chandelure VMAX",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.953,
+    "annotated": false,
+    "skipped": true
+  },
+  "277776698269_1.jpg": {
+    "itemId": "277776698269",
+    "grader": "CGC",
+    "cardName": "Oricorio",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.946,
+    "annotated": false,
+    "skipped": true
+  },
+  "336509829802_1.jpg": {
+    "itemId": "336509829802",
+    "grader": "CGC",
+    "cardName": "Oricorio",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.949,
+    "annotated": false,
+    "skipped": true
+  },
+  "116954802528_1.jpg": {
+    "itemId": "116954802528",
+    "grader": "PSA",
+    "cardName": "Team Rocket's Meowth",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.949,
+    "annotated": false,
+    "skipped": true
+  },
+  "117138342058_1.jpg": {
+    "itemId": "117138342058",
+    "grader": "CGC",
+    "cardName": "Team Rocket's Murkrow",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.938,
+    "annotated": false,
+    "skipped": true
+  },
+  "117079670126_1.jpg": {
+    "itemId": "117079670126",
+    "grader": "PSA",
+    "cardName": "Frosmoth",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.942,
+    "annotated": false,
+    "skipped": true
+  },
+  "157747890209_1.jpg": {
+    "itemId": "157747890209",
+    "grader": "BGS",
+    "cardName": "Mega Dragonite ex",
+    "detectedClass": 3,
+    "detectedName": "ACE",
+    "confidence": 0.958,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 1,
+      "cx": 0.7624042028823155,
+      "cy": 0.18403150733977797,
+      "w": 0.12946202052018752,
+      "h": 0.02506265664160401
+    }
+  },
+  "117014199219_1.jpg": {
+    "itemId": "117014199219",
+    "grader": "PSA",
+    "cardName": "Mimikyu",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.944,
+    "annotated": false,
+    "skipped": true
+  },
+  "317761467847_1.jpg": {
+    "itemId": "317761467847",
+    "grader": "CGC",
+    "cardName": "Kingler",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.947,
+    "annotated": false,
+    "skipped": true
+  },
+  "116999244948_12.jpg": {
+    "itemId": "116999244948",
+    "grader": "PSA",
+    "cardName": "Mew",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.952,
+    "annotated": false,
+    "skipped": true
+  },
+  "116647136776_1.jpg": {
+    "itemId": "116647136776",
+    "grader": "PSA",
+    "cardName": "Froslass ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.953,
+    "annotated": false,
+    "skipped": true
+  },
+  "236598942469_1.jpg": {
+    "itemId": "236598942469",
+    "grader": "BGS",
+    "cardName": "Snorlax",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.942,
+    "annotated": false,
+    "skipped": true
+  },
+  "117070205776_1.jpg": {
+    "itemId": "117070205776",
+    "grader": "PSA",
+    "cardName": "Psyduck",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.951,
+    "annotated": false,
+    "skipped": true
+  },
+  "227087036910_1.jpg": {
+    "itemId": "227087036910",
+    "grader": "CGC",
+    "cardName": "Team Rocket's Meowth",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.944,
+    "annotated": false,
+    "skipped": true
+  },
+  "117030448610_1.jpg": {
+    "itemId": "117030448610",
+    "grader": "PSA",
+    "cardName": "Team Rocket's Blipbug",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.949,
+    "annotated": false,
+    "skipped": true
+  },
+  "366152437538_1.jpg": {
+    "itemId": "366152437538",
+    "grader": "CGC",
+    "cardName": "Thundurus",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.946,
+    "annotated": false,
+    "skipped": true
+  },
+  "117035554769_1.jpg": {
+    "itemId": "117035554769",
+    "grader": "PSA",
+    "cardName": "Oranguru",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.941,
+    "annotated": false,
+    "skipped": true
+  },
+  "117054355632_1.jpg": {
+    "itemId": "117054355632",
+    "grader": "PSA",
+    "cardName": "Miraidon ex",
+    "detectedClass": 8,
+    "detectedName": "8",
+    "confidence": 0.829,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 0,
+      "cx": 0.7778032036613272,
+      "cy": 0.7483491337038248,
+      "w": 0.231578947368421,
+      "h": 0.15318731611637793
+    }
+  },
+  "117052416129_1.jpg": {
+    "itemId": "117052416129",
+    "grader": "PSA",
+    "cardName": "Toxtricity",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.95,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 3,
+      "cx": 0.6584477776072835,
+      "cy": 0.17687074829931967,
+      "w": 0.16992950062230405,
+      "h": 0.07876834944504119
+    }
+  },
+  "117009602291_1.jpg": {
+    "itemId": "117009602291",
+    "grader": "PSA",
+    "cardName": "Cradily",
+    "detectedClass": 10,
+    "detectedName": "10",
+    "confidence": 0.905,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 0,
+      "cx": 0.7817106028275043,
+      "cy": 0.14957035445757244,
+      "w": 0.22418854256429666,
+      "h": 0.03132832080200501
+    }
+  },
+  "117096447163_1.jpg": {
+    "itemId": "117096447163",
+    "grader": "CGC",
+    "cardName": "Budew",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.938,
+    "annotated": false,
+    "skipped": true
+  },
+  "287182305785_1.jpg": {
+    "itemId": "287182305785",
+    "grader": "CGC",
+    "cardName": "Vulpix",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.944,
+    "annotated": false,
+    "skipped": true
+  },
+  "287195040210_1.jpg": {
+    "itemId": "287195040210",
+    "grader": "CGC",
+    "cardName": "Thundurus",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.95,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5373064782208687,
+      "cy": 0.2686179735051915,
+      "w": 0.1224778718949272,
+      "h": 0.022377372001432194
+    }
+  },
+  "117057905463_1.jpg": {
+    "itemId": "117057905463",
+    "grader": "PSA",
+    "cardName": "Paldean Wooper",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.941,
+    "annotated": false,
+    "skipped": true
+  },
+  "205988729342_1.jpg": {
+    "itemId": "205988729342",
+    "grader": "CGC",
+    "cardName": "Counter Catcher",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.95,
+    "annotated": false,
+    "skipped": true
+  },
+  "117041350637_1.jpg": {
+    "itemId": "117041350637",
+    "grader": "PSA",
+    "cardName": "Applin",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.941,
+    "annotated": false,
+    "skipped": true
+  },
+  "117018094802_1.jpg": {
+    "itemId": "117018094802",
+    "grader": "PSA",
+    "cardName": "Dondozo",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.944,
+    "annotated": false,
+    "skipped": true
+  },
+  "137015716761_1.jpg": {
+    "itemId": "137015716761",
+    "grader": "CGC",
+    "cardName": "Plusle",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.949,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5756063185442315,
+      "cy": 0.2010383100608664,
+      "w": 0.15121263708846278,
+      "h": 0.02685284640171859
+    }
+  },
+  "117059301195_1.jpg": {
+    "itemId": "117059301195",
+    "grader": "PSA",
+    "cardName": "Dondozo",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.942,
+    "annotated": false,
+    "skipped": true
+  },
+  "157833327205_1.jpg": {
+    "itemId": "157833327205",
+    "grader": "BGS",
+    "cardName": "Snorlax",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.955,
+    "annotated": false,
+    "skipped": true
+  },
+  "117060895589_1.jpg": {
+    "itemId": "117060895589",
+    "grader": "PSA",
+    "cardName": "Electivire ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.938,
+    "annotated": false,
+    "skipped": true
+  },
+  "117058048554_1.jpg": {
+    "itemId": "117058048554",
+    "grader": "PSA",
+    "cardName": "Voltorb",
+    "detectedClass": 10,
+    "detectedName": "10",
+    "confidence": 0.929,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 0,
+      "cx": 0.7565581332858807,
+      "cy": 0.17642320085929103,
+      "w": 0.21582327646890254,
+      "h": 0.03490870032223414
+    }
+  },
+  "336362003599_1.jpg": {
+    "itemId": "336362003599",
+    "grader": "CGC",
+    "cardName": "Vulpix",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.936,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5453089244851259,
+      "cy": 0.7837147215865752,
+      "w": 0.1418764302059497,
+      "h": 0.08137554030002536
+    }
+  },
+  "298216843196_1.jpg": {
+    "itemId": "298216843196",
+    "grader": "CGC",
+    "cardName": "Mew",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.944,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5462242562929062,
+      "cy": 0.7919162831357828,
+      "w": 0.15835240274599544,
+      "h": 0.10379245622605615
+    }
+  },
+  "326994126190_1.jpg": {
+    "itemId": "326994126190",
+    "grader": "CGC",
+    "cardName": "Mew",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.943,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5528604118993135,
+      "cy": 0.7932325141776937,
+      "w": 0.14691075514874136,
+      "h": 0.09921400855636253
+    }
+  },
+  "117022927378_1.jpg": {
+    "itemId": "117022927378",
+    "grader": "CGC",
+    "cardName": "Mew VMAX",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.956,
+    "annotated": false,
+    "skipped": true
+  },
+  "117137688292_1.jpg": {
+    "itemId": "117137688292",
+    "grader": "CGC",
+    "cardName": "Ting-Lu ex",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.864,
+    "annotated": false,
+    "skipped": true
+  },
+  "116851124635_1.jpg": {
+    "itemId": "116851124635",
+    "grader": "PSA",
+    "cardName": "Forretress ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.944,
+    "annotated": false,
+    "skipped": true
+  },
+  "116971521597_10.jpg": {
+    "itemId": "116971521597",
+    "grader": "CGC",
+    "cardName": "Maractus",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.559,
+    "annotated": false,
+    "skipped": true
+  },
+  "116672336212_1.jpg": {
+    "itemId": "116672336212",
+    "grader": "PSA",
+    "cardName": "Pikachu ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.945,
+    "annotated": false,
+    "skipped": true
+  },
+  "318082302296_1.jpg": {
+    "itemId": "318082302296",
+    "grader": "CGC",
+    "cardName": "Oricorio",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.946,
+    "annotated": false,
+    "skipped": true
+  },
+  "287139217826_1.jpg": {
+    "itemId": "287139217826",
+    "grader": "CGC",
+    "cardName": "Virizion",
+    "detectedClass": 10,
+    "detectedName": "10",
+    "confidence": 0.591,
+    "annotated": false,
+    "skipped": true
+  },
+  "116999524720_1.jpg": {
+    "itemId": "116999524720",
+    "grader": "PSA",
+    "cardName": "Sylveon ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.966,
+    "annotated": false,
+    "skipped": true
+  },
+  "366303402016_1.jpg": {
+    "itemId": "366303402016",
+    "grader": "CGC",
+    "cardName": "Paldean Clodsire ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.913,
+    "annotated": false,
+    "skipped": true
+  },
+  "297527674652_1.jpg": {
+    "itemId": "297527674652",
+    "grader": "BGS",
+    "cardName": "Charmeleon",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.933,
+    "annotated": false,
+    "skipped": true
+  },
+  "396831139209_1.jpg": {
+    "itemId": "396831139209",
+    "grader": "CGC",
+    "cardName": "Slowbro",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.935,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.539816933638444,
+      "cy": 0.783357183837931,
+      "w": 0.15102974828375287,
+      "h": 0.07138005394390623
+    }
+  },
+  "117006416800_1.jpg": {
+    "itemId": "117006416800",
+    "grader": "PSA",
+    "cardName": "Pokémon Center",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.938,
+    "annotated": false,
+    "skipped": true
+  },
+  "127770844187_1.jpg": {
+    "itemId": "127770844187",
+    "grader": "CGC",
+    "cardName": "Celebi",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.95,
+    "annotated": false,
+    "skipped": true
+  },
+  "317990912897_1.jpg": {
+    "itemId": "317990912897",
+    "grader": "CGC",
+    "cardName": "Slowbro",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.935,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5407322654462242,
+      "cy": 0.7747050560871545,
+      "w": 0.1528604118993135,
+      "h": 0.08652127750776517
+    }
+  },
+  "117052649703_1.jpg": {
+    "itemId": "117052649703",
+    "grader": "CGC",
+    "cardName": "Hawlucha",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.956,
+    "annotated": false,
+    "skipped": true
+  },
+  "116998402129_1.jpg": {
+    "itemId": "116998402129",
+    "grader": "PSA",
+    "cardName": "Mega Gardevoir ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.943,
+    "annotated": false,
+    "skipped": true
+  },
+  "117079057327_1.jpg": {
+    "itemId": "117079057327",
+    "grader": "PSA",
+    "cardName": "Water Energy",
+    "detectedClass": 10,
+    "detectedName": "10",
+    "confidence": 0.924,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 0,
+      "cx": 0.7606460237818478,
+      "cy": 0.16970998925886138,
+      "w": 0.21860634252671096,
+      "h": 0.02506265664160401
+    }
+  },
+  "389579480921_1.jpg": {
+    "itemId": "389579480921",
+    "grader": "BGS",
+    "cardName": "Ho-oh",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.959,
+    "annotated": false,
+    "skipped": true
+  },
+  "406835452923_1.jpg": {
+    "itemId": "406835452923",
+    "grader": "CGC",
+    "cardName": "Ethan's Magcargo",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.956,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5549553607521108,
+      "cy": 0.24758324382384533,
+      "w": 0.12476352170749455,
+      "h": 0.02327246688148943
+    }
+  },
+  "157814713238_1.jpg": {
+    "itemId": "157814713238",
+    "grader": "CGC",
+    "cardName": "Luxray",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.946,
+    "annotated": false,
+    "skipped": true
+  },
+  "117050817600_1.jpg": {
+    "itemId": "117050817600",
+    "grader": "PSA",
+    "cardName": "Dragonair",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.932,
+    "annotated": false,
+    "skipped": true
+  },
+  "198026343665_1.jpg": {
+    "itemId": "198026343665",
+    "grader": "CGC",
+    "cardName": "Slowbro",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.935,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5427917620137299,
+      "cy": 0.7779496039936956,
+      "w": 0.15881006864988556,
+      "h": 0.09517340525854157
+    }
+  },
+  "116994844700_1.jpg": {
+    "itemId": "116994844700",
+    "grader": "CGC",
+    "cardName": "Team Rocket's Mewtwo ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.933,
+    "annotated": false,
+    "skipped": true
+  },
+  "317904805285_1.jpg": {
+    "itemId": "317904805285",
+    "grader": "CGC",
+    "cardName": "Swablu",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.946,
+    "annotated": false,
+    "skipped": true
+  },
+  "127708350741_1.jpg": {
+    "itemId": "127708350741",
+    "grader": "CGC",
+    "cardName": "Celebi",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.954,
+    "annotated": false,
+    "skipped": true
+  },
+  "297959130499_1.jpg": {
+    "itemId": "297959130499",
+    "grader": "CGC",
+    "cardName": "Saguaro",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.955,
+    "annotated": false,
+    "skipped": true
+  },
+  "117022621271_1.jpg": {
+    "itemId": "117022621271",
+    "grader": "PSA",
+    "cardName": "Paldean Student",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.953,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5589060679868686,
+      "cy": 0.24042248478338704,
+      "w": 0.16983307913097173,
+      "h": 0.030433225921947693
+    }
+  },
+  "117009418833_1.jpg": {
+    "itemId": "117009418833",
+    "grader": "PSA",
+    "cardName": "Oricorio",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.946,
+    "annotated": false,
+    "skipped": true
+  },
+  "117059463925_1.jpg": {
+    "itemId": "117059463925",
+    "grader": "PSA",
+    "cardName": "Kangaskhan",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.944,
+    "annotated": false,
+    "skipped": true
+  },
+  "127775328017_1.jpg": {
+    "itemId": "127775328017",
+    "grader": "BGS",
+    "cardName": "Suicune",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.954,
+    "annotated": false,
+    "skipped": true
+  },
+  "117088541988_1.jpg": {
+    "itemId": "117088541988",
+    "grader": "CGC",
+    "cardName": "Breloom",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.947,
+    "annotated": false,
+    "skipped": true
+  },
+  "117081875242_1.jpg": {
+    "itemId": "117081875242",
+    "grader": "CGC",
+    "cardName": "Kyogre",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.961,
+    "annotated": false,
+    "skipped": true
+  },
+  "137066125407_1.jpg": {
+    "itemId": "137066125407",
+    "grader": "CGC",
+    "cardName": "Sneasel",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.953,
+    "annotated": false,
+    "skipped": true
+  },
+  "177881461704_1.jpg": {
+    "itemId": "177881461704",
+    "grader": "CGC",
+    "cardName": "Mew VMAX",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.963,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5403391421698057,
+      "cy": 0.23505191550304327,
+      "w": 0.1393534002229655,
+      "h": 0.017901897601145716
+    }
+  },
+  "366118036346_1.jpg": {
+    "itemId": "366118036346",
+    "grader": "CGC",
+    "cardName": "Golduck",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.952,
+    "annotated": false,
+    "skipped": true
+  },
+  "326800235230_1.jpg": {
+    "itemId": "326800235230",
+    "grader": "CGC",
+    "cardName": "Recycle Energy",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.954,
+    "annotated": false,
+    "skipped": true
+  },
+  "127649278148_1.jpg": {
+    "itemId": "127649278148",
+    "grader": "BGS",
+    "cardName": "Celebi",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.944,
+    "annotated": false,
+    "skipped": true
+  },
+  "267196128266_1.jpg": {
+    "itemId": "267196128266",
+    "grader": "CGC",
+    "cardName": "Golduck",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.952,
+    "annotated": false,
+    "skipped": true
+  },
+  "117013348809_1.jpg": {
+    "itemId": "117013348809",
+    "grader": "PSA",
+    "cardName": "Greninja",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.942,
+    "annotated": false,
+    "skipped": true
+  },
+  "366280844130_1.jpg": {
+    "itemId": "366280844130",
+    "grader": "CGC",
+    "cardName": "Talonflame",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.915,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5391304347826087,
+      "cy": 0.7568649885583523,
+      "w": 0.151487414187643,
+      "h": 0.08581235697940504
+    }
+  },
+  "116905392494_1.jpg": {
+    "itemId": "116905392494",
+    "grader": "PSA",
+    "cardName": "Vivillon",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.941,
+    "annotated": false,
+    "skipped": true
+  },
+  "116892103611_1.jpg": {
+    "itemId": "116892103611",
+    "grader": "PSA",
+    "cardName": "Maractus",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.956,
+    "annotated": false,
+    "skipped": true
+  },
+  "287204674895_1.jpg": {
+    "itemId": "287204674895",
+    "grader": "CGC",
+    "cardName": "Butterfree",
+    "detectedClass": 10,
+    "detectedName": "10",
+    "confidence": 0.591,
+    "annotated": false,
+    "skipped": true
+  },
+  "389103370728_1.jpg": {
+    "itemId": "389103370728",
+    "grader": "CGC",
+    "cardName": "Team Rocket's Meowth",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.944,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5700228832951945,
+      "cy": 0.7883993921078833,
+      "w": 0.17665903890160178,
+      "h": 0.0909567313571017
+    }
+  },
+  "137203016250_1.jpg": {
+    "itemId": "137203016250",
+    "grader": "CGC",
+    "cardName": "Marill",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.952,
+    "annotated": false,
+    "skipped": true
+  },
+  "188197550764_1.jpg": {
+    "itemId": "188197550764",
+    "grader": "CGC",
+    "cardName": "Oricorio",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.949,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5679633867276888,
+      "cy": 0.7943666108815193,
+      "w": 0.13775743707093818,
+      "h": 0.10142969363707777
+    }
+  },
+  "117032311683_10.jpg": {
+    "itemId": "117032311683",
+    "grader": "PSA",
+    "cardName": "Palafin",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.559,
+    "annotated": false,
+    "skipped": true
+  },
+  "364320981978_1.jpg": {
+    "itemId": "364320981978",
+    "grader": "BGS",
+    "cardName": "Blissey",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.938,
+    "annotated": false,
+    "skipped": true
+  },
+  "397668078564_1.jpg": {
+    "itemId": "397668078564",
+    "grader": "CGC",
+    "cardName": "Vulpix",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.951,
+    "annotated": false,
+    "skipped": true
+  },
+  "116997647349_1.jpg": {
+    "itemId": "116997647349",
+    "grader": "PSA",
+    "cardName": "Cetitan",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.94,
+    "annotated": false,
+    "skipped": true
+  },
+  "117072900449_1.jpg": {
+    "itemId": "117072900449",
+    "grader": "PSA",
+    "cardName": "Magikarp",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.953,
+    "annotated": false,
+    "skipped": true
+  },
+  "117036684715_1.jpg": {
+    "itemId": "117036684715",
+    "grader": "PSA",
+    "cardName": "Smoliv",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.95,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5471395881006865,
+      "cy": 0.7669674799368292,
+      "w": 0.14370709382151037,
+      "h": 0.10118928675024974
+    }
+  },
+  "198094951212_1.jpg": {
+    "itemId": "198094951212",
+    "grader": "CGC",
+    "cardName": "Snorlax",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.959,
+    "annotated": false,
+    "skipped": true
+  },
+  "277282892233_1.jpg": {
+    "itemId": "277282892233",
+    "grader": "CGC",
+    "cardName": "Snorlax",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.946,
+    "annotated": false,
+    "skipped": true
+  },
+  "116697049466_1.jpg": {
+    "itemId": "116697049466",
+    "grader": "PSA",
+    "cardName": "Gallade",
+    "detectedClass": 10,
+    "detectedName": "10",
+    "confidence": 0.916,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 0,
+      "cx": 0.7370554902717827,
+      "cy": 0.16747225205871819,
+      "w": 0.19637732921922824,
+      "h": 0.03848907984246333
+    }
+  },
+  "116728947262_1.jpg": {
+    "itemId": "116728947262",
+    "grader": "PSA",
+    "cardName": "Charcadet",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.954,
+    "annotated": false,
+    "skipped": true
+  },
+  "117060323595_10.jpg": {
+    "itemId": "117060323595",
+    "grader": "PSA",
+    "cardName": "Palafin",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.559,
+    "annotated": false,
+    "skipped": true
+  },
+  "117078265156_1.jpg": {
+    "itemId": "117078265156",
+    "grader": "PSA",
+    "cardName": "Cinderace ex",
+    "detectedClass": 3,
+    "detectedName": "ACE",
+    "confidence": 0.958,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 1,
+      "cx": 0.7672764294610321,
+      "cy": 0.18447905477980658,
+      "w": 0.1503429915718305,
+      "h": 0.03132832080200501
+    }
+  },
+  "135729343838_1.jpg": {
+    "itemId": "135729343838",
+    "grader": "CGC",
+    "cardName": "Butterfree",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.956,
+    "annotated": false,
+    "skipped": true
+  },
+  "287175855351_1.jpg": {
+    "itemId": "287175855351",
+    "grader": "BGS",
+    "cardName": "Mega Charizard Y ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.944,
+    "annotated": false,
+    "skipped": true
+  },
+  "117009334237_1.jpg": {
+    "itemId": "117009334237",
+    "grader": "PSA",
+    "cardName": "Piplup",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.947,
+    "annotated": false,
+    "skipped": true
+  },
+  "117037573486_1.jpg": {
+    "itemId": "117037573486",
+    "grader": "PSA",
+    "cardName": "Charmeleon",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.936,
+    "annotated": false,
+    "skipped": true
+  },
+  "205748090835_1.jpg": {
+    "itemId": "205748090835",
+    "grader": "CGC",
+    "cardName": "Snorlax",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.952,
+    "annotated": false,
+    "skipped": true
+  },
+  "298140731284_1.jpg": {
+    "itemId": "298140731284",
+    "grader": "CGC",
+    "cardName": "Sneasel",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.946,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5530892448512585,
+      "cy": 0.8010874345850092,
+      "w": 0.1409610983981694,
+      "h": 0.09156505166270401
+    }
+  },
+  "306837983892_1.jpg": {
+    "itemId": "306837983892",
+    "grader": "BGS",
+    "cardName": "Azumarill",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.951,
+    "annotated": false,
+    "skipped": true
+  },
+  "117039785291_1.jpg": {
+    "itemId": "117039785291",
+    "grader": "PSA",
+    "cardName": "Mewtwo",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.94,
+    "annotated": false,
+    "skipped": true
+  },
+  "377084943008_1.jpg": {
+    "itemId": "377084943008",
+    "grader": "CGC",
+    "cardName": "Mew",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.942,
+    "annotated": false,
+    "skipped": true
+  },
+  "117070400633_1.jpg": {
+    "itemId": "117070400633",
+    "grader": "CGC",
+    "cardName": "Suicune",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.942,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5526315789473684,
+      "cy": 0.79044769113419,
+      "w": 0.1537757437070938,
+      "h": 0.10611459902077758
+    }
+  },
+  "117042523003_1.jpg": {
+    "itemId": "117042523003",
+    "grader": "PSA",
+    "cardName": "Koraidon",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.944,
+    "annotated": false,
+    "skipped": true
+  },
+  "406659646702_1.jpg": {
+    "itemId": "406659646702",
+    "grader": "CGC",
+    "cardName": "Snorlax",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.959,
+    "annotated": false,
+    "skipped": true
+  },
+  "117024742828_1.jpg": {
+    "itemId": "117024742828",
+    "grader": "CGC",
+    "cardName": "Garbodor V",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.943,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.559954233409611,
+      "cy": 0.7556707865096919,
+      "w": 0.1601830663615561,
+      "h": 0.09189013468635854
+    }
+  },
+  "117022885066_1.jpg": {
+    "itemId": "117022885066",
+    "grader": "PSA",
+    "cardName": "Team Rocket's Mewtwo ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.938,
+    "annotated": false,
+    "skipped": true
+  },
+  "389772704170_1.jpg": {
+    "itemId": "389772704170",
+    "grader": "CGC",
+    "cardName": "Mega Charizard Y ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.944,
+    "annotated": false,
+    "skipped": true
+  },
+  "287198017965_1.jpg": {
+    "itemId": "287198017965",
+    "grader": "CGC",
+    "cardName": "Charmander",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.944,
+    "annotated": false,
+    "skipped": true
+  },
+  "117005231849_1.jpg": {
+    "itemId": "117005231849",
+    "grader": "PSA",
+    "cardName": "Absol",
+    "detectedClass": 10,
+    "detectedName": "10",
+    "confidence": 0.773,
+    "annotated": false,
+    "skipped": true
+  },
+  "257343778708_1.jpg": {
+    "itemId": "257343778708",
+    "grader": "CGC",
+    "cardName": "Snorlax",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.955,
+    "annotated": false,
+    "skipped": true
+  },
+  "157692014467_1.jpg": {
+    "itemId": "157692014467",
+    "grader": "CGC",
+    "cardName": "Seadra",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.96,
+    "annotated": false,
+    "skipped": true
+  },
+  "336446326052_1.jpg": {
+    "itemId": "336446326052",
+    "grader": "CGC",
+    "cardName": "Team Rocket's Murkrow",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.938,
+    "annotated": false,
+    "skipped": true
+  },
+  "298138831161_1.jpg": {
+    "itemId": "298138831161",
+    "grader": "CGC",
+    "cardName": "Sneasel",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.949,
+    "annotated": false,
+    "skipped": true
+  },
+  "366336999326_1.jpg": {
+    "itemId": "366336999326",
+    "grader": "CGC",
+    "cardName": "Oricorio",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.946,
+    "annotated": false,
+    "skipped": true
+  },
+  "116998095498_1.jpg": {
+    "itemId": "116998095498",
+    "grader": "PSA",
+    "cardName": "Oricorio",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.946,
+    "annotated": false,
+    "skipped": true
+  },
+  "117060691083_1.jpg": {
+    "itemId": "117060691083",
+    "grader": "PSA",
+    "cardName": "Misty's Lapras",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.949,
+    "annotated": false,
+    "skipped": true
+  },
+  "117023033895_1.jpg": {
+    "itemId": "117023033895",
+    "grader": "PSA",
+    "cardName": "Team Rocket's Tarountula",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.935,
+    "annotated": false,
+    "skipped": true
+  },
+  "117096931420_1.jpg": {
+    "itemId": "117096931420",
+    "grader": "BGS",
+    "cardName": "Kilowattrel",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.932,
+    "annotated": false,
+    "skipped": true
+  },
+  "117068226666_1.jpg": {
+    "itemId": "117068226666",
+    "grader": "PSA",
+    "cardName": "Atticus",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.951,
+    "annotated": false,
+    "skipped": true
+  },
+  "236548060976_10.jpg": {
+    "itemId": "236548060976",
+    "grader": "CGC",
+    "cardName": "Sprigatito",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.948,
+    "annotated": false,
+    "skipped": true
+  },
+  "117081879317_1.jpg": {
+    "itemId": "117081879317",
+    "grader": "BGS",
+    "cardName": "Breloom",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.956,
+    "annotated": false,
+    "skipped": true
+  },
+  "117000091691_1.jpg": {
+    "itemId": "117000091691",
+    "grader": "BGS",
+    "cardName": "Kirlia",
+    "detectedClass": 2,
+    "detectedName": "BGS",
+    "confidence": 0.751,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 1,
+      "cx": 0.8192219679633868,
+      "cy": 0.7921044156284431,
+      "w": 0.22562929061784898,
+      "h": 0.19073141791677273
+    }
+  },
+  "147230180276_1.jpg": {
+    "itemId": "147230180276",
+    "grader": "CGC",
+    "cardName": "Oricorio",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.959,
+    "annotated": false,
+    "skipped": true
+  },
+  "157680961506_1.jpg": {
+    "itemId": "157680961506",
+    "grader": "CGC",
+    "cardName": "Seadra",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.958,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5596901148135762,
+      "cy": 0.24892588614393127,
+      "w": 0.15677644613686298,
+      "h": 0.03132832080200504
+    }
+  },
+  "117022844592_1.jpg": {
+    "itemId": "117022844592",
+    "grader": "PSA",
+    "cardName": "Misty's Psyduck",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.948,
+    "annotated": false,
+    "skipped": true
+  },
+  "117057814249_1.jpg": {
+    "itemId": "117057814249",
+    "grader": "CGC",
+    "cardName": "Mega Dragonite ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.948,
+    "annotated": false,
+    "skipped": true
+  },
+  "188263828065_1.jpg": {
+    "itemId": "188263828065",
+    "grader": "BGS",
+    "cardName": "Psyduck",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.951,
+    "annotated": false,
+    "skipped": true
+  },
+  "336471198295_1.jpg": {
+    "itemId": "336471198295",
+    "grader": "CGC",
+    "cardName": "Iron Valiant ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.96,
+    "annotated": false,
+    "skipped": true
+  },
+  "286890927459_1.jpg": {
+    "itemId": "286890927459",
+    "grader": "CGC",
+    "cardName": "Mew",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.952,
+    "annotated": false,
+    "skipped": true
+  },
+  "389842913004_1.jpg": {
+    "itemId": "389842913004",
+    "grader": "CGC",
+    "cardName": "Snorlax",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.95,
+    "annotated": false,
+    "skipped": true
+  },
+  "117066955521_1.jpg": {
+    "itemId": "117066955521",
+    "grader": "PSA",
+    "cardName": "Cynthia's Roserade",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.95,
+    "annotated": false,
+    "skipped": true
+  },
+  "377079340958_1.jpg": {
+    "itemId": "377079340958",
+    "grader": "CGC",
+    "cardName": "Pikachu",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.944,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5432494279176201,
+      "cy": 0.7725597727452063,
+      "w": 0.14324942791762013,
+      "h": 0.10200426102738103
+    }
+  },
+  "366181474940_1.jpg": {
+    "itemId": "366181474940",
+    "grader": "BGS",
+    "cardName": "Froslass ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.946,
+    "annotated": false,
+    "skipped": true
+  },
+  "157763510397_1.jpg": {
+    "itemId": "157763510397",
+    "grader": "CGC",
+    "cardName": "Oricorio",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.946,
+    "annotated": false,
+    "skipped": true
+  },
+  "137055079967_1.jpg": {
+    "itemId": "137055079967",
+    "grader": "CGC",
+    "cardName": "Lapras",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.957,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5599683363961889,
+      "cy": 0.18940207662012176,
+      "w": 0.167911341909329,
+      "h": 0.02864303616183314
+    }
+  },
+  "136865176124_1.jpg": {
+    "itemId": "136865176124",
+    "grader": "CGC",
+    "cardName": "Mew VMAX",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.963,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5352050695300122,
+      "cy": 0.23370927318295737,
+      "w": 0.14082027812004932,
+      "h": 0.02774794128177585
+    }
+  },
+  "287121862889_1.jpg": {
+    "itemId": "287121862889",
+    "grader": "CGC",
+    "cardName": "Stunfisk",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.948,
+    "annotated": false,
+    "skipped": true
+  },
+  "117008490893_1.jpg": {
+    "itemId": "117008490893",
+    "grader": "CGC",
+    "cardName": "Breloom",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.94,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5489702517162471,
+      "cy": 0.7973264362953421,
+      "w": 0.14553775743707092,
+      "h": 0.09457915889467905
+    }
+  },
+  "298034043570_1.jpg": {
+    "itemId": "298034043570",
+    "grader": "CGC",
+    "cardName": "Yveltal",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.941,
+    "annotated": false,
+    "skipped": true
+  },
+  "117041644199_1.jpg": {
+    "itemId": "117041644199",
+    "grader": "PSA",
+    "cardName": "Kakuna",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.953,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5411819180259269,
+      "cy": 0.26638023630504837,
+      "w": 0.15620727527075678,
+      "h": 0.028643036161833113
+    }
+  },
+  "116510520723_1.jpg": {
+    "itemId": "116510520723",
+    "grader": "PSA",
+    "cardName": "Electabuzz",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.937,
+    "annotated": false,
+    "skipped": true
+  },
+  "117015359480_1.jpg": {
+    "itemId": "117015359480",
+    "grader": "PSA",
+    "cardName": "Sudowoodo",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.959,
+    "annotated": false,
+    "skipped": true
+  },
+  "267627058082_1.jpg": {
+    "itemId": "267627058082",
+    "grader": "CGC",
+    "cardName": "Mega Dragonite ex",
+    "detectedClass": 3,
+    "detectedName": "ACE",
+    "confidence": 0.958,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 1,
+      "cx": 0.7644922999874798,
+      "cy": 0.1813462226996061,
+      "w": 0.15034299157183062,
+      "h": 0.02685284640171859
+    }
+  },
+  "236679791189_1.jpg": {
+    "itemId": "236679791189",
+    "grader": "CGC",
+    "cardName": "Silvally-GX",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.946,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5437070938215103,
+      "cy": 0.7566563467492261,
+      "w": 0.14233409610983982,
+      "h": 0.091503567101898
+    }
+  },
+  "306800779329_1.jpg": {
+    "itemId": "306800779329",
+    "grader": "BGS",
+    "cardName": "Quaxly",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.954,
+    "annotated": false,
+    "skipped": true
+  },
+  "116982057642_10.jpg": {
+    "itemId": "116982057642",
+    "grader": "PSA",
+    "cardName": "Sprigatito",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.948,
+    "annotated": false,
+    "skipped": true
+  },
+  "117008508759_1.jpg": {
+    "itemId": "117008508759",
+    "grader": "CGC",
+    "cardName": "Dratini",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.938,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.559954233409611,
+      "cy": 0.7976534926114107,
+      "w": 0.14553775743707098,
+      "h": 0.09099535869888431
+    }
+  },
+  "117096447047_1.jpg": {
+    "itemId": "117096447047",
+    "grader": "CGC",
+    "cardName": "Sneasel",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.947,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.557437070938215,
+      "cy": 0.7965904527577876,
+      "w": 0.14782608695652172,
+      "h": 0.08628085898408366
+    }
+  },
+  "277731505849_1.jpg": {
+    "itemId": "277731505849",
+    "grader": "CGC",
+    "cardName": "Snorlax",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.939,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5544622425629291,
+      "cy": 0.7740086148876026,
+      "w": 0.1464530892448513,
+      "h": 0.08733342307174585
+    }
+  },
+  "117001704465_1.jpg": {
+    "itemId": "117001704465",
+    "grader": "PSA",
+    "cardName": "Team Rocket's Tarountula",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.933,
+    "annotated": false,
+    "skipped": true
+  },
+  "358039627303_1.jpg": {
+    "itemId": "358039627303",
+    "grader": "CGC",
+    "cardName": "Articuno",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.952,
+    "annotated": false,
+    "skipped": true
+  },
+  "177917524739_1.jpg": {
+    "itemId": "177917524739",
+    "grader": "CGC",
+    "cardName": "Magmar",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.939,
+    "annotated": false,
+    "skipped": true
+  },
+  "116919135890_1.jpg": {
+    "itemId": "116919135890",
+    "grader": "PSA",
+    "cardName": "Pokémon Center",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.949,
+    "annotated": false,
+    "skipped": true
+  },
+  "117068057145_1.jpg": {
+    "itemId": "117068057145",
+    "grader": "PSA",
+    "cardName": "Pineco",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.936,
+    "annotated": false,
+    "skipped": true
+  },
+  "297917046722_12.jpg": {
+    "itemId": "297917046722",
+    "grader": "CGC",
+    "cardName": "Trubbish",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.822,
+    "annotated": false,
+    "skipped": true
+  },
+  "117055827901_1.jpg": {
+    "itemId": "117055827901",
+    "grader": "PSA",
+    "cardName": "Miraidon ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.948,
+    "annotated": false,
+    "skipped": true
+  },
+  "317823785957_1.jpg": {
+    "itemId": "317823785957",
+    "grader": "BGS",
+    "cardName": "Butterfree",
+    "detectedClass": 10,
+    "detectedName": "10",
+    "confidence": 0.591,
+    "annotated": false,
+    "skipped": true
+  },
+  "187523541383_1.jpg": {
+    "itemId": "187523541383",
+    "grader": "CGC",
+    "cardName": "Stantler",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.94,
+    "annotated": false,
+    "skipped": true
+  },
+  "194987757934_1.jpg": {
+    "itemId": "194987757934",
+    "grader": "CGC",
+    "cardName": "Weavile",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.937,
+    "annotated": false,
+    "skipped": true
+  },
+  "187998879532_1.jpg": {
+    "itemId": "187998879532",
+    "grader": "CGC",
+    "cardName": "Snorlax",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.938,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.568649885583524,
+      "cy": 0.770139634801289,
+      "w": 0.15743707093821513,
+      "h": 0.10633727175080565
+    }
+  },
+  "366298479928_1.jpg": {
+    "itemId": "366298479928",
+    "grader": "CGC",
+    "cardName": "Azumarill",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.933,
+    "annotated": false,
+    "skipped": true
+  },
+  "146711341680_1.jpg": {
+    "itemId": "146711341680",
+    "grader": "CGC",
+    "cardName": "Porygon-Z",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.957,
+    "annotated": false,
+    "skipped": true
+  },
+  "117062587774_1.jpg": {
+    "itemId": "117062587774",
+    "grader": "PSA",
+    "cardName": "Pineco",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.947,
+    "annotated": false,
+    "skipped": true
+  },
+  "298031148128_1.jpg": {
+    "itemId": "298031148128",
+    "grader": "BGS",
+    "cardName": "Stantler",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.889,
+    "annotated": false,
+    "skipped": true
+  },
+  "297502567828_1.jpg": {
+    "itemId": "297502567828",
+    "grader": "CGC",
+    "cardName": "Skeledirge ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.941,
+    "annotated": false,
+    "skipped": true
+  },
+  "117028778900_1.jpg": {
+    "itemId": "117028778900",
+    "grader": "PSA",
+    "cardName": "Vivillon",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.966,
+    "annotated": false,
+    "skipped": true
+  },
+  "117063693692_1.jpg": {
+    "itemId": "117063693692",
+    "grader": "PSA",
+    "cardName": "Combusken",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.94,
+    "annotated": false,
+    "skipped": true
+  },
+  "116926402668_1.jpg": {
+    "itemId": "116926402668",
+    "grader": "PSA",
+    "cardName": "Pachirisu",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.942,
+    "annotated": false,
+    "skipped": true
+  },
+  "287145954153_1.jpg": {
+    "itemId": "287145954153",
+    "grader": "BGS",
+    "cardName": "Bayleef",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.958,
+    "annotated": false,
+    "skipped": true
+  },
+  "327009087647_1.jpg": {
+    "itemId": "327009087647",
+    "grader": "CGC",
+    "cardName": "Seadra",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.946,
+    "annotated": false,
+    "skipped": true
+  },
+  "116973208041_1.jpg": {
+    "itemId": "116973208041",
+    "grader": "PSA",
+    "cardName": "Ethan's Cyndaquil",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.947,
+    "annotated": false,
+    "skipped": true
+  },
+  "117005206547_1.jpg": {
+    "itemId": "117005206547",
+    "grader": "PSA",
+    "cardName": "Onix",
+    "detectedClass": 10,
+    "detectedName": "10",
+    "confidence": 0.773,
+    "annotated": false,
+    "skipped": true
+  },
+  "287106445543_1.jpg": {
+    "itemId": "287106445543",
+    "grader": "CGC",
+    "cardName": "Mismagius",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.939,
+    "annotated": false,
+    "skipped": true
+  },
+  "117080613513_1.jpg": {
+    "itemId": "117080613513",
+    "grader": "PSA",
+    "cardName": "Lapras",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.949,
+    "annotated": false,
+    "skipped": true
+  },
+  "188167084440_1.jpg": {
+    "itemId": "188167084440",
+    "grader": "BGS",
+    "cardName": "Sneasel",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.963,
+    "annotated": false,
+    "skipped": true
+  },
+  "127647313679_1.jpg": {
+    "itemId": "127647313679",
+    "grader": "BGS",
+    "cardName": "Zygarde",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.946,
+    "annotated": false,
+    "skipped": true
+  },
+  "205128474529_1.jpg": {
+    "itemId": "205128474529",
+    "grader": "CGC",
+    "cardName": "Tapu Koko ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.76,
+    "annotated": false,
+    "skipped": true
+  },
+  "117079670095_1.jpg": {
+    "itemId": "117079670095",
+    "grader": "PSA",
+    "cardName": "Weavile",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.943,
+    "annotated": false,
+    "skipped": true
+  },
+  "167937526663_1.jpg": {
+    "itemId": "167937526663",
+    "grader": "CGC",
+    "cardName": "Butterfree",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.952,
+    "annotated": false,
+    "skipped": true
+  },
+  "306344413954_1.jpg": {
+    "itemId": "306344413954",
+    "grader": "CGC",
+    "cardName": "Crocalor",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.957,
+    "annotated": false,
+    "skipped": true
+  },
+  "117060323847_1.jpg": {
+    "itemId": "117060323847",
+    "grader": "PSA",
+    "cardName": "Paldean Student",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.953,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5596710818568279,
+      "cy": 0.23997493734335842,
+      "w": 0.1591228849515411,
+      "h": 0.02774794128177588
+    }
+  },
+  "117059028406_1.jpg": {
+    "itemId": "117059028406",
+    "grader": "PSA",
+    "cardName": "Kilowattrel",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.95,
+    "annotated": false,
+    "skipped": true
+  },
+  "287220077730_1.jpg": {
+    "itemId": "287220077730",
+    "grader": "CGC",
+    "cardName": "Cynthia's Garchomp ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.95,
+    "annotated": false,
+    "skipped": true
+  },
+  "116965913009_1.jpg": {
+    "itemId": "116965913009",
+    "grader": "PSA",
+    "cardName": "Zygarde",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.929,
+    "annotated": false,
+    "skipped": true
+  },
+  "236682179562_1.jpg": {
+    "itemId": "236682179562",
+    "grader": "CGC",
+    "cardName": "Butterfree",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.933,
+    "annotated": false,
+    "skipped": true
+  },
+  "327025287783_1.jpg": {
+    "itemId": "327025287783",
+    "grader": "CGC",
+    "cardName": "Lillie's Full Force",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.958,
+    "annotated": false,
+    "skipped": true
+  },
+  "136962423478_1.jpg": {
+    "itemId": "136962423478",
+    "grader": "BGS",
+    "cardName": "Stantler",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.952,
+    "annotated": false,
+    "skipped": true
+  },
+  "277823028494_1.jpg": {
+    "itemId": "277823028494",
+    "grader": "CGC",
+    "cardName": "Budew",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.948,
+    "annotated": false,
+    "skipped": true
+  },
+  "377105687319_12.jpg": {
+    "itemId": "377105687319",
+    "grader": "CGC",
+    "cardName": "Maushold ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.631,
+    "annotated": false,
+    "skipped": true
+  },
+  "117066956197_1.jpg": {
+    "itemId": "117066956197",
+    "grader": "PSA",
+    "cardName": "Breloom",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.95,
+    "annotated": false,
+    "skipped": true
+  },
+  "377065512681_1.jpg": {
+    "itemId": "377065512681",
+    "grader": "CGC",
+    "cardName": "Mew VMAX",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.963,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5344716305814703,
+      "cy": 0.23460436806301463,
+      "w": 0.14228715601713315,
+      "h": 0.0259577515216613
+    }
+  },
+  "236740707934_12.jpg": {
+    "itemId": "236740707934",
+    "grader": "CGC",
+    "cardName": "Mega Gengar ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.556,
+    "annotated": false,
+    "skipped": true
+  },
+  "277697236041_1.jpg": {
+    "itemId": "277697236041",
+    "grader": "CGC",
+    "cardName": "Snorlax",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.938,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5496567505720824,
+      "cy": 0.7661958938988622,
+      "w": 0.14416475972540044,
+      "h": 0.08149933928513875
+    }
+  },
+  "117042216974_10.jpg": {
+    "itemId": "117042216974",
+    "grader": "PSA",
+    "cardName": "Palafin",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.559,
+    "annotated": false,
+    "skipped": true
+  },
+  "117061376837_1.jpg": {
+    "itemId": "117061376837",
+    "grader": "PSA",
+    "cardName": "Misdreavus",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.943,
+    "annotated": false,
+    "skipped": true
+  },
+  "117046774481_1.jpg": {
+    "itemId": "117046774481",
+    "grader": "PSA",
+    "cardName": "Erika's Gloom",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.94,
+    "annotated": false,
+    "skipped": true
+  },
+  "116992243235_1.jpg": {
+    "itemId": "116992243235",
+    "grader": "PSA",
+    "cardName": "Eevee",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.942,
+    "annotated": false,
+    "skipped": true
+  },
+  "236720249114_1.jpg": {
+    "itemId": "236720249114",
+    "grader": "CGC",
+    "cardName": "Snorlax",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.933,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5432657607738166,
+      "cy": 0.2941281775868242,
+      "w": 0.12164576217565831,
+      "h": 0.03580379520229143
+    }
+  },
+  "117134750641_1.jpg": {
+    "itemId": "117134750641",
+    "grader": "CGC",
+    "cardName": "Entei",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.939,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5443935926773456,
+      "cy": 0.7763944108510286,
+      "w": 0.14370709382151037,
+      "h": 0.0964166549480332
+    }
+  },
+  "326082891638_1.jpg": {
+    "itemId": "326082891638",
+    "grader": "CGC",
+    "cardName": "Cradily",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.933,
+    "annotated": false,
+    "skipped": true
+  },
+  "267575005740_1.jpg": {
+    "itemId": "267575005740",
+    "grader": "CGC",
+    "cardName": "Snorlax",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.959,
+    "annotated": false,
+    "skipped": true
+  },
+  "187141823138_10.jpg": {
+    "itemId": "187141823138",
+    "grader": "CGC",
+    "cardName": "Misty's Favor",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.948,
+    "annotated": false,
+    "skipped": true
+  },
+  "198028905359_12.jpg": {
+    "itemId": "198028905359",
+    "grader": "CGC",
+    "cardName": "Maushold ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.631,
+    "annotated": false,
+    "skipped": true
+  },
+  "406774490692_1.jpg": {
+    "itemId": "406774490692",
+    "grader": "CGC",
+    "cardName": "Luxray",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.947,
+    "annotated": false,
+    "skipped": true
+  },
+  "287153992306_1.jpg": {
+    "itemId": "287153992306",
+    "grader": "CGC",
+    "cardName": "Gloom",
+    "detectedClass": 10,
+    "detectedName": "10",
+    "confidence": 0.934,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 0,
+      "cx": 0.7505593849018636,
+      "cy": 0.22162549230218404,
+      "w": 0.20791097896112087,
+      "h": 0.0322234156820623
+    }
+  },
+  "298113287246_11.jpg": {
+    "itemId": "298113287246",
+    "grader": "CGC",
+    "cardName": "Minun",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.94,
+    "annotated": false,
+    "skipped": true
+  },
+  "117057285946_1.jpg": {
+    "itemId": "117057285946",
+    "grader": "PSA",
+    "cardName": "Paldean Wooper",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.942,
+    "annotated": false,
+    "skipped": true
+  },
+  "116806825244_1.jpg": {
+    "itemId": "116806825244",
+    "grader": "PSA",
+    "cardName": "Gothorita",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.954,
+    "annotated": false,
+    "skipped": true
+  },
+  "117051825155_1.jpg": {
+    "itemId": "117051825155",
+    "grader": "PSA",
+    "cardName": "Gothitelle",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.948,
+    "annotated": false,
+    "skipped": true
+  },
+  "356585783346_1.jpg": {
+    "itemId": "356585783346",
+    "grader": "CGC",
+    "cardName": "Magmar",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.929,
+    "annotated": false,
+    "skipped": true
+  },
+  "127701295226_1.jpg": {
+    "itemId": "127701295226",
+    "grader": "CGC",
+    "cardName": "Archen",
+    "detectedClass": 10,
+    "detectedName": "10",
+    "confidence": 0.927,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 0,
+      "cx": 0.7740491972412236,
+      "cy": 0.16433941997851764,
+      "w": 0.22674755497766974,
+      "h": 0.0322234156820623
+    }
+  },
+  "366342590650_10.jpg": {
+    "itemId": "366342590650",
+    "grader": "CGC",
+    "cardName": "Wooloo",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.956,
+    "annotated": false,
+    "skipped": true
+  },
+  "366127531922_1.jpg": {
+    "itemId": "366127531922",
+    "grader": "CGC",
+    "cardName": "Ceruledge",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.939,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5537757437070938,
+      "cy": 0.7612426770100056,
+      "w": 0.15514874141876428,
+      "h": 0.08557949764120876
+    }
+  },
+  "168115948064_1.jpg": {
+    "itemId": "168115948064",
+    "grader": "CGC",
+    "cardName": "Rapidash",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.959,
+    "annotated": false,
+    "skipped": true
+  },
+  "116888697351_1.jpg": {
+    "itemId": "116888697351",
+    "grader": "CGC",
+    "cardName": "Cynthia's Roserade",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.965,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5412673224098773,
+      "cy": 0.23370927318295737,
+      "w": 0.12969729900247157,
+      "h": 0.02774794128177585
+    }
+  },
+  "116973075310_1.jpg": {
+    "itemId": "116973075310",
+    "grader": "CGC",
+    "cardName": "Butterfree",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.953,
+    "annotated": false,
+    "skipped": true
+  },
+  "376962346543_1.jpg": {
+    "itemId": "376962346543",
+    "grader": "BGS",
+    "cardName": "Rapidash",
+    "detectedClass": 3,
+    "detectedName": "ACE",
+    "confidence": 0.944,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 1,
+      "cx": 0.7802036146266287,
+      "cy": 0.16523451485857496,
+      "w": 0.1646628648916978,
+      "h": 0.03580379520229143
+    }
+  },
+  "117046098025_1.jpg": {
+    "itemId": "117046098025",
+    "grader": "PSA",
+    "cardName": "Clobbopus",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.948,
+    "annotated": false,
+    "skipped": true
+  },
+  "389762944940_1.jpg": {
+    "itemId": "389762944940",
+    "grader": "BGS",
+    "cardName": "Sneasel",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.924,
+    "annotated": false,
+    "skipped": true
+  },
+  "326819436420_1.jpg": {
+    "itemId": "326819436420",
+    "grader": "CGC",
+    "cardName": "Snorlax",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.959,
+    "annotated": false,
+    "skipped": true
+  },
+  "116978295389_1.jpg": {
+    "itemId": "116978295389",
+    "grader": "CGC",
+    "cardName": "Baltoy",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.942,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5464530892448513,
+      "cy": 0.794870918877107,
+      "w": 0.14874141876430208,
+      "h": 0.09139910400618811
+    }
+  },
+  "116878795331_1.jpg": {
+    "itemId": "116878795331",
+    "grader": "CGC",
+    "cardName": "Growlithe",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.943,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5610983981693364,
+      "cy": 0.7685878291897761,
+      "w": 0.151487414187643,
+      "h": 0.08594810534072839
+    }
+  },
+  "366203525336_1.jpg": {
+    "itemId": "366203525336",
+    "grader": "CGC",
+    "cardName": "Porygon-Z",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.957,
+    "annotated": false,
+    "skipped": true
+  },
+  "277343831925_1.jpg": {
+    "itemId": "277343831925",
+    "grader": "CGC",
+    "cardName": "Dragonite-GX",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.92,
+    "annotated": false,
+    "skipped": true
+  },
+  "127701154250_1.jpg": {
+    "itemId": "127701154250",
+    "grader": "BGS",
+    "cardName": "Rapidash",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.947,
+    "annotated": false,
+    "skipped": true
+  },
+  "117030949880_1.jpg": {
+    "itemId": "117030949880",
+    "grader": "BGS",
+    "cardName": "Stantler",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.949,
+    "annotated": false,
+    "skipped": true
+  },
+  "187839936555_1.jpg": {
+    "itemId": "187839936555",
+    "grader": "CGC",
+    "cardName": "Mew",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.942,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5560640732265446,
+      "cy": 0.761297047633755,
+      "w": 0.14599542334096105,
+      "h": 0.09905378276312282
+    }
+  },
+  "336216138335_1.jpg": {
+    "itemId": "336216138335",
+    "grader": "CGC",
+    "cardName": "Crocalor",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.933,
+    "annotated": false,
+    "skipped": true
+  },
+  "117079131278_1.jpg": {
+    "itemId": "117079131278",
+    "grader": "PSA",
+    "cardName": "Team Rocket's Moltres ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.95,
+    "annotated": false,
+    "skipped": true
+  },
+  "116534798697_1.jpg": {
+    "itemId": "116534798697",
+    "grader": "PSA",
+    "cardName": "Haunter",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.944,
+    "annotated": false,
+    "skipped": true
+  },
+  "406267212059_1.jpg": {
+    "itemId": "406267212059",
+    "grader": "CGC",
+    "cardName": "Arbok",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.948,
+    "annotated": false,
+    "skipped": true
+  },
+  "235035137477_1.jpg": {
+    "itemId": "235035137477",
+    "grader": "CGC",
+    "cardName": "Prinplup",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.911,
+    "annotated": false,
+    "skipped": true
+  },
+  "298140731003_1.jpg": {
+    "itemId": "298140731003",
+    "grader": "CGC",
+    "cardName": "Sneasel",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.948,
+    "annotated": false,
+    "skipped": true
+  },
+  "298054456005_1.jpg": {
+    "itemId": "298054456005",
+    "grader": "CGC",
+    "cardName": "Shellder",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.948,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5775743707093821,
+      "cy": 0.789630966577497,
+      "w": 0.17345537757437074,
+      "h": 0.08585683437006475
+    }
+  },
+  "117061376875_1.jpg": {
+    "itemId": "117061376875",
+    "grader": "PSA",
+    "cardName": "Frosmoth",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.948,
+    "annotated": false,
+    "skipped": true
+  },
+  "116604257959_1.jpg": {
+    "itemId": "116604257959",
+    "grader": "PSA",
+    "cardName": "Bounsweet",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.942,
+    "annotated": false,
+    "skipped": true
+  },
+  "227296944759_1.jpg": {
+    "itemId": "227296944759",
+    "grader": "BGS",
+    "cardName": "Blissey",
+    "detectedClass": 3,
+    "detectedName": "ACE",
+    "confidence": 0.948,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 1,
+      "cx": 0.7428828674326873,
+      "cy": 0.1858216970998926,
+      "w": 0.1619219116217916,
+      "h": 0.02864303616183317
+    }
+  },
+  "146886451959_1.jpg": {
+    "itemId": "146886451959",
+    "grader": "BGS",
+    "cardName": "Celebi",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.967,
+    "annotated": false,
+    "skipped": true
+  },
+  "168123767217_1.jpg": {
+    "itemId": "168123767217",
+    "grader": "CGC",
+    "cardName": "Garchomp ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.943,
+    "annotated": false,
+    "skipped": true
+  },
+  "127252734566_1.jpg": {
+    "itemId": "127252734566",
+    "grader": "CGC",
+    "cardName": "Dratini",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.964,
+    "annotated": false,
+    "skipped": true
+  },
+  "117041732474_1.jpg": {
+    "itemId": "117041732474",
+    "grader": "CGC",
+    "cardName": "Kilowattrel",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.938,
+    "annotated": false,
+    "skipped": true
+  },
+  "365883963928_1.jpg": {
+    "itemId": "365883963928",
+    "grader": "CGC",
+    "cardName": "Slaking",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.948,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5739130434782609,
+      "cy": 0.758859637805648,
+      "w": 0.17803203661327238,
+      "h": 0.0887518758190794
+    }
+  },
+  "116997451658_1.jpg": {
+    "itemId": "116997451658",
+    "grader": "PSA",
+    "cardName": "Oricorio",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.946,
+    "annotated": false,
+    "skipped": true
+  },
+  "117034721631_12.jpg": {
+    "itemId": "117034721631",
+    "grader": "PSA",
+    "cardName": "Magneton",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.759,
+    "annotated": false,
+    "skipped": true
+  },
+  "318080093347_1.jpg": {
+    "itemId": "318080093347",
+    "grader": "BGS",
+    "cardName": "Stantler",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.948,
+    "annotated": false,
+    "skipped": true
+  },
+  "366314034941_1.jpg": {
+    "itemId": "366314034941",
+    "grader": "CGC",
+    "cardName": "Gengar V",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.936,
+    "annotated": false,
+    "skipped": true
+  },
+  "267464920641_1.jpg": {
+    "itemId": "267464920641",
+    "grader": "CGC",
+    "cardName": "Magikarp",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.955,
+    "annotated": false,
+    "skipped": true
+  },
+  "397786205308_1.jpg": {
+    "itemId": "397786205308",
+    "grader": "CGC",
+    "cardName": "Snorlax",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.959,
+    "annotated": false,
+    "skipped": true
+  },
+  "127192194973_1.jpg": {
+    "itemId": "127192194973",
+    "grader": "CGC",
+    "cardName": "Weezing",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.955,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.554638746563497,
+      "cy": 0.2565341926244182,
+      "w": 0.1565326252900181,
+      "h": 0.02506265664160398
+    }
+  },
+  "117009293224_1.jpg": {
+    "itemId": "117009293224",
+    "grader": "PSA",
+    "cardName": "Eevee",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.956,
+    "annotated": false,
+    "skipped": true
+  },
+  "137028512085_1.jpg": {
+    "itemId": "137028512085",
+    "grader": "BGS",
+    "cardName": "Clawitzer",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.95,
+    "annotated": false,
+    "skipped": true
+  },
+  "116961263570_1.jpg": {
+    "itemId": "116961263570",
+    "grader": "PSA",
+    "cardName": "Snorunt",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.952,
+    "annotated": false,
+    "skipped": true
+  },
+  "227190078554_1.jpg": {
+    "itemId": "227190078554",
+    "grader": "BGS",
+    "cardName": "Sneasel",
+    "detectedClass": 3,
+    "detectedName": "ACE",
+    "confidence": 0.959,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 1,
+      "cx": 0.7629538425550193,
+      "cy": 0.15046544933762973,
+      "w": 0.16303138238411197,
+      "h": 0.02774794128177588
+    }
+  },
+  "389518218241_1.jpg": {
+    "itemId": "389518218241",
+    "grader": "CGC",
+    "cardName": "Snorlax",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.943,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5578947368421052,
+      "cy": 0.7996972364020418,
+      "w": 0.15331807780320367,
+      "h": 0.08468509065305396
+    }
+  },
+  "157675589766_1.jpg": {
+    "itemId": "157675589766",
+    "grader": "CGC",
+    "cardName": "Plusle",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.948,
+    "annotated": false,
+    "skipped": true
+  },
+  "137162291078_1.jpg": {
+    "itemId": "137162291078",
+    "grader": "CGC",
+    "cardName": "Poochyena",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.949,
+    "annotated": false,
+    "skipped": true
+  },
+  "117008561671_1.jpg": {
+    "itemId": "117008561671",
+    "grader": "PSA",
+    "cardName": "Mow Rotom",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.941,
+    "annotated": false,
+    "skipped": true
+  },
+  "389538501225_1.jpg": {
+    "itemId": "389538501225",
+    "grader": "BGS",
+    "cardName": "Blissey",
+    "detectedClass": 3,
+    "detectedName": "ACE",
+    "confidence": 0.904,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 1,
+      "cx": 0.7767836992616952,
+      "cy": 0.13748657357679908,
+      "w": 0.17538769062127213,
+      "h": 0.032223415682062315
+    }
+  },
+  "227250261192_1.jpg": {
+    "itemId": "227250261192",
+    "grader": "CGC",
+    "cardName": "Sneasel",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.949,
+    "annotated": false,
+    "skipped": true
+  },
+  "137168032827_34.jpg": {
+    "itemId": "137168032827",
+    "grader": "CGC",
+    "cardName": "Magikarp",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.93,
+    "annotated": false,
+    "skipped": true
+  },
+  "257382508915_1.jpg": {
+    "itemId": "257382508915",
+    "grader": "CGC",
+    "cardName": "Arceus & Dialga & Palkia-GX",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.951,
+    "annotated": false,
+    "skipped": true
+  },
+  "116697834954_1.jpg": {
+    "itemId": "116697834954",
+    "grader": "PSA",
+    "cardName": "Chandelure V",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.947,
+    "annotated": false,
+    "skipped": true
+  },
+  "117044959394_1.jpg": {
+    "itemId": "117044959394",
+    "grader": "PSA",
+    "cardName": "Viridian Forest",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.945,
+    "annotated": false,
+    "skipped": true
+  },
+  "136869688705_1.jpg": {
+    "itemId": "136869688705",
+    "grader": "CGC",
+    "cardName": "Pikachu",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.955,
+    "annotated": false,
+    "skipped": true
+  },
+  "117031129177_1.jpg": {
+    "itemId": "117031129177",
+    "grader": "PSA",
+    "cardName": "Celebi & Venusaur-GX",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.947,
+    "annotated": false,
+    "skipped": true
+  },
+  "316886321092_1.jpg": {
+    "itemId": "316886321092",
+    "grader": "CGC",
+    "cardName": "Delcatty",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.962,
+    "annotated": false,
+    "skipped": true
+  },
+  "117078609768_1.jpg": {
+    "itemId": "117078609768",
+    "grader": "PSA",
+    "cardName": "Team Rocket's Tarountula",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.935,
+    "annotated": false,
+    "skipped": true
+  },
+  "336469633356_1.jpg": {
+    "itemId": "336469633356",
+    "grader": "CGC",
+    "cardName": "Ho-oh",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.948,
+    "annotated": false,
+    "skipped": true
+  },
+  "306756959906_1.jpg": {
+    "itemId": "306756959906",
+    "grader": "CGC",
+    "cardName": "Oricorio",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.94,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5496567505720824,
+      "cy": 0.7359043388522457,
+      "w": 0.15606407322654464,
+      "h": 0.10436320981481828
+    }
+  },
+  "117002698891_1.jpg": {
+    "itemId": "117002698891",
+    "grader": "PSA",
+    "cardName": "Dipplin",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.941,
+    "annotated": false,
+    "skipped": true
+  },
+  "298022713366_1.jpg": {
+    "itemId": "298022713366",
+    "grader": "CGC",
+    "cardName": "Articuno",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.958,
+    "annotated": false,
+    "skipped": true
+  },
+  "116706321271_1.jpg": {
+    "itemId": "116706321271",
+    "grader": "PSA",
+    "cardName": "Professor Turo's Scenario",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.953,
+    "annotated": false,
+    "skipped": true
+  },
+  "236614970400_1.jpg": {
+    "itemId": "236614970400",
+    "grader": "CGC",
+    "cardName": "Charmeleon",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.931,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5956775285035738,
+      "cy": 0.2502685284640172,
+      "w": 0.12331770340460624,
+      "h": 0.03222341568206233
+    }
+  },
+  "358116529676_1.jpg": {
+    "itemId": "358116529676",
+    "grader": "CGC",
+    "cardName": "Archen",
+    "detectedClass": 10,
+    "detectedName": "10",
+    "confidence": 0.927,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 0,
+      "cx": 0.7748000169596926,
+      "cy": 0.16120658789831716,
+      "w": 0.23125247328848442,
+      "h": 0.03490870032223417
+    }
+  },
+  "287167053135_1.jpg": {
+    "itemId": "287167053135",
+    "grader": "CGC",
+    "cardName": "Tentacruel",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.954,
+    "annotated": false,
+    "skipped": true
+  },
+  "318115558688_1.jpg": {
+    "itemId": "318115558688",
+    "grader": "CGC",
+    "cardName": "Swadloon",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.957,
+    "annotated": false,
+    "skipped": true
+  },
+  "157726635621_1.jpg": {
+    "itemId": "157726635621",
+    "grader": "CGC",
+    "cardName": "Celebi",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.955,
+    "annotated": false,
+    "skipped": true
+  },
+  "366342590675_4.jpg": {
+    "itemId": "366342590675",
+    "grader": "CGC",
+    "cardName": "Clawitzer",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.914,
+    "annotated": false,
+    "skipped": true
+  },
+  "377055255644_1.jpg": {
+    "itemId": "377055255644",
+    "grader": "BGS",
+    "cardName": "Snorlax",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.931,
+    "annotated": false,
+    "skipped": true
+  },
+  "117076648158_1.jpg": {
+    "itemId": "117076648158",
+    "grader": "PSA",
+    "cardName": "Ethan's Pinsir",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.942,
+    "annotated": false,
+    "skipped": true
+  },
+  "117034835729_1.jpg": {
+    "itemId": "117034835729",
+    "grader": "PSA",
+    "cardName": "Team Rocket's Articuno",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.938,
+    "annotated": false,
+    "skipped": true
+  },
+  "116890523152_1.jpg": {
+    "itemId": "116890523152",
+    "grader": "CGC",
+    "cardName": "Breloom",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.938,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.548512585812357,
+      "cy": 0.7567999282092699,
+      "w": 0.1482837528604119,
+      "h": 0.08360927895185533
+    }
+  },
+  "157618860144_1.jpg": {
+    "itemId": "157618860144",
+    "grader": "CGC",
+    "cardName": "Seadra",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.96,
+    "annotated": false,
+    "skipped": true
+  },
+  "227062602080_1.jpg": {
+    "itemId": "227062602080",
+    "grader": "CGC",
+    "cardName": "Steelix",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.944,
+    "annotated": false,
+    "skipped": true
+  },
+  "117056323849_1.jpg": {
+    "itemId": "117056323849",
+    "grader": "PSA",
+    "cardName": "Togedemaru ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.906,
+    "annotated": false,
+    "skipped": true
+  },
+  "117055198363_1.jpg": {
+    "itemId": "117055198363",
+    "grader": "PSA",
+    "cardName": "Victini",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.945,
+    "annotated": false,
+    "skipped": true
+  },
+  "117003453552_1.jpg": {
+    "itemId": "117003453552",
+    "grader": "PSA",
+    "cardName": "Shedinja",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.946,
+    "annotated": false,
+    "skipped": true
+  },
+  "177911355104_1.jpg": {
+    "itemId": "177911355104",
+    "grader": "CGC",
+    "cardName": "Mew",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.959,
+    "annotated": false,
+    "skipped": true
+  },
+  "377021096756_1.jpg": {
+    "itemId": "377021096756",
+    "grader": "CGC",
+    "cardName": "Butterfree",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.933,
+    "annotated": false,
+    "skipped": true
+  },
+  "117067207066_1.jpg": {
+    "itemId": "117067207066",
+    "grader": "BGS",
+    "cardName": "Oricorio",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.946,
+    "annotated": false,
+    "skipped": true
+  },
+  "116998181169_1.jpg": {
+    "itemId": "116998181169",
+    "grader": "PSA",
+    "cardName": "Snorlax-GX",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.933,
+    "annotated": false,
+    "skipped": true
+  },
+  "157817086455_1.jpg": {
+    "itemId": "157817086455",
+    "grader": "CGC",
+    "cardName": "Sprigatito",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.951,
+    "annotated": false,
+    "skipped": true
+  },
+  "117061342116_1.jpg": {
+    "itemId": "117061342116",
+    "grader": "PSA",
+    "cardName": "Psyduck",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.937,
+    "annotated": false,
+    "skipped": true
+  },
+  "116996892377_1.jpg": {
+    "itemId": "116996892377",
+    "grader": "PSA",
+    "cardName": "Team Rocket's Giovanni",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.943,
+    "annotated": false,
+    "skipped": true
+  },
+  "117015193579_10.jpg": {
+    "itemId": "117015193579",
+    "grader": "PSA",
+    "cardName": "Pikachu",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.834,
+    "annotated": false,
+    "skipped": true
+  },
+  "287214837608_1.jpg": {
+    "itemId": "287214837608",
+    "grader": "CGC",
+    "cardName": "Sneasel",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.949,
+    "annotated": false,
+    "skipped": true
+  },
+  "117049045727_1.jpg": {
+    "itemId": "117049045727",
+    "grader": "PSA",
+    "cardName": "Team Rocket's Blipbug",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.943,
+    "annotated": false,
+    "skipped": true
+  },
+  "397811175134_1.jpg": {
+    "itemId": "397811175134",
+    "grader": "CGC",
+    "cardName": "Rapidash",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.946,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5565306376376606,
+      "cy": 0.26100966702470463,
+      "w": 0.15074836703376138,
+      "h": 0.02864303616183317
+    }
+  },
+  "117099283127_1.jpg": {
+    "itemId": "117099283127",
+    "grader": "CGC",
+    "cardName": "Shroomish",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.928,
+    "annotated": false,
+    "skipped": true
+  },
+  "117091996584_1.jpg": {
+    "itemId": "117091996584",
+    "grader": "BGS",
+    "cardName": "Sneasel",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.949,
+    "annotated": false,
+    "skipped": true
+  },
+  "147098196384_1.jpg": {
+    "itemId": "147098196384",
+    "grader": "CGC",
+    "cardName": "Mew V",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.933,
+    "annotated": false,
+    "skipped": true
+  },
+  "127710504141_1.jpg": {
+    "itemId": "127710504141",
+    "grader": "CGC",
+    "cardName": "Dratini",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.954,
+    "annotated": false,
+    "skipped": true
+  },
+  "366246425162_1.jpg": {
+    "itemId": "366246425162",
+    "grader": "CGC",
+    "cardName": "Mew V",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.933,
+    "annotated": false,
+    "skipped": true
+  },
+  "226979358793_1.jpg": {
+    "itemId": "226979358793",
+    "grader": "CGC",
+    "cardName": "Steelix",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.955,
+    "annotated": false,
+    "skipped": true
+  },
+  "117079739931_12.jpg": {
+    "itemId": "117079739931",
+    "grader": "PSA",
+    "cardName": "Alolan Diglett",
+    "detectedClass": 10,
+    "detectedName": "10",
+    "confidence": 0.517,
+    "annotated": false,
+    "skipped": true
+  },
+  "389609303991_1.jpg": {
+    "itemId": "389609303991",
+    "grader": "CGC",
+    "cardName": "Snorlax",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.952,
+    "annotated": false,
+    "skipped": true
+  },
+  "197923823534_1.jpg": {
+    "itemId": "197923823534",
+    "grader": "BGS",
+    "cardName": "Rapidash",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.946,
+    "annotated": false,
+    "skipped": true
+  },
+  "206059559775_1.jpg": {
+    "itemId": "206059559775",
+    "grader": "CGC",
+    "cardName": "Mew",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.955,
+    "annotated": false,
+    "skipped": true
+  },
+  "306850440559_1.jpg": {
+    "itemId": "306850440559",
+    "grader": "BGS",
+    "cardName": "Azumarill",
+    "detectedClass": 3,
+    "detectedName": "ACE",
+    "confidence": 0.958,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 1,
+      "cx": 0.7785502978746609,
+      "cy": 0.2126745435016112,
+      "w": 0.15460207920316105,
+      "h": 0.0322234156820623
+    }
+  },
+  "127397575644_1.jpg": {
+    "itemId": "127397575644",
+    "grader": "CGC",
+    "cardName": "Breloom",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.942,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5750572082379863,
+      "cy": 0.7791348379822671,
+      "w": 0.14828375286041184,
+      "h": 0.10419571555330209
+    }
+  },
+  "377016677441_1.jpg": {
+    "itemId": "377016677441",
+    "grader": "CGC",
+    "cardName": "Charmander",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.949,
+    "annotated": false,
+    "skipped": true
+  },
+  "117073157208_1.jpg": {
+    "itemId": "117073157208",
+    "grader": "PSA",
+    "cardName": "Venomoth-GX",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.928,
+    "annotated": false,
+    "skipped": true
+  },
+  "298153908219_1.jpg": {
+    "itemId": "298153908219",
+    "grader": "CGC",
+    "cardName": "Azumarill",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.951,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5549199084668193,
+      "cy": 0.7960829182931753,
+      "w": 0.14462242562929062,
+      "h": 0.08242601388381443
+    }
+  },
+  "366152509260_1.jpg": {
+    "itemId": "366152509260",
+    "grader": "CGC",
+    "cardName": "Buneary",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.944,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5473684210526315,
+      "cy": 0.8109760909019175,
+      "w": 0.1496567505720824,
+      "h": 0.08727215339698569
+    }
+  },
+  "377073658576_1.jpg": {
+    "itemId": "377073658576",
+    "grader": "BGS",
+    "cardName": "Sneasel",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.949,
+    "annotated": false,
+    "skipped": true
+  },
+  "306805529481_1.jpg": {
+    "itemId": "306805529481",
+    "grader": "CGC",
+    "cardName": "Ethan's Ho-Oh ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.935,
+    "annotated": false,
+    "skipped": true
+  },
+  "287225840488_1.jpg": {
+    "itemId": "287225840488",
+    "grader": "CGC",
+    "cardName": "Thundurus",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.946,
+    "annotated": false,
+    "skipped": true
+  },
+  "117016557251_1.jpg": {
+    "itemId": "117016557251",
+    "grader": "PSA",
+    "cardName": "Moltres",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.934,
+    "annotated": false,
+    "skipped": true
+  },
+  "117071372779_1.jpg": {
+    "itemId": "117071372779",
+    "grader": "PSA",
+    "cardName": "Cinderace ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.949,
+    "annotated": false,
+    "skipped": true
+  },
+  "116971675590_1.jpg": {
+    "itemId": "116971675590",
+    "grader": "PSA",
+    "cardName": "Cinderace VMAX",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.94,
+    "annotated": false,
+    "skipped": true
+  },
+  "117056173967_1.jpg": {
+    "itemId": "117056173967",
+    "grader": "PSA",
+    "cardName": "Sneasel",
+    "detectedClass": 3,
+    "detectedName": "ACE",
+    "confidence": 0.958,
+    "annotated": false,
+    "skipped": true
+  },
+  "117013683035_10.jpg": {
+    "itemId": "117013683035",
+    "grader": "PSA",
+    "cardName": "Mimikyu",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.666,
+    "annotated": false,
+    "skipped": true
+  },
+  "116921496025_1.jpg": {
+    "itemId": "116921496025",
+    "grader": "PSA",
+    "cardName": "Rapidash",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.932,
+    "annotated": false,
+    "skipped": true
+  },
+  "287247666739_11.jpg": {
+    "itemId": "287247666739",
+    "grader": "CGC",
+    "cardName": "Dark Dragonite",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.947,
+    "annotated": false,
+    "skipped": true
+  },
+  "198047177911_1.jpg": {
+    "itemId": "198047177911",
+    "grader": "BGS",
+    "cardName": "Snorlax",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.959,
+    "annotated": false,
+    "skipped": true
+  },
+  "236631638764_1.jpg": {
+    "itemId": "236631638764",
+    "grader": "CGC",
+    "cardName": "Sandy Shocks ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.942,
+    "annotated": false,
+    "skipped": true
+  },
+  "327006481410_1.jpg": {
+    "itemId": "327006481410",
+    "grader": "CGC",
+    "cardName": "Mew",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.947,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5560640732265446,
+      "cy": 0.7873284596639734,
+      "w": 0.1322654462242563,
+      "h": 0.08493010132102097
+    }
+  },
+  "136947525437_1.jpg": {
+    "itemId": "136947525437",
+    "grader": "BGS",
+    "cardName": "Fuecoco",
+    "detectedClass": 3,
+    "detectedName": "ACE",
+    "confidence": 0.954,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 1,
+      "cx": 0.8207027290224597,
+      "cy": 0.1670247046186895,
+      "w": 0.15921412079129205,
+      "h": 0.0322234156820623
+    }
+  },
+  "116890698249_1.jpg": {
+    "itemId": "116890698249",
+    "grader": "PSA",
+    "cardName": "Cetitan ex",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.939,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5374295219115824,
+      "cy": 0.2708557107053347,
+      "w": 0.12930198478546645,
+      "h": 0.02685284640171859
+    }
+  },
+  "117035769438_1.jpg": {
+    "itemId": "117035769438",
+    "grader": "PSA",
+    "cardName": "Mega Charizard Y ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.926,
+    "annotated": false,
+    "skipped": true
+  },
+  "117042954509_1.jpg": {
+    "itemId": "117042954509",
+    "grader": "PSA",
+    "cardName": "Combusken",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.948,
+    "annotated": false,
+    "skipped": true
+  },
+  "357671584280_1.jpg": {
+    "itemId": "357671584280",
+    "grader": "CGC",
+    "cardName": "Celebi",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.946,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5720823798627003,
+      "cy": 0.7836390398550724,
+      "w": 0.17070938215102976,
+      "h": 0.07769474637681162
+    }
+  },
+  "117070195794_1.jpg": {
+    "itemId": "117070195794",
+    "grader": "PSA",
+    "cardName": "Applin",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.941,
+    "annotated": false,
+    "skipped": true
+  },
+  "287193228240_1.jpg": {
+    "itemId": "287193228240",
+    "grader": "CGC",
+    "cardName": "Pikachu",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.952,
+    "annotated": false,
+    "skipped": true
+  },
+  "117013512742_1.jpg": {
+    "itemId": "117013512742",
+    "grader": "PSA",
+    "cardName": "Team Rocket's Zapdos",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.93,
+    "annotated": false,
+    "skipped": true
+  },
+  "227257399595_1.jpg": {
+    "itemId": "227257399595",
+    "grader": "CGC",
+    "cardName": "Maractus",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.909,
+    "annotated": false,
+    "skipped": true
+  },
+  "227155678445_1.jpg": {
+    "itemId": "227155678445",
+    "grader": "CGC",
+    "cardName": "Mew V",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.933,
+    "annotated": false,
+    "skipped": true
+  },
+  "116899596857_1.jpg": {
+    "itemId": "116899596857",
+    "grader": "PSA",
+    "cardName": "Golbat",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.942,
+    "annotated": false,
+    "skipped": true
+  },
+  "117031041292_1.jpg": {
+    "itemId": "117031041292",
+    "grader": "PSA",
+    "cardName": "Pansage",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.936,
+    "annotated": false,
+    "skipped": true
+  },
+  "336198058668_1.jpg": {
+    "itemId": "336198058668",
+    "grader": "CGC",
+    "cardName": "Cynthia's Garchomp ex",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.909,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 3,
+      "cx": 0.6494410629748976,
+      "cy": 0.18537414965986396,
+      "w": 0.1600076027812034,
+      "h": 0.09756534192624416
+    }
+  },
+  "389666588091_1.jpg": {
+    "itemId": "389666588091",
+    "grader": "CGC",
+    "cardName": "Weavile",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.953,
+    "annotated": false,
+    "skipped": true
+  },
+  "147208432038_1.jpg": {
+    "itemId": "147208432038",
+    "grader": "CGC",
+    "cardName": "Butterfree",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.933,
+    "annotated": false,
+    "skipped": true
+  },
+  "336482778989_1.jpg": {
+    "itemId": "336482778989",
+    "grader": "CGC",
+    "cardName": "Oricorio",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.957,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5382244680155948,
+      "cy": 0.2538489079842463,
+      "w": 0.1293751225143206,
+      "h": 0.025062656641604036
+    }
+  },
+  "117122020114_1.jpg": {
+    "itemId": "117122020114",
+    "grader": "BGS",
+    "cardName": "Sneasel",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.95,
+    "annotated": false,
+    "skipped": true
+  },
+  "168115875350_1.jpg": {
+    "itemId": "168115875350",
+    "grader": "CGC",
+    "cardName": "Snorlax",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.959,
+    "annotated": false,
+    "skipped": true
+  },
+  "389679922386_1.jpg": {
+    "itemId": "389679922386",
+    "grader": "CGC",
+    "cardName": "Meloetta",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.948,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5387265539943151,
+      "cy": 0.22878625134264227,
+      "w": 0.13006276624505875,
+      "h": 0.02506265664160401
+    }
+  },
+  "116994280294_1.jpg": {
+    "itemId": "116994280294",
+    "grader": "PSA",
+    "cardName": "Team Rocket's Persian ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.952,
+    "annotated": false,
+    "skipped": true
+  },
+  "277646905469_1.jpg": {
+    "itemId": "277646905469",
+    "grader": "CGC",
+    "cardName": "Mew",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.954,
+    "annotated": false,
+    "skipped": true
+  },
+  "147137409749_1.jpg": {
+    "itemId": "147137409749",
+    "grader": "CGC",
+    "cardName": "Mewtwo & Mew-GX",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.949,
+    "annotated": false,
+    "skipped": true
+  },
+  "257381316641_1.jpg": {
+    "itemId": "257381316641",
+    "grader": "CGC",
+    "cardName": "Snorlax",
+    "detectedClass": 6,
+    "detectedName": "6",
+    "confidence": 0.916,
+    "annotated": false,
+    "skipped": true
+  },
+  "286743817900_1.jpg": {
+    "itemId": "286743817900",
+    "grader": "CGC",
+    "cardName": "Solgaleo & Lunala-GX",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.945,
+    "annotated": false,
+    "skipped": true
+  },
+  "157814713220_1.jpg": {
+    "itemId": "157814713220",
+    "grader": "CGC",
+    "cardName": "Luxray",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.945,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5508009153318077,
+      "cy": 0.74759135286828,
+      "w": 0.13821510297482836,
+      "h": 0.09153711486889649
+    }
+  },
+  "157655011733_1.jpg": {
+    "itemId": "157655011733",
+    "grader": "CGC",
+    "cardName": "Chi-Yu ex",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.945,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5411899313501144,
+      "cy": 0.7471375510120934,
+      "w": 0.14279176201372995,
+      "h": 0.08658033937895959
+    }
+  },
+  "298153908245_1.jpg": {
+    "itemId": "298153908245",
+    "grader": "CGC",
+    "cardName": "Oricorio",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.942,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5510297482837528,
+      "cy": 0.8034804649263262,
+      "w": 0.1469107551487414,
+      "h": 0.0895158205897797
+    }
+  },
+  "376881424944_1.jpg": {
+    "itemId": "376881424944",
+    "grader": "CGC",
+    "cardName": "Noivern ex",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.946,
+    "annotated": false,
+    "skipped": true
+  },
+  "116978824838_1.jpg": {
+    "itemId": "116978824838",
+    "grader": "PSA",
+    "cardName": "Spewpa",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.945,
+    "annotated": false,
+    "skipped": true
+  },
+  "116828525815_1.jpg": {
+    "itemId": "116828525815",
+    "grader": "PSA",
+    "cardName": "Slither Wing",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.948,
+    "annotated": false,
+    "skipped": true
+  },
+  "117060527352_1.jpg": {
+    "itemId": "117060527352",
+    "grader": "PSA",
+    "cardName": "Charcadet",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.934,
+    "annotated": false,
+    "skipped": true
+  },
+  "298153908262_1.jpg": {
+    "itemId": "298153908262",
+    "grader": "CGC",
+    "cardName": "Azumarill",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.951,
+    "annotated": false,
+    "skipped": true
+  },
+  "256558618604_1.jpg": {
+    "itemId": "256558618604",
+    "grader": "CGC",
+    "cardName": "Suicune",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.953,
+    "annotated": false,
+    "skipped": true
+  },
+  "117038187947_1.jpg": {
+    "itemId": "117038187947",
+    "grader": "PSA",
+    "cardName": "Team Rocket's Raticate",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.945,
+    "annotated": false,
+    "skipped": true
+  },
+  "117018225278_1.jpg": {
+    "itemId": "117018225278",
+    "grader": "PSA",
+    "cardName": "Cynthia's Feebas",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.942,
+    "annotated": false,
+    "skipped": true
+  },
+  "227298297046_1.jpg": {
+    "itemId": "227298297046",
+    "grader": "BGS",
+    "cardName": "Giratina",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.945,
+    "annotated": false,
+    "skipped": true
+  },
+  "116906875067_10.jpg": {
+    "itemId": "116906875067",
+    "grader": "BGS",
+    "cardName": "Spewpa",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.96,
+    "annotated": false,
+    "skipped": true
+  },
+  "117036537273_1.jpg": {
+    "itemId": "117036537273",
+    "grader": "PSA",
+    "cardName": "Huntail",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.94,
+    "annotated": false,
+    "skipped": true
+  },
+  "287166942424_1.jpg": {
+    "itemId": "287166942424",
+    "grader": "CGC",
+    "cardName": "Charmander",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.954,
+    "annotated": false,
+    "skipped": true
+  },
+  "137063299614_1.jpg": {
+    "itemId": "137063299614",
+    "grader": "BGS",
+    "cardName": "Team Rocket's Meowth",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.944,
+    "annotated": false,
+    "skipped": true
+  },
+  "117080160097_1.jpg": {
+    "itemId": "117080160097",
+    "grader": "PSA",
+    "cardName": "Charcadet",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.939,
+    "annotated": false,
+    "skipped": true
+  },
+  "117076023075_1.jpg": {
+    "itemId": "117076023075",
+    "grader": "PSA",
+    "cardName": "Cynthia's Roselia",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.94,
+    "annotated": false,
+    "skipped": true
+  },
+  "287182385521_1.jpg": {
+    "itemId": "287182385521",
+    "grader": "CGC",
+    "cardName": "Unfezant",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.948,
+    "annotated": false,
+    "skipped": true
+  },
+  "116841901432_1.jpg": {
+    "itemId": "116841901432",
+    "grader": "PSA",
+    "cardName": "Judge",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.949,
+    "annotated": false,
+    "skipped": true
+  },
+  "117122048981_1.jpg": {
+    "itemId": "117122048981",
+    "grader": "CGC",
+    "cardName": "Eevee",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.948,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.545766590389016,
+      "cy": 0.7787289369669232,
+      "w": 0.14645308924485123,
+      "h": 0.09437278968171414
+    }
+  },
+  "406835398782_1.jpg": {
+    "itemId": "406835398782",
+    "grader": "CGC",
+    "cardName": "Psyduck",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.951,
+    "annotated": false,
+    "skipped": true
+  },
+  "377084813882_1.jpg": {
+    "itemId": "377084813882",
+    "grader": "CGC",
+    "cardName": "Celebi",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.951,
+    "annotated": false,
+    "skipped": true
+  },
+  "117041524059_1.jpg": {
+    "itemId": "117041524059",
+    "grader": "PSA",
+    "cardName": "Hop's Phantump",
+    "detectedClass": 10,
+    "detectedName": "10",
+    "confidence": 0.878,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 0,
+      "cx": 0.7830997760181184,
+      "cy": 0.16747225205871819,
+      "w": 0.2301131869238182,
+      "h": 0.040279269602577855
+    }
+  },
+  "336511332192_1.jpg": {
+    "itemId": "336511332192",
+    "grader": "CGC",
+    "cardName": "Virizion",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.94,
+    "annotated": false,
+    "skipped": true
+  },
+  "198284020792_1.jpg": {
+    "itemId": "198284020792",
+    "grader": "CGC",
+    "cardName": "Mega Sableye & Tyranitar-GX",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.947,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5702517162471397,
+      "cy": 0.7739306460130259,
+      "w": 0.15240274599542342,
+      "h": 0.10040485829959511
+    }
+  },
+  "267572794403_1.jpg": {
+    "itemId": "267572794403",
+    "grader": "CGC",
+    "cardName": "Snorlax",
+    "detectedClass": 5,
+    "detectedName": "5",
+    "confidence": 0.93,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5601830663615561,
+      "cy": 0.7918098200569852,
+      "w": 0.14599542334096116,
+      "h": 0.08782086013143564
+    }
+  },
+  "117063362795_1.jpg": {
+    "itemId": "117063362795",
+    "grader": "PSA",
+    "cardName": "Rapidash",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.948,
+    "annotated": false,
+    "skipped": true
+  },
+  "298074882483_1.jpg": {
+    "itemId": "298074882483",
+    "grader": "CGC",
+    "cardName": "Maractus",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.948,
+    "annotated": false,
+    "skipped": true
+  },
+  "287166942405_1.jpg": {
+    "itemId": "287166942405",
+    "grader": "CGC",
+    "cardName": "Sneasel",
+    "detectedClass": 10,
+    "detectedName": "10",
+    "confidence": 0.926,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 0,
+      "cx": 0.7399442297087873,
+      "cy": 0.2113319011815252,
+      "w": 0.20229144289294665,
+      "h": 0.02953813104189046
+    }
+  },
+  "117136026014_1.jpg": {
+    "itemId": "117136026014",
+    "grader": "BGS",
+    "cardName": "Sneasel",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.949,
+    "annotated": false,
+    "skipped": true
+  },
+  "116920754058_1.jpg": {
+    "itemId": "116920754058",
+    "grader": "CGC",
+    "cardName": "Latios",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.95,
+    "annotated": false,
+    "skipped": true
+  },
+  "298140731513_1.jpg": {
+    "itemId": "298140731513",
+    "grader": "CGC",
+    "cardName": "Sneasel",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.95,
+    "annotated": false,
+    "skipped": true
+  },
+  "117040714647_12.jpg": {
+    "itemId": "117040714647",
+    "grader": "PSA",
+    "cardName": "Wo-Chien",
+    "detectedClass": 10,
+    "detectedName": "10",
+    "confidence": 0.892,
+    "annotated": false,
+    "skipped": true
+  },
+  "287222409945_1.jpg": {
+    "itemId": "287222409945",
+    "grader": "CGC",
+    "cardName": "Snorlax",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.959,
+    "annotated": false,
+    "skipped": true
+  },
+  "306816896611_1.jpg": {
+    "itemId": "306816896611",
+    "grader": "CGC",
+    "cardName": "Espathra",
+    "detectedClass": 7,
+    "detectedName": "7",
+    "confidence": 0.951,
+    "annotated": true,
+    "skipped": false,
+    "annotation": {
+      "class": 2,
+      "cx": 0.5455956473348597,
+      "cy": 0.22968134622269956,
+      "w": 0.1450091079174225,
+      "h": 0.02327246688148943
+    }
+  },
+  "306454276632_1.jpg": {
+    "itemId": "306454276632",
+    "grader": "CGC",
+    "cardName": "Ho-oh",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.945,
+    "annotated": false,
+    "skipped": true
+  },
+  "116920691399_1.jpg": {
+    "itemId": "116920691399",
+    "grader": "PSA",
+    "cardName": "Umbreon V",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.944,
+    "annotated": false,
+    "skipped": true
+  },
+  "287182305847_1.jpg": {
+    "itemId": "287182305847",
+    "grader": "CGC",
+    "cardName": "Thundurus",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.946,
+    "annotated": false,
+    "skipped": true
+  },
+  "117060750148_1.jpg": {
+    "itemId": "117060750148",
+    "grader": "PSA",
+    "cardName": "Team Rocket's Ariana",
+    "detectedClass": 4,
+    "detectedName": "4",
+    "confidence": 0.941,
+    "annotated": false,
+    "skipped": true
+  }
+}
