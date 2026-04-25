@@ -148,7 +148,14 @@ def extract_cert_from_text(texts: list[str]) -> str | None:
 # ── Step 0: Barcode decode ────────────────────────────────────────────────────
 
 def try_barcode(image_path: Path) -> str | None:
-    """Attempt to decode a barcode from the image. Returns cert string or None."""
+    """
+    Attempt to decode a PSA cert barcode from the image.
+
+    Trust hierarchy (to avoid I25 false positives from card-back stripe patterns):
+      1. QR code containing psacard.com/cert/ URL — fully trusted, return immediately
+      2. I25/CODE128 that agrees with a QR code on the same image — trusted
+      3. I25/CODE128 alone (no QR) — REJECTED (too many false positives)
+    """
     try:
         img = cv2.imread(str(image_path))
         if img is None:
@@ -161,11 +168,28 @@ def try_barcode(image_path: Path) -> str | None:
                 scaled = img
             with suppress_c_stderr():
                 barcodes = pyzbar.decode(scaled)
+
+            qr_cert    = None
+            linear_cert = None
             for bc in barcodes:
                 data = bc.data.decode("utf-8", errors="ignore")
-                m = CERT_RE.search(data)
-                if m:
-                    return m.group(1)
+                if bc.type == "QRCODE" and "psacard.com/cert/" in data:
+                    m = CERT_RE.search(data)
+                    if m:
+                        return m.group(1)  # QR with URL — unambiguous
+                elif bc.type in ("I25", "CODE128", "CODE39"):
+                    m = CERT_RE.search(data)
+                    if m:
+                        linear_cert = m.group(1)
+                elif bc.type == "QRCODE":
+                    m = CERT_RE.search(data)
+                    if m:
+                        qr_cert = m.group(1)
+
+            # Accept linear barcode only when confirmed by a QR on the same image
+            if linear_cert and qr_cert and linear_cert == qr_cert:
+                return linear_cert
+
     except Exception:
         pass
     return None
