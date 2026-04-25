@@ -72,23 +72,28 @@ def suppress_c_stderr():
 _BASE        = Path(__file__).resolve().parent
 IMAGES_DIR   = _BASE / "data" / "images"
 RESULTS_DIR  = _BASE / "data" / "cert_results"
-MODEL_PATH   = _BASE / "models" / "grading_labels_v3.pt"
+MODEL_PATH        = _BASE / "models" / "grading_labels_v3.pt"
+CERT_MODEL_PATH   = _BASE / "models" / "cert_detector_v1.pt"
 PROGRESS_F   = RESULTS_DIR / "_progress.json"
 CERT_JSON    = RESULTS_DIR / "cert_numbers.json"
 
 # Detection confidence threshold (YOLO)
-YOLO_CONF_THRESHOLD = 0.50   # minimum to even attempt OCR on this crop
+YOLO_CONF_THRESHOLD = 0.75   # minimum to even attempt OCR on this crop
 HIGH_CONF_THRESHOLD = 0.95   # cert_extracted — images deleted
 
 # Label class indices for grading_labels_v3:
-#   0=PSA, 1=CGC, 2=BGS, 3=ACE
+#   0=PSA, 1=CGC, 2=BGS, 3=TAG (ACE/TAG both use QR codes)
 LABEL_CLASSES = {0, 1, 2, 3}
+TAG_CLASS     = 3   # use QR code reading instead of OCR
 
-# Cert number pattern: exactly 8 consecutive digits
-CERT_RE = re.compile(r'\b(\d{8})\b')
+# Cert number pattern: 8 digits (PSA) or 10 digits (CGC) — word-boundary anchored
+CERT_RE = re.compile(r'\b(\d{10}|\d{8})\b')
 
 # Crop padding fraction — adds context around the detected label
 CROP_PADDING = 0.12
+
+# Cert detector confidence threshold (Model 2)
+CERT_CONF_THRESHOLD = 0.50
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
@@ -166,18 +171,38 @@ def try_barcode(image_path: Path) -> str | None:
     return None
 
 
+def try_qr_on_crop(crop_bgr: np.ndarray) -> str | None:
+    """Try to decode a QR code from a label crop (TAG/ACE cards)."""
+    try:
+        for scale in [1.0, 2.0, 3.0]:
+            if scale != 1.0:
+                h, w  = crop_bgr.shape[:2]
+                scaled = cv2.resize(crop_bgr, (int(w*scale), int(h*scale)))
+            else:
+                scaled = crop_bgr
+            with suppress_c_stderr():
+                barcodes = pyzbar.decode(scaled)
+            for bc in barcodes:
+                data = bc.data.decode("utf-8", errors="ignore")
+                m = CERT_RE.search(data)
+                if m:
+                    return m.group(1)
+    except Exception:
+        pass
+    return None
+
+
 # ── Step 1: YOLO label detection ──────────────────────────────────────────────
 
-def best_label_crop_batch(model: YOLO, image_paths: list[Path]) -> tuple[np.ndarray | None, float, str]:
+def detect_label_crops_batch(model: YOLO, image_paths: list[Path]) -> list[tuple[np.ndarray, float, str]]:
     """
-    Run YOLO on all images for an item in a single batched call, return the
-    (cropped_label_bgr, confidence, class_name) from the highest-confidence detection.
-    Returns (None, 0.0, '') if no label found above threshold in any image.
+    Run YOLO on all images for an item in a single batched call.
+    Returns all detected label crops above threshold, sorted by confidence descending.
+    Each entry is (cropped_label_bgr, confidence, class_name).
     """
     if not image_paths:
-        return None, 0.0, ""
+        return []
 
-    # Single batched inference call — much faster than one-at-a-time
     try:
         results_list = model(
             [str(p) for p in image_paths],
@@ -185,8 +210,6 @@ def best_label_crop_batch(model: YOLO, image_paths: list[Path]) -> tuple[np.ndar
             conf=YOLO_CONF_THRESHOLD,
         )
     except Exception:
-        # Batch failed (likely a truncated image). Fall back to one-at-a-time,
-        # skipping any individual image that errors.
         results_list = []
         for p in image_paths:
             try:
@@ -194,42 +217,73 @@ def best_label_crop_batch(model: YOLO, image_paths: list[Path]) -> tuple[np.ndar
             except Exception:
                 results_list.append(None)
 
-    # Normalise: single-image call returns a Result, batch returns a list
     if not isinstance(results_list, list):
         results_list = [results_list]
 
-    best_conf = 0.0
-    best_crop = None
-    best_cls  = ""
+    detections = []  # (conf, crop, cls_name)
 
     for img_path, results in zip(image_paths, results_list):
         if results is None or results.boxes is None or len(results.boxes) == 0:
             continue
 
+        img = None  # lazy-load once per image
         for box in results.boxes:
             cls_id = int(box.cls[0])
             conf   = float(box.conf[0])
-            if cls_id not in LABEL_CLASSES or conf <= best_conf:
+            if cls_id not in LABEL_CLASSES:
                 continue
 
-            img = cv2.imread(str(img_path))
             if img is None:
-                continue
+                img = cv2.imread(str(img_path))
+                if img is None:
+                    break
 
             h, w = img.shape[:2]
             x1, y1, x2, y2 = box.xyxy[0].cpu().numpy()
             pad_x = (x2 - x1) * CROP_PADDING
             pad_y = (y2 - y1) * CROP_PADDING
-            x1 = max(0, int(x1 - pad_x))
-            y1 = max(0, int(y1 - pad_y))
-            x2 = min(w, int(x2 + pad_x))
-            y2 = min(h, int(y2 + pad_y))
+            cx1 = max(0, int(x1 - pad_x))
+            cy1 = max(0, int(y1 - pad_y))
+            cx2 = min(w, int(x2 + pad_x))
+            cy2 = min(h, int(y2 + pad_y))
 
-            best_conf = conf
-            best_crop = preprocess_crop(img[y1:y2, x1:x2])
-            best_cls  = results.names[cls_id]
+            detections.append((conf, preprocess_crop(img[cy1:cy2, cx1:cx2]), results.names[cls_id], cls_id))
 
-    return best_crop, best_conf, best_cls
+    detections.sort(key=lambda x: x[0], reverse=True)
+    return [(crop, conf, cls_name, cls_id) for conf, crop, cls_name, cls_id in detections]
+
+
+# ── Step 1b: Cert sub-region detector (Model 2) ───────────────────────────────
+
+def extract_cert_subcrop(cert_model: YOLO, label_crop_bgr: np.ndarray) -> tuple[np.ndarray, bool]:
+    """
+    Run Model 2 on a label crop to find the cert number sub-region.
+    Returns (subcrop, model2_found) where model2_found=True means Model 2 detected
+    a cert region. Returns (original_crop, False) as fallback.
+    """
+    try:
+        results = cert_model(label_crop_bgr, conf=CERT_CONF_THRESHOLD, verbose=False)
+        if not results or not len(results[0].boxes):
+            return label_crop_bgr, False
+
+        boxes = results[0].boxes
+        best  = boxes[boxes.conf.argmax()]
+        h, w  = label_crop_bgr.shape[:2]
+        x1, y1, x2, y2 = best.xyxy[0].cpu().numpy()
+
+        pad_x = (x2 - x1) * 0.08
+        pad_y = (y2 - y1) * 0.08
+        cx1 = max(0, int(x1 - pad_x))
+        cy1 = max(0, int(y1 - pad_y))
+        cx2 = min(w, int(x2 + pad_x))
+        cy2 = min(h, int(y2 + pad_y))
+
+        subcrop = label_crop_bgr[cy1:cy2, cx1:cx2]
+        if subcrop.size == 0:
+            return label_crop_bgr, False
+        return preprocess_crop(subcrop), True
+    except Exception:
+        return label_crop_bgr, False
 
 
 # ── Step 2: OCR engines ───────────────────────────────────────────────────────
@@ -309,7 +363,10 @@ def run_ocr_both(crop_bgr: np.ndarray) -> tuple[str | None, str | None, str]:
 
 def route_result(item_id: str, cert: str | None, yolo_conf: float,
                  method: str, ocr_status: str, meta: dict,
-                 image_dir: Path, progress: dict, cert_db: dict):
+                 image_dir: Path, progress: dict, cert_db: dict,
+                 all_certs: list[str] | None = None,
+                 yolo_detected: bool = False,
+                 cert_region_detected: bool | None = None):
     """
     Decide which output folder this result goes to, write result JSON,
     and delete images if high-confidence.
@@ -336,6 +393,7 @@ def route_result(item_id: str, cert: str | None, yolo_conf: float,
     result_record = {
         "itemId":      item_id,
         "certNumber":  cert,
+        "allCerts":    all_certs if all_certs and len(all_certs) > 1 else None,
         "confidence":  round(confidence, 4),
         "method":      method,
         "ocrStatus":   ocr_status,
@@ -376,17 +434,28 @@ def route_result(item_id: str, cert: str | None, yolo_conf: float,
         if not remaining or all(f.name == "_meta.json" for f in remaining):
             pass  # keep meta, folder stays
 
+    if cert is not None:
+        fail_stage = None
+    elif not yolo_detected:
+        fail_stage = "no_detection"
+    elif cert_region_detected is False:
+        fail_stage = "no_cert_region"
+    else:
+        fail_stage = "ocr_failed"
+
     progress[item_id] = {
-        "done":       True,
-        "folder":     folder,
-        "certNumber": cert,
-        "confidence": round(confidence, 4),
+        "done":               True,
+        "folder":             folder,
+        "certNumber":         cert,
+        "confidence":         round(confidence, 4),
+        "yoloConf":           round(yolo_conf, 4) if yolo_conf else 0.0,
+        "failStage":          fail_stage,
     }
 
 
 # ── Process one item ──────────────────────────────────────────────────────────
 
-def process_item(item_id: str, image_dir: Path, model: YOLO,
+def process_item(item_id: str, image_dir: Path, model: YOLO, cert_model: YOLO,
                  progress: dict, cert_db: dict, verbose: bool = True):
     # Load metadata
     meta_path = image_dir / "_meta.json"
@@ -402,39 +471,66 @@ def process_item(item_id: str, image_dir: Path, model: YOLO,
         cert = try_barcode(img_path)
         if cert:
             route_result(item_id, cert, 1.0, "barcode", "barcode",
-                         meta, image_dir, progress, cert_db)
+                         meta, image_dir, progress, cert_db,
+                         yolo_detected=False, cert_region_detected=None)
             if verbose:
                 print(f"    BARCODE  → {cert}")
             return "cert_extracted"
 
-    # ── Step 1+2: YOLO (batched) + OCR, keep best result ────────────────────
-    best_conf       = 0.0
-    best_cert       = None
-    best_method     = "yolo+ocr"
-    best_ocr_status = "none"
+    # ── Step 1+2: YOLO (batched) + OCR on every detected crop ───────────────
+    crops = detect_label_crops_batch(model, images)
 
-    # Batch all images through YOLO in a single GPU call
-    crop, conf, cls_name = best_label_crop_batch(model, images)
-    if crop is not None:
-        easy_cert, paddle_cert, ocr_status = run_ocr_both(crop)
+    model1_detected       = len(crops) > 0
+    cert_region_detected  = None   # None = not applicable (no Model 1 detection)
+    best_conf             = 0.0
+    best_cert             = None
+    best_ocr_status       = "none"
+    all_certs             = []
 
-        img_cert = None
-        if ocr_status == "both":
-            img_cert = easy_cert
-        elif ocr_status in ("easy_only", "paddle_only"):
-            img_cert = easy_cert or paddle_cert
+    for crop, conf, cls_name, cls_id in crops:
+        m2_found = False
+        if cert_model is not None:
+            crop, m2_found = extract_cert_subcrop(cert_model, crop)
+            # cert_region_detected = True if ANY crop yielded a Model 2 detection
+            if m2_found:
+                cert_region_detected = True
+            elif cert_region_detected is None:
+                cert_region_detected = False
 
-        best_conf       = conf
-        best_cert       = img_cert
-        best_ocr_status = ocr_status
+        # TAG/ACE: try QR code first, skip OCR
+        if cls_id == TAG_CLASS:
+            img_cert   = try_qr_on_crop(crop)
+            ocr_status = "qr" if img_cert else "none"
+        else:
+            easy_cert, paddle_cert, ocr_status = run_ocr_both(crop)
+            img_cert = None
+            if ocr_status == "both":
+                img_cert = easy_cert
+            elif ocr_status in ("easy_only", "paddle_only"):
+                img_cert = easy_cert or paddle_cert
 
-    route_result(item_id, best_cert, best_conf, best_method, best_ocr_status,
-                 meta, image_dir, progress, cert_db)
+        if img_cert and img_cert not in all_certs:
+            all_certs.append(img_cert)
+
+        # Best = highest-conf crop that yielded a cert; fall back to highest conf
+        if img_cert and (best_cert is None or conf > best_conf):
+            best_conf       = conf
+            best_cert       = img_cert
+            best_ocr_status = ocr_status
+        elif best_cert is None and conf > best_conf:
+            best_conf       = conf
+            best_ocr_status = ocr_status
+
+    route_result(item_id, best_cert, best_conf, "yolo+ocr", best_ocr_status,
+                 meta, image_dir, progress, cert_db, all_certs=all_certs,
+                 yolo_detected=model1_detected,
+                 cert_region_detected=cert_region_detected)
 
     folder = progress[item_id]["folder"]
     if verbose:
-        cert_str = best_cert or "none"
-        print(f"    {folder.upper():<16} cert={cert_str:<10} conf={best_conf:.2f}  ocr={best_ocr_status}")
+        cert_str  = best_cert or "none"
+        extra     = f"  +{len(all_certs)-1} more cert(s)" if len(all_certs) > 1 else ""
+        print(f"    {folder.upper():<16} cert={cert_str:<10} conf={best_conf:.2f}  ocr={best_ocr_status}{extra}")
     return folder
 
 
@@ -468,7 +564,7 @@ def print_summary(counts: dict, watch: bool = False):
         print(f"  To watch continuously:        python extract_certs.py --watch")
 
 
-def run_batch(item_ids: list[str], model, progress: dict, cert_db: dict,
+def run_batch(item_ids: list[str], model, cert_model, progress: dict, cert_db: dict,
               total_label: str = "") -> dict:
     """Process a list of item IDs and return per-folder counts."""
     counts = {"cert_extracted": 0, "ocr_success": 0, "verify_later": 0, "unextractable": 0}
@@ -478,7 +574,7 @@ def run_batch(item_ids: list[str], model, progress: dict, cert_db: dict,
         idx_label = f"[{i+1}/{len(item_ids)}{total_label}]"
         print(f"  {idx_label} {item_id}")
 
-        folder = process_item(item_id, image_dir, model, progress, cert_db)
+        folder = process_item(item_id, image_dir, model, cert_model, progress, cert_db)
         counts[folder] = counts.get(folder, 0) + 1
 
         if (i + 1) % 10 == 0:
@@ -517,9 +613,15 @@ def main():
         print(f"  Mode   : watch (polls every {WATCH_POLL_SECONDS}s — Ctrl+C to stop)")
     print()
 
-    print("  Loading YOLO model...")
+    print("  Loading YOLO models...")
     model = YOLO(str(MODEL_PATH))
     model.to("cuda")
+    cert_model = YOLO(str(CERT_MODEL_PATH)) if CERT_MODEL_PATH.exists() else None
+    if cert_model:
+        cert_model.to("cuda")
+        print(f"  Cert detector : {CERT_MODEL_PATH.name}")
+    else:
+        print(f"  Cert detector : NOT FOUND — running OCR on full label crop")
 
     print("  Warming up OCR engines...")
     dummy = np.zeros((100, 200, 3), dtype=np.uint8)
@@ -534,7 +636,7 @@ def main():
         for iid in item_ids:
             progress.pop(iid, None)
         print(f"  Re-checking {len(item_ids)} items from verify_later/\n")
-        counts = run_batch(item_ids, model, progress, cert_db)
+        counts = run_batch(item_ids, model, cert_model, progress, cert_db)
         print_summary(counts)
         return
 
@@ -548,7 +650,7 @@ def main():
                 item_ids = get_pending_item_ids(progress)
                 if item_ids:
                     print(f"  {len(item_ids)} new item(s) to process...\n")
-                    counts = run_batch(item_ids, model, progress, cert_db)
+                    counts = run_batch(item_ids, model, cert_model, progress, cert_db)
                     for k, v in counts.items():
                         total_counts[k] = total_counts.get(k, 0) + v
                     print_summary(total_counts, watch=True)
@@ -573,7 +675,7 @@ def main():
         print("  Nothing to do — all downloaded images already processed.\n")
         return
 
-    counts = run_batch(item_ids, model, progress, cert_db)
+    counts = run_batch(item_ids, model, cert_model, progress, cert_db)
     print_summary(counts)
 
 

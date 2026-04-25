@@ -27,7 +27,7 @@ MANIFEST_F  = BASE / 'data' / 'label_annotation' / 'manifest.json'
 MODEL_PATH  = BASE / 'models' / 'grading_labels.pt'
 
 CONF        = 0.25   # low threshold — we want to capture whatever the model sees
-CLASS_NAMES = {0: 'PSA', 1: 'CGC', 2: 'BGS', 3: 'ACE'}
+CLASS_NAMES = {0: 'PSA', 1: 'CGC', 2: 'BGS', 3: 'TAG'}
 
 def main():
     parser = argparse.ArgumentParser()
@@ -56,7 +56,8 @@ def main():
 
     counts  = {'PSA': 0, 'CGC': 0, 'BGS': 0, 'ACE': 0, 'OTHER': 0}
     total   = 0
-    cap     = args.limit or 999_999
+    # When targeting a single grader, cap = --limit if given, else --per-grader
+    cap     = args.limit if args.limit else (args.per_grader if args.grader else 999_999)
 
     print(f"\nAlready in manifest: {already}")
     print(f"Target: {args.per_grader} per grader\n")
@@ -85,7 +86,7 @@ def main():
             continue
 
         g_key = grader if grader in counts else 'OTHER'
-        if not args.grader and counts.get(g_key, 0) >= args.per_grader:
+        if counts.get(g_key, 0) >= args.per_grader:
             continue
 
         imgs = sorted(f for f in img_dir.iterdir()

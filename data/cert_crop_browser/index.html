@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cert Crop Browser</title>
+<style>
+  body { background:#0d1117; color:#e6edf3; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; margin:0; padding:16px; }
+  h1   { font-size:18px; margin-bottom:4px; }
+  .stats { color:#8b949e; font-size:13px; margin-bottom:16px; }
+  .stats b { color:#3fb950; }
+  .stats .bad { color:#f85149; }
+  .filters { margin-bottom:16px; display:flex; gap:10px; flex-wrap:wrap; }
+  .filters button { padding:6px 14px; border-radius:4px; border:1px solid #30363d;
+    background:#161b22; color:#8b949e; cursor:pointer; font-size:12px; }
+  .filters button.active { border-color:#58a6ff; color:#58a6ff; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:10px; }
+  .card { background:#161b22; border:2px solid #30363d; border-radius:6px;
+    padding:8px; display:flex; flex-direction:column; gap:4px; }
+  .card img { width:100%; height:130px; object-fit:contain; background:#050709; border-radius:3px; }
+  .cert { font-size:13px; font-weight:700; text-align:center; letter-spacing:.05em; }
+  .meta { font-size:11px; color:#8b949e; text-align:center; }
+  .name { font-size:11px; color:#8b949e; text-align:center; white-space:nowrap;
+    overflow:hidden; text-overflow:ellipsis; }
+  .warn { font-size:10px; color:#d29922; text-align:center; }
+  .hidden { display:none !important; }
+</style>
+</head>
+<body>
+<h1>Cert Crop Browser — 93 items</h1>
+<div class="stats">
+  <b>16 certs found</b> &nbsp;·&nbsp;
+  <span class="bad">77 failed</span> &nbsp;·&nbsp;
+  17% success rate
+</div>
+<div class="filters">
+  <button class="active" onclick="filter('all',this)">All (93)</button>
+  <button onclick="filter('found',this)">Found (16)</button>
+  <button onclick="filter('fail',this)">Failed (77)</button>
+</div>
+<div class="grid" id="grid">
+
+        <div class="card" style="border-color:#3fb950">
+          <img src="images/0003_CGC_136879308753.jpg" loading="lazy">
+          <div class="cert" style="color:#3fb950">0003992176</div>
+          <div class="meta">CGC · 92%</div>
+          <div class="name">Popplio</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0014_PSA_117067306016.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 89%</div>
+          <div class="name">Zapdos</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0022_PSA_137148618974.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 86%</div>
+          <div class="name">Lisia's Appeal</div>
+          
+        </div>
+        <div class="card" style="border-color:#3fb950">
+          <img src="images/0024_PSA_117127913259.jpg" loading="lazy">
+          <div class="cert" style="color:#3fb950">45692430</div>
+          <div class="meta">PSA · 94%</div>
+          <div class="name">Latias ex</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0030_PSA_117035554208.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 0%</div>
+          <div class="name">Oranguru</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0032_CGC_277692002765.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">CGC · 78%</div>
+          <div class="name">Mega Sableye & Tyranitar-GX</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0049_PSA_117118641929.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 94%</div>
+          <div class="name">Tropius</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0051_PSA_117131287205.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 95%</div>
+          <div class="name">Team Rocket's Giovanni</div>
+          
+        </div>
+        <div class="card" style="border-color:#3fb950">
+          <img src="images/0053_CGC_127727599473.jpg" loading="lazy">
+          <div class="cert" style="color:#3fb950">48738395</div>
+          <div class="meta">CGC · 94%</div>
+          <div class="name">Misty's Lapras</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0054_CGC_127727599524.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">CGC · 0%</div>
+          <div class="name">Blaziken</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0059_PSA_137072901310.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 86%</div>
+          <div class="name">Toxtricity</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0065_PSA_137024202821.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 95%</div>
+          <div class="name">Team Rocket's Giovanni</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0069_CGC_205128474529.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">CGC · 0%</div>
+          <div class="name">Tapu Koko ex</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0071_CGC_366342590675.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">CGC · 0%</div>
+          <div class="name">Clawitzer</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0076_CGC_205979620985.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">CGC · 90%</div>
+          <div class="name">Butterfree</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0077_PSA_117110620601.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 0%</div>
+          <div class="name">Carbink</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0084_PSA_127748859172.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 95%</div>
+          <div class="name">Alolan Exeggutor ex</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0103_PSA_127632940256.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 0%</div>
+          <div class="name">Mimikyu</div>
+          
+        </div>
+        <div class="card" style="border-color:#3fb950">
+          <img src="images/0107_CGC_376884164763.jpg" loading="lazy">
+          <div class="cert" style="color:#3fb950">6026563022</div>
+          <div class="meta">CGC · 91%</div>
+          <div class="name">Snorlax</div>
+          
+        </div>
+        <div class="card" style="border-color:#3fb950">
+          <img src="images/0113_PSA_127155745671.jpg" loading="lazy">
+          <div class="cert" style="color:#3fb950">1745049354</div>
+          <div class="meta">PSA · 94%</div>
+          <div class="name">Sandygast</div>
+          
+        </div>
+        <div class="card" style="border-color:#3fb950">
+          <img src="images/0127_PSA_116989519039.jpg" loading="lazy">
+          <div class="cert" style="color:#3fb950">6121902141</div>
+          <div class="meta">PSA · 90%</div>
+          <div class="name">Eevee</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0128_PSA_117127931432.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 95%</div>
+          <div class="name">Charcadet</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0129_PSA_137088789679.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 0%</div>
+          <div class="name">Latias ex</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0131_PSA_137040530545.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 95%</div>
+          <div class="name">Thundurus</div>
+          
+        </div>
+        <div class="card" style="border-color:#3fb950">
+          <img src="images/0147_CGC_116900062076.jpg" loading="lazy">
+          <div class="cert" style="color:#3fb950">6070001001</div>
+          <div class="meta">CGC · 91%</div>
+          <div class="name">Greninja-GX</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0159_PSA_127545154167.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 0%</div>
+          <div class="name">Miraidon ex</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0175_PSA_117122458537.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 87%</div>
+          <div class="name">Team Rocket's Spidops</div>
+          
+        </div>
+        <div class="card" style="border-color:#3fb950">
+          <img src="images/0184_PSA_117057635666.jpg" loading="lazy">
+          <div class="cert" style="color:#3fb950">6134567010</div>
+          <div class="meta">PSA · 92%</div>
+          <div class="name">Erika's Weepinbell</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0188_PSA_117152027334.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 95%</div>
+          <div class="name">Lilligant</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0195_PSA_117053544111.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 95%</div>
+          <div class="name">Unown [J]</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0196_PSA_136980193584.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 95%</div>
+          <div class="name">Misty's Psyduck</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0198_PSA_117017476130.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 94%</div>
+          <div class="name">Kingambit</div>
+          
+        </div>
+        <div class="card" style="border-color:#3fb950">
+          <img src="images/0208_CGC_168115875350.jpg" loading="lazy">
+          <div class="cert" style="color:#3fb950">6020935037</div>
+          <div class="meta">CGC · 93%</div>
+          <div class="name">Snorlax</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0211_PSA_204868538280.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 0%</div>
+          <div class="name">Jynx</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0217_PSA_117084266213.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 94%</div>
+          <div class="name">Spewpa</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0218_PSA_127275043316.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 95%</div>
+          <div class="name">Cyclizar</div>
+          
+        </div>
+        <div class="card" style="border-color:#3fb950">
+          <img src="images/0219_CGC_389666290376.jpg" loading="lazy">
+          <div class="cert" style="color:#3fb950">6111802013</div>
+          <div class="meta">CGC · 92%</div>
+          <div class="name">Toxtricity</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0222_PSA_188260772808.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 0%</div>
+          <div class="name">Armarouge ex</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0223_CGC_277742419827.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">CGC · 92%</div>
+          <div class="name">Mega Dragonite ex</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0226_PSA_137000417013.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 95%</div>
+          <div class="name">Tangrowth</div>
+          
+        </div>
+        <div class="card" style="border-color:#3fb950">
+          <img src="images/0233_CGC_117096447500.jpg" loading="lazy">
+          <div class="cert" style="color:#3fb950">6428735021</div>
+          <div class="meta">CGC · 91%</div>
+          <div class="name">Sneasel</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0235_PSA_117118557529.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 91%</div>
+          <div class="name">Great Tusk ex</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0247_PSA_116833605457.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 95%</div>
+          <div class="name">Golisopod</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0254_CGC_116971789924.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">CGC · 95%</div>
+          <div class="name">Ethan's Pinsir</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0258_PSA_116948317162.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 95%</div>
+          <div class="name">Applin</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0263_PSA_137105517483.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 94%</div>
+          <div class="name">Team Rocket's Giovanni</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0264_PSA_136936247951.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 0%</div>
+          <div class="name">Blaziken</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0266_PSA_117066955521.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 92%</div>
+          <div class="name">Cynthia's Roserade</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0274_BGS_137054735638.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">BGS · 93%</div>
+          <div class="name">Staravia</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0280_PSA_117078361599.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 0%</div>
+          <div class="name">Dialga</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0281_PSA_117090402264.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 95%</div>
+          <div class="name">Cacturne</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0285_CGC_287225840488.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">CGC · 95%</div>
+          <div class="name">Thundurus</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0287_CGC_376864723110.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">CGC · 0%</div>
+          <div class="name">Seadra</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0293_CGC_177843871307.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">CGC · 92%</div>
+          <div class="name">Meloetta</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0294_PSA_127703051046.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 95%</div>
+          <div class="name">Hydreigon ex</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0300_PSA_127641496713.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 94%</div>
+          <div class="name">Team Rocket's Murkrow</div>
+          
+        </div>
+        <div class="card" style="border-color:#3fb950">
+          <img src="images/0315_BGS_157833327205.jpg" loading="lazy">
+          <div class="cert" style="color:#3fb950">0016396206</div>
+          <div class="meta">BGS · 90%</div>
+          <div class="name">Snorlax</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0321_CGC_267587678971.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">CGC · 92%</div>
+          <div class="name">Charmander</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0329_PSA_127806756134.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 95%</div>
+          <div class="name">Eevee</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0331_CGC_366152437641.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">CGC · 95%</div>
+          <div class="name">Thundurus</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0341_PSA_117066956197.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 92%</div>
+          <div class="name">Breloom</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0351_PSA_137115102286.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 94%</div>
+          <div class="name">Thick Scale</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0352_PSA_117057885943.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 95%</div>
+          <div class="name">Cinderace ex</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0357_PSA_116605706347.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 95%</div>
+          <div class="name">Charizard</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0364_PSA_127704916344.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 0%</div>
+          <div class="name">Latias ex</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0370_CGC_376949994880.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">CGC · 95%</div>
+          <div class="name">Froslass ex</div>
+          
+        </div>
+        <div class="card" style="border-color:#3fb950">
+          <img src="images/0375_CGC_267560193200.jpg" loading="lazy">
+          <div class="cert" style="color:#3fb950">6096699006</div>
+          <div class="meta">CGC · 91%</div>
+          <div class="name">Tag Switch</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0378_PSA_306761521556.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 95%</div>
+          <div class="name">Sudowoodo</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0385_PSA_127472357937.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 95%</div>
+          <div class="name">Tyranitar</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0393_CGC_198028905359.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">CGC · 0%</div>
+          <div class="name">Maushold ex</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0394_PSA_116992506689.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 0%</div>
+          <div class="name">Armarouge ex</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0397_BGS_389873791605.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">BGS · 93%</div>
+          <div class="name">Mega Charizard Y ex</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0403_PSA_117122233642.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 0%</div>
+          <div class="name">Team Rocket's Tarountula</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0416_PSA_297998686698.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 95%</div>
+          <div class="name">Mew</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0417_BGS_116990827460.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">BGS · 0%</div>
+          <div class="name">Starmie</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0418_CGC_136925817242.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">CGC · 94%</div>
+          <div class="name">Pikachu ex</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0438_CGC_389679922386.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">CGC · 91%</div>
+          <div class="name">Meloetta</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0443_CGC_298047133563.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">CGC · 0%</div>
+          <div class="name">Dreepy</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0446_PSA_117054384719.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 95%</div>
+          <div class="name">Croconaw</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0448_PSA_137154148949.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 95%</div>
+          <div class="name">Clamperl</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0449_PSA_117021366876.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 95%</div>
+          <div class="name">Team Rocket's Mareep</div>
+          
+        </div>
+        <div class="card" style="border-color:#3fb950">
+          <img src="images/0462_CGC_116977014142.jpg" loading="lazy">
+          <div class="cert" style="color:#3fb950">6102033239</div>
+          <div class="meta">CGC · 91%</div>
+          <div class="name">Breloom</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0468_CGC_127727599500.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">CGC · 94%</div>
+          <div class="name">Shaymin</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0473_CGC_366206227601.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">CGC · 0%</div>
+          <div class="name">Butterfree</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0478_BGS_127647313677.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">BGS · 95%</div>
+          <div class="name">Rapidash</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0479_PSA_117078228022.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 0%</div>
+          <div class="name">Skarmory</div>
+          
+        </div>
+        <div class="card" style="border-color:#3fb950">
+          <img src="images/0481_BGS_117140764457.jpg" loading="lazy">
+          <div class="cert" style="color:#3fb950">0078956403</div>
+          <div class="meta">BGS · 92%</div>
+          <div class="name">Stantler</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0482_PSA_117022343872.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 95%</div>
+          <div class="name">Clobbopus</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0488_PSA_117141285625.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 94%</div>
+          <div class="name">Victini</div>
+          
+        </div>
+        <div class="card" style="border-color:#3fb950">
+          <img src="images/0489_CGC_117100046595.jpg" loading="lazy">
+          <div class="cert" style="color:#3fb950">6020690011</div>
+          <div class="meta">CGC · 91%</div>
+          <div class="name">Spewpa</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0492_PSA_127806222614.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 86%</div>
+          <div class="name">Lisia's Appeal</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0496_PSA_117036605600.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 95%</div>
+          <div class="name">Charcadet</div>
+          
+        </div>
+        <div class="card" style="border-color:#f85149">
+          <img src="images/0499_PSA_116982057642.jpg" loading="lazy">
+          <div class="cert" style="color:#f85149">NO CERT</div>
+          <div class="meta">PSA · 0%</div>
+          <div class="name">Sprigatito</div>
+          
+        </div>
+</div>
+<script>
+function filter(type, btn) {
+  document.querySelectorAll('.filters button').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.card').forEach(card => {
+    const cert  = card.querySelector('.cert').textContent;
+    const found = cert !== 'NO CERT';
+    if (type === 'all')   card.classList.remove('hidden');
+    if (type === 'found') card.classList.toggle('hidden', !found);
+    if (type === 'fail')  card.classList.toggle('hidden', found);
+  });
+}
+</script>
+</body>
+</html>

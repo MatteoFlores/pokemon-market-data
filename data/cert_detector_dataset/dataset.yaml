@@ -1,0 +1,6 @@
+path: F:/Programs/Pokemon Market Data/data/cert_detector_dataset
+train: train/images
+val:   valid/images
+
+nc: 4
+names: ['psa_cert', 'bgs_cert', 'cgc_cert', 'ace_qr']

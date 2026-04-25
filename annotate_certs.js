@@ -15,7 +15,7 @@
  *   P / 1    PSA cert number
  *   B / 2    BGS/Beckett cert number
  *   C / 3    CGC cert number
- *   A / 4    ACE QR code
+ *   A / 4    TAG QR code
  *   S / 0    Skip (no cert visible / bad crop)
  *   X / Del  Clear current box
  *   ← →     Navigate (without saving)
@@ -171,7 +171,7 @@ const HTML = `<!DOCTYPE html>
     <div class="flash flash-psa"  id="flash-psa">PSA</div>
     <div class="flash flash-bgs"  id="flash-bgs">BGS</div>
     <div class="flash flash-cgc"  id="flash-cgc">CGC</div>
-    <div class="flash flash-ace"  id="flash-ace">ACE</div>
+    <div class="flash flash-ace"  id="flash-ace">TAG</div>
     <div class="flash flash-skip" id="flash-skip">Skipped</div>
     <div class="hint-overlay">
       Draw box around cert number · then press class key
@@ -200,7 +200,7 @@ const HTML = `<!DOCTYPE html>
         <button class="btn btn-psa" onclick="annotate(0)">PSA <span class="key-hint">[P]</span></button>
         <button class="btn btn-bgs" onclick="annotate(1)">BGS <span class="key-hint">[B]</span></button>
         <button class="btn btn-cgc" onclick="annotate(2)">CGC <span class="key-hint">[C]</span></button>
-        <button class="btn btn-ace" onclick="annotate(3)">ACE <span class="key-hint">[A]</span></button>
+        <button class="btn btn-ace" onclick="annotate(3)">TAG <span class="key-hint">[A]</span></button>
       </div>
       <div class="btn-row">
         <button class="btn btn-skip"  style="flex:2" onclick="skip()">Skip — no cert [S]</button>
@@ -219,11 +219,11 @@ const HTML = `<!DOCTYPE html>
 <script>
 // ── State ─────────────────────────────────────────────────────────────────────
 
-const CLASSES = ['psa_cert', 'bgs_cert', 'cgc_cert', 'ace_qr'];
-const NAMES   = ['PSA', 'BGS', 'CGC', 'ACE'];
+const CLASSES = ['psa_cert', 'bgs_cert', 'cgc_cert', 'tag_qr'];
+const NAMES   = ['PSA', 'BGS', 'CGC', 'TAG'];
 const COLORS  = ['#58a6ff', '#bc8cff', '#d29922', '#3fb950'];
 const KEYS    = { p:'0', '1':'0', b:'1', '2':'1', c:'2', '3':'2', a:'3', '4':'3' };
-const GRADER_CLASS = { PSA: 0, BGS: 1, CGC: 2, ACE: 3 };
+const GRADER_CLASS = { PSA: 0, BGS: 1, CGC: 2, TAG: 3, TAG: 3 };
 
 let items = [];
 let idx   = 0;
@@ -626,5 +626,5 @@ server.listen(PORT, () => {
     }
   }
   console.log(`\n  Draw box → press class key to save`);
-  console.log(`  P=PSA  B=BGS  C=CGC  A=ACE  S=skip  X=clear\n`);
+  console.log(`  P=PSA  B=BGS  C=CGC  A=TAG  S=skip  X=clear\n`);
 });

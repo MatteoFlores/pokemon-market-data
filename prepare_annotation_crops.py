@@ -25,9 +25,9 @@ PROGRESS_F  = BASE / 'data' / 'cert_results' / '_progress.json'
 IMAGES_DIR  = BASE / 'data' / 'images'
 CROPS_DIR   = BASE / 'data' / 'annotation_crops' / 'images'
 MANIFEST_F  = BASE / 'data' / 'annotation_crops' / 'manifest.json'
-MODEL_PATH  = BASE / 'models' / 'grading_labels.pt'
+MODEL_PATH  = BASE / 'models' / 'grading_labels_v3.pt'
 
-CONF  = 0.50
+CONF  = 0.75
 PAD   = 0.06   # 6% padding around detected box
 
 CLASS_NAMES = {0: 'PSA', 1: 'CGC', 2: 'BGS', 3: 'ACE'}  # adjust to match your model

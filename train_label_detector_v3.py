@@ -34,7 +34,7 @@ MODELS_DIR  = BASE / 'models'
 
 VALID_SPLIT = 0.15
 SEED        = 42
-CLASSES     = ['PSA', 'CGC', 'BGS', 'ACE']
+CLASSES     = ['PSA', 'CGC', 'BGS', 'TAG']
 RUN_NAME    = 'grading_labels_v3'
 
 EPOCHS      = 150

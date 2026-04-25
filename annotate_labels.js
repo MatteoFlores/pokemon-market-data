@@ -11,7 +11,7 @@
  *   P / 1   PSA label
  *   C / 2   CGC label
  *   B / 3   BGS / Beckett label
- *   A / 4   ACE label
+ *   A / 4   TAG label
  *   S / 0   Skip (bad image / can't tell)
  *   X / Del Clear drawn box
  *   ← →    Navigate without saving
@@ -75,19 +75,22 @@ const HTML = `<!DOCTYPE html>
 <style>
   *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
   :root {
-    --bg:#0d1117; --surface:#161b22; --border:#30363d;
+    --bg:#0d1117; --surftag:#161b22; --border:#30363d;
     --text:#e6edf3; --muted:#8b949e;
-    --psa:#58a6ff; --cgc:#d29922; --bgs:#bc8cff; --ace:#3fb950;
+    --psa:#58a6ff; --cgc:#d29922; --bgs:#bc8cff; --tag:#3fb950;
     --wrong:#f85149;
   }
   body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; height:100vh; display:flex; flex-direction:column; overflow:hidden; }
 
-  .topbar { background:var(--surface); border-bottom:1px solid var(--border); padding:8px 20px; display:flex; align-items:center; gap:14px; flex-shrink:0; }
+  .topbar { background:var(--surftag); border-bottom:1px solid var(--border); padding:8px 20px; display:flex; align-items:center; gap:14px; flex-shrink:0; }
   .topbar h1 { font-size:14px; font-weight:600; }
   .pos b { color:var(--text); }
   .pos  { color:var(--muted); font-size:13px; }
   .tally { margin-left:auto; display:flex; gap:16px; font-size:12px; color:var(--muted); }
   .tally b { color:var(--text); }
+  .review-btn { padding:4px 12px; border-radius:4px; border:1px solid var(--border); background:transparent;
+    color:var(--muted); font-size:12px; cursor:pointer; }
+  .review-btn.active { border-color:#d29922; background:#1e1600; color:#d29922; font-weight:700; }
 
   .main { display:flex; flex:1; overflow:hidden; }
 
@@ -96,7 +99,7 @@ const HTML = `<!DOCTYPE html>
 
   .legend { position:absolute; bottom:10px; left:50%; transform:translateX(-50%);
     display:flex; gap:16px; background:rgba(0,0,0,.75); padding:6px 18px;
-    border-radius:4px; font-size:12px; white-space:nowrap; pointer-events:none; }
+    border-radius:4px; font-size:12px; white-sptag:nowrap; pointer-events:none; }
   .legend-item { display:flex; align-items:center; gap:5px; color:var(--muted); }
   .swatch { width:18px; height:3px; border-radius:2px; }
   .swatch-wrong  { background:var(--wrong); opacity:.7; border-top:2px dashed var(--wrong); }
@@ -104,7 +107,7 @@ const HTML = `<!DOCTYPE html>
 
   .hint-bar { position:absolute; top:10px; left:50%; transform:translateX(-50%);
     background:rgba(0,0,0,.75); padding:4px 16px; border-radius:4px;
-    font-size:12px; color:var(--muted); white-space:nowrap; pointer-events:none; }
+    font-size:12px; color:var(--muted); white-sptag:nowrap; pointer-events:none; }
   .hint-bar b { color:var(--text); }
 
   .flash { position:absolute; top:10px; left:12px; padding:4px 14px; border-radius:4px;
@@ -112,8 +115,8 @@ const HTML = `<!DOCTYPE html>
   .flash-psa  { background:#0d1e33; border:1px solid var(--psa);  color:var(--psa); }
   .flash-cgc  { background:#1e1600; border:1px solid var(--cgc);  color:var(--cgc); }
   .flash-bgs  { background:#1a0d33; border:1px solid var(--bgs);  color:var(--bgs); }
-  .flash-ace  { background:#0d2414; border:1px solid var(--ace);  color:var(--ace); }
-  .flash-skip { background:var(--surface); border:1px solid var(--border); color:var(--muted); }
+  .flash-tag  { background:#0d2414; border:1px solid var(--tag);  color:var(--tag); }
+  .flash-skip { background:var(--surftag); border:1px solid var(--border); color:var(--muted); }
 
   .side-panel { width:260px; flex-shrink:0; border-left:1px solid var(--border); display:flex; flex-direction:column; }
   .side-body   { flex:1; padding:16px; overflow-y:auto; }
@@ -123,14 +126,14 @@ const HTML = `<!DOCTYPE html>
   .psa-color { color:var(--psa); }
   .cgc-color { color:var(--cgc); }
   .bgs-color { color:var(--bgs); }
-  .ace-color { color:var(--ace); }
+  .tag-color { color:var(--tag); }
   .wrong-color { color:var(--wrong); }
 
   .predicted-box { background:#1a0000; border:1px solid #f8514940; border-radius:4px;
     padding:8px 10px; margin-bottom:12px; font-size:12px; color:var(--muted); }
   .predicted-box b { color:var(--wrong); }
 
-  .actions { border-top:1px solid var(--border); padding:12px; background:var(--surface); }
+  .actions { border-top:1px solid var(--border); padding:12px; background:var(--surftag); }
   .btn-grid { display:grid; grid-template-columns:1fr 1fr; gap:6px; margin-bottom:6px; }
   .btn { padding:10px 6px; border-radius:5px; border:1px solid; font-size:12px; font-weight:700;
          cursor:pointer; text-align:center; }
@@ -138,7 +141,7 @@ const HTML = `<!DOCTYPE html>
   .btn-psa  { border-color:var(--psa);    background:#0d1e33; color:var(--psa); }
   .btn-cgc  { border-color:var(--cgc);    background:#1e1600; color:var(--cgc); }
   .btn-bgs  { border-color:var(--bgs);    background:#1a0d33; color:var(--bgs); }
-  .btn-ace  { border-color:var(--ace);    background:#0d2414; color:var(--ace); }
+  .btn-tag  { border-color:var(--tag);    background:#0d2414; color:var(--tag); }
   .btn-skip { border-color:var(--border); background:transparent; color:var(--muted); font-size:11px; }
   .btn-clear{ border-color:var(--border); background:transparent; color:var(--muted); font-size:11px; }
   .btn-row  { display:flex; gap:6px; }
@@ -164,6 +167,7 @@ const HTML = `<!DOCTYPE html>
     <span>Skipped: <b id="cnt-skipped">0</b></span>
     <span>Left: <b id="cnt-remaining">0</b></span>
   </div>
+  <button class="review-btn" id="review-btn" onclick="toggleReviewMode()" title="R">Review Annotated [R]</button>
 </div>
 <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
 
@@ -174,12 +178,12 @@ const HTML = `<!DOCTYPE html>
     <div class="flash flash-psa"  id="flash-psa">PSA</div>
     <div class="flash flash-cgc"  id="flash-cgc">CGC</div>
     <div class="flash flash-bgs"  id="flash-bgs">BGS</div>
-    <div class="flash flash-ace"  id="flash-ace">ACE</div>
+    <div class="flash flash-tag"  id="flash-tag">TAG</div>
     <div class="flash flash-skip" id="flash-skip">Skipped</div>
 
     <div class="hint-bar">
       <b>Enter</b>=confirm model box &nbsp;·&nbsp; or draw your own, then press class key &nbsp;·&nbsp;
-      <b>P</b>=PSA &nbsp;<b>C</b>=CGC &nbsp;<b>B</b>=BGS &nbsp;<b>A</b>=ACE &nbsp;
+      <b>P</b>=PSA &nbsp;<b>C</b>=CGC &nbsp;<b>B</b>=BGS &nbsp;<b>A</b>=TAG &nbsp;
       <b>S</b>=skip &nbsp;<b>X</b>=clear &nbsp;<b>Ctrl+Z</b>=undo &nbsp;<b>← →</b>=navigate
     </div>
 
@@ -212,7 +216,7 @@ const HTML = `<!DOCTYPE html>
         <button class="btn btn-psa" onclick="annotate(0)">PSA <span class="key">[P]</span></button>
         <button class="btn btn-cgc" onclick="annotate(1)">CGC <span class="key">[C]</span></button>
         <button class="btn btn-bgs" onclick="annotate(2)">BGS <span class="key">[B]</span></button>
-        <button class="btn btn-ace" onclick="annotate(3)">ACE <span class="key">[A]</span></button>
+        <button class="btn btn-tag" onclick="annotate(3)">TAG <span class="key">[A]</span></button>
       </div>
       <div class="btn-row">
         <button class="btn btn-skip"  style="flex:2" onclick="skip()">Skip [S]</button>
@@ -229,16 +233,17 @@ const HTML = `<!DOCTYPE html>
 </div>
 
 <script>
-const NAMES  = ['PSA', 'CGC', 'BGS', 'ACE'];
+const NAMES  = ['PSA', 'CGC', 'BGS', 'TAG'];
 const COLORS = ['#58a6ff', '#d29922', '#bc8cff', '#3fb950'];
 const KEY_MAP = { p:'0','1':'0', c:'1','2':'1', b:'2','3':'2', a:'3','4':'3' };
-const GRADER_CLS = { PSA:0, CGC:1, BGS:2, ACE:3 };
+const GRADER_CLS = { PSA:0, CGC:1, BGS:2, TAG:3 };
 
 let items = [], idx = 0, item = null;
 let imgEl = new Image(), imgW=0, imgH=0, dispW=0, dispH=0, offX=0, offY=0;
 let drawing=false, dragSX=0, dragSY=0, box=null, busy=false;
 let confirmedBoxes = [];  // [{class, cx, cy, w, h}] pending save for current image
 let undoStack = [];       // [{name, idx, wasAnnotated, wasSkipped, prevAnnotations}]
+let reviewMode = false;
 
 const canvas = document.getElementById('canvas');
 const ctx    = canvas.getContext('2d');
@@ -350,7 +355,13 @@ function loadItem() {
   };
   imgEl.src = '/img/' + encodeURIComponent(item.name);
 
-  document.getElementById('pos').textContent = idx + 1;
+  if (reviewMode) {
+    const annotatedItems = items.filter(i => i.annotated);
+    const reviewPos = annotatedItems.indexOf(item) + 1;
+    document.getElementById('pos').textContent = reviewPos + ' of ' + annotatedItems.length + ' annotated';
+  } else {
+    document.getElementById('pos').textContent = idx + 1;
+  }
 
   const g = (item.grader || '').toUpperCase();
   const graderEl = document.getElementById('info-grader');
@@ -409,7 +420,7 @@ function annotate(classId) {
   const cx=(box.x1+box.x2)/2, cy=(box.y1+box.y2)/2, w=box.x2-box.x1, h=box.y2-box.y1;
   confirmedBoxes.push({ class:classId, cx, cy, w, h, x1:box.x1, y1:box.y1, x2:box.x2, y2:box.y2 });
   box = null;
-  showFlash(['psa','cgc','bgs','ace'][classId]);
+  showFlash(['psa','cgc','bgs','tag'][classId]);
   updateBoxStatus();
   redraw();
 }
@@ -455,11 +466,35 @@ function clearBox() {
 
 function advance() {
   updateTally();
+  if (reviewMode) {
+    const next = items.findIndex((it,i) => i > idx && it.annotated);
+    if (next >= 0) { idx = next; loadItem(); }
+    else { idx = items.findIndex(i => i.annotated); if (idx < 0) idx = 0; loadItem(); }
+    return;
+  }
   const next = items.findIndex((it,i) => i > idx && !it.annotated && !it.skipped);
   if (next >= 0)              { idx = next; }
   else if (idx < items.length-1) { idx++; }
   else { showDone(); return; }
   loadItem();
+}
+
+function toggleReviewMode() {
+  reviewMode = !reviewMode;
+  const btn = document.getElementById('review-btn');
+  btn.classList.toggle('active', reviewMode);
+  const hintBar = document.querySelector('.hint-bar');
+  if (reviewMode) {
+    hintBar.innerHTML = '<b>REVIEW MODE</b> — ← → to navigate · re-draw box + class key to fix · <b>Enter</b>=save · <b>S</b>=skip · <b>R</b>=exit review';
+    // Jump to first annotated item
+    const first = items.findIndex(i => i.annotated);
+    if (first >= 0) { idx = first; loadItem(); }
+  } else {
+    hintBar.innerHTML = '<b>Enter</b>=confirm model box &nbsp;·&nbsp; or draw your own, then press class key &nbsp;·&nbsp; <b>P</b>=PSA &nbsp;<b>C</b>=CGC &nbsp;<b>B</b>=BGS &nbsp;<b>A</b>=TAG &nbsp;<b>S</b>=skip &nbsp;<b>X</b>=clear &nbsp;<b>Ctrl+Z</b>=undo &nbsp;<b>← →</b>=navigate';
+    // Jump to first unannotated item
+    const first = items.findIndex(i => !i.annotated && !i.skipped);
+    if (first >= 0) { idx = first; loadItem(); }
+  }
 }
 
 async function undoLast() {
@@ -542,12 +577,24 @@ document.addEventListener('keydown', e => {
   if (e.ctrlKey && e.key === 'z') { e.preventDefault(); undoLast(); return; }
   if (busy) return;
   const k = e.key.toLowerCase();
+  if (k === 'r')                  { toggleReviewMode(); return; }
   if (e.key === 'Enter')          saveAndAdvance();
   if (k in KEY_MAP)               annotate(parseInt(KEY_MAP[k]));
   if (k==='s'||k==='0')           skip();
   if (k==='x'||k==='delete')      clearBox();
-  if (k==='arrowright' && idx<items.length-1) { idx++; loadItem(); }
-  if (k==='arrowleft'  && idx>0)              { idx--; loadItem(); }
+  if (k==='arrowright') {
+    if (reviewMode) {
+      const next = items.findIndex((it,i) => i > idx && it.annotated);
+      if (next >= 0) { idx = next; loadItem(); }
+    } else if (idx < items.length-1) { idx++; loadItem(); }
+  }
+  if (k==='arrowleft') {
+    if (reviewMode) {
+      let prev = -1;
+      for (let i = idx-1; i >= 0; i--) { if (items[i].annotated) { prev=i; break; } }
+      if (prev >= 0) { idx = prev; loadItem(); }
+    } else if (idx > 0) { idx--; loadItem(); }
+  }
 });
 
 async function init() {
@@ -599,7 +646,7 @@ const server = http.createServer((req, res) => {
         const { name, boxes } = JSON.parse(body);
         if (!name || !Array.isArray(boxes) || boxes.length === 0) throw new Error('bad params');
 
-        const labelName  = name.replace(/\.[^.]+$/, '.txt');
+        const labelName  = name.repltag(/\.[^.]+$/, '.txt');
         const yoloLines  = boxes.map(b =>
           b.class + ' ' + b.cx.toFixed(6) + ' ' + b.cy.toFixed(6) + ' ' + b.w.toFixed(6) + ' ' + b.h.toFixed(6)
         );
@@ -655,7 +702,7 @@ const server = http.createServer((req, res) => {
           saveManifest(manifest);
         }
         // Delete label file if it exists
-        const labelPath = path.join(LABELS_DIR, name.replace(/\.[^.]+$/, '.txt'));
+        const labelPath = path.join(LABELS_DIR, name.repltag(/\.[^.]+$/, '.txt'));
         if (fs.existsSync(labelPath)) fs.unlinkSync(labelPath);
         res.writeHead(200, { 'Content-Type': 'application/json' });
         res.end(JSON.stringify({ ok: true }));
@@ -692,5 +739,5 @@ server.listen(PORT, () => {
   }
   console.log('\n  Red dashed box = what current model detects (wrong)');
   console.log('  Draw the correct box around the label at the TOP of the slab');
-  console.log('  P=PSA  C=CGC  B=BGS  A=ACE  S=skip\n');
+  console.log('  P=PSA  C=CGC  B=BGS  A=TAG  S=skip\n');
 });
