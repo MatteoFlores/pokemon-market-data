@@ -4,7 +4,7 @@
 Pokemon Market Data is a comprehensive data collection and analysis system that scrapes Pokemon trading card prices and sales data from eBay and TCGPlayer. It uses web scraping, image processing, and machine learning to extract card information, grading certificates, and market pricing trends across multiple Pokemon card sets spanning from Base Set to recent releases.
 
 ## Session Summary
-Implemented a distributed scraping coordinator using Google Sheets as a lightweight task queue system, enabling multiple scrapers to run simultaneously without claiming the same set. Updated configuration to support Google Sheets integration with credential-based authentication. This infrastructure enables scalable, coordinated data collection across the Pokemon card catalog.
+Implemented a comprehensive evaluation framework for the certificate extraction pipeline with `eval/measure_accuracy.py`. This tool measures extraction rate, exact-match accuracy, per-digit accuracy, and generates confusion matrices to identify which digit pairs are commonly misclassified. The evaluation system compares predictions against hand-labeled test sets, enabling quantitative assessment and targeted improvement of OCR accuracy.
 
 ## Features Registry
 - eBay sold listings scraper with set-based organization (base1 through me3 sets)
@@ -17,6 +17,7 @@ Implemented a distributed scraping coordinator using Google Sheets as a lightwei
 - Unmatched sets tracking and error handling across scraping operations
 - Distributed scraping coordinator using Google Sheets for task queue management
 - Multi-scraper synchronization with claim tracking and stale claim detection
+- Certificate extraction accuracy evaluation framework with confusion matrix analysis
 
 ## Completed
 - [x] eBay sold listings scraper with set-based organization (base1 through me3 sets)
@@ -29,6 +30,7 @@ Implemented a distributed scraping coordinator using Google Sheets as a lightwei
 - [x] Unmatched sets tracking and error handling across scraping operations
 - [x] Distributed scraping coordinator using Google Sheets for task queue management
 - [x] Multi-scraper synchronization with claim tracking and stale claim detection
+- [x] Certificate extraction accuracy evaluation framework with confusion matrix analysis
 
 ## In Progress
 - [ ] Certificate OCR accuracy improvement and digit extraction refinement

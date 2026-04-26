@@ -168,6 +168,7 @@ const HTML = `<!DOCTYPE html>
     <span>Left: <b id="cnt-remaining">0</b></span>
   </div>
   <button class="review-btn" id="review-btn" onclick="toggleReviewMode()" title="R">Review Annotated [R]</button>
+  <span id="user-count" style="font-size:12px;color:#8b949e;white-space:nowrap;">1 user</span>
 </div>
 <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
 
@@ -239,6 +240,26 @@ const KEY_MAP = { p:'0','1':'0', c:'1','2':'1', b:'2','3':'2', a:'3','4':'3' };
 const GRADER_CLS = { PSA:0, CGC:1, BGS:2, TAG:3 };
 
 let items = [], idx = 0, item = null;
+const _clientId = Math.random().toString(36).slice(2);
+const _claimed  = new Set(); // names currently being worked on by OTHER clients
+const _es = new EventSource('/api/events');
+_es.onmessage = e => {
+  const ev = JSON.parse(e.data);
+  if (ev.type === 'users') {
+    const el = document.getElementById('user-count');
+    if (el) el.textContent = ev.count + (ev.count === 1 ? ' user' : ' users');
+  }
+  if (ev.type === 'claimed' && ev.clientId !== _clientId) {
+    if (ev.name) _claimed.add(ev.name); else _claimed.clear();
+  }
+  if (ev.type === 'saved') {
+    const it = items.find(i => i.name === ev.name);
+    if (it) { it.annotated = ev.annotated; it.skipped = ev.skipped; }
+    _claimed.delete(ev.name);
+    updateTally();
+    if (item && item.name === ev.name && !reviewMode) advance();
+  }
+};
 let imgEl = new Image(), imgW=0, imgH=0, dispW=0, dispH=0, offX=0, offY=0;
 let drawing=false, dragSX=0, dragSY=0, box=null, busy=false;
 let confirmedBoxes = [];  // [{class, cx, cy, w, h}] pending save for current image
@@ -346,6 +367,8 @@ function currentClass() {
 
 function loadItem() {
   item           = items[idx];
+  fetch('/api/claim', { method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({ name: item.name, clientId: _clientId }) }).catch(()=>{});
   box            = null;
   confirmedBoxes = item.annotations ? item.annotations.map(a => ({ ...a, x1:a.cx-a.w/2, y1:a.cy-a.h/2, x2:a.cx+a.w/2, y2:a.cy+a.h/2 })) : [];
   imgEl  = new Image();
@@ -472,7 +495,7 @@ function advance() {
     else { idx = items.findIndex(i => i.annotated); if (idx < 0) idx = 0; loadItem(); }
     return;
   }
-  const next = items.findIndex((it,i) => i > idx && !it.annotated && !it.skipped);
+  const next = items.findIndex((it,i) => i > idx && !it.annotated && !it.skipped && !_claimed.has(it.name));
   if (next >= 0)              { idx = next; }
   else if (idx < items.length-1) { idx++; }
   else { showDone(); return; }
@@ -616,6 +639,16 @@ init();
 </body>
 </html>`;
 
+// ── Live sync ─────────────────────────────────────────────────────────────────
+
+const sseClients = new Set();
+const claimed    = new Map(); // name → { clientId, ts }
+
+function broadcast(data) {
+  const msg = 'data: ' + JSON.stringify(data) + '\n\n';
+  for (const c of sseClients) { try { c.write(msg); } catch { sseClients.delete(c); } }
+}
+
 // ── Server ────────────────────────────────────────────────────────────────────
 
 const server = http.createServer((req, res) => {
@@ -646,7 +679,7 @@ const server = http.createServer((req, res) => {
         const { name, boxes } = JSON.parse(body);
         if (!name || !Array.isArray(boxes) || boxes.length === 0) throw new Error('bad params');
 
-        const labelName  = name.repltag(/\.[^.]+$/, '.txt');
+        const labelName  = name.replace(/\.[^.]+$/, '.txt');
         const yoloLines  = boxes.map(b =>
           b.class + ' ' + b.cx.toFixed(6) + ' ' + b.cy.toFixed(6) + ' ' + b.w.toFixed(6) + ' ' + b.h.toFixed(6)
         );
@@ -658,6 +691,7 @@ const server = http.createServer((req, res) => {
           manifest[name].skipped     = false;
           manifest[name].annotations = boxes;
           saveManifest(manifest);
+          broadcast({ type: 'saved', name, annotated: true, skipped: false });
         }
 
         res.writeHead(200, { 'Content-Type': 'application/json' });
@@ -677,7 +711,7 @@ const server = http.createServer((req, res) => {
       try {
         const { name } = JSON.parse(body);
         const manifest = loadManifest();
-        if (manifest[name]) { manifest[name].skipped=true; manifest[name].annotated=false; saveManifest(manifest); }
+        if (manifest[name]) { manifest[name].skipped=true; manifest[name].annotated=false; saveManifest(manifest); broadcast({ type:'saved', name, annotated:false, skipped:true }); }
         res.writeHead(200, { 'Content-Type': 'application/json' });
         res.end(JSON.stringify({ ok: true }));
       } catch (e) {
@@ -700,9 +734,10 @@ const server = http.createServer((req, res) => {
           manifest[name].skipped     = false;
           delete manifest[name].annotations;
           saveManifest(manifest);
+          broadcast({ type: 'saved', name, annotated: false, skipped: false });
         }
         // Delete label file if it exists
-        const labelPath = path.join(LABELS_DIR, name.repltag(/\.[^.]+$/, '.txt'));
+        const labelPath = path.join(LABELS_DIR, name.replace(/\.[^.]+$/, '.txt'));
         if (fs.existsSync(labelPath)) fs.unlinkSync(labelPath);
         res.writeHead(200, { 'Content-Type': 'application/json' });
         res.end(JSON.stringify({ ok: true }));
@@ -725,12 +760,43 @@ const server = http.createServer((req, res) => {
     return;
   }
 
+  if (req.url === '/api/events') {
+    res.writeHead(200, { 'Content-Type': 'text/event-stream', 'Cache-Control': 'no-cache', 'Connection': 'keep-alive' });
+    res.write('data: ' + JSON.stringify({ type: 'users', count: sseClients.size + 1 }) + '\n\n');
+    sseClients.add(res);
+    broadcast({ type: 'users', count: sseClients.size });
+    req.on('close', () => { sseClients.delete(res); broadcast({ type: 'users', count: sseClients.size }); });
+    return;
+  }
+
+  if (req.url === '/api/claim' && req.method === 'POST') {
+    let body = '';
+    req.on('data', c => body += c);
+    req.on('end', () => {
+      try {
+        const { name, clientId } = JSON.parse(body);
+        for (const [k, v] of claimed) if (v.clientId === clientId) claimed.delete(k);
+        if (name) claimed.set(name, { clientId, ts: Date.now() });
+        broadcast({ type: 'claimed', name, clientId });
+        res.writeHead(200, { 'Content-Type': 'application/json' }); res.end(JSON.stringify({ ok: true }));
+      } catch (e) { res.writeHead(400); res.end(String(e)); }
+    });
+    return;
+  }
+
   res.writeHead(404); res.end();
 });
 
-server.listen(PORT, () => {
+server.listen(PORT, '0.0.0.0', () => {
+  const os   = require('os');
+  const nets = os.networkInterfaces();
+  const ips  = [];
+  for (const iface of Object.values(nets))
+    for (const n of iface) if (n.family === 'IPv4' && !n.internal) ips.push(n.address);
   const stats = getStats();
-  console.log('\nLabel annotation tool at http://localhost:' + PORT);
+  console.log('\nLabel annotation tool');
+  console.log('  This machine : http://localhost:' + PORT);
+  for (const ip of ips) console.log('  LAN          : http://' + ip + ':' + PORT);
   console.log('  ' + stats.total + ' images  |  ' + stats.annotated + ' annotated  |  ' + (stats.total - stats.annotated - stats.skipped) + ' remaining');
   if (stats.byGrader) {
     for (const [g, s] of Object.entries(stats.byGrader)) {

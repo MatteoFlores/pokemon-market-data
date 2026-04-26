@@ -117,12 +117,23 @@ const server = http.createServer((req, res) => {
   res.writeHead(404); res.end('not found');
 });
 
-server.listen(PORT, () => {
+server.listen(PORT, '0.0.0.0', () => {
+  const os = require('os');
+  const nets = os.networkInterfaces();
+  const ips = [];
+  for (const iface of Object.values(nets)) {
+    for (const n of iface) {
+      if (n.family === 'IPv4' && !n.internal) ips.push(n.address);
+    }
+  }
+
   const m = loadManifest();
   const total   = Object.keys(m).length;
   const labeled = Object.values(m).filter(v => v.trueCert || v.skipped).length;
-  console.log(`\nCert Labeling Tool  →  http://localhost:${PORT}`);
-  console.log(`  Total crops : ${total}`);
+  console.log(`\nCert Labeling Tool`);
+  console.log(`  This machine : http://localhost:${PORT}`);
+  for (const ip of ips) console.log(`  LAN          : http://${ip}:${PORT}`);
+  console.log(`\n  Total crops : ${total}`);
   console.log(`  Labeled     : ${labeled}`);
   console.log(`  Remaining   : ${total - labeled}`);
   console.log(`\nControls: type cert + Enter  |  S = skip  |  ← back\n`);
@@ -221,9 +232,9 @@ button { flex: 1; padding: 10px; border: none; border-radius: 6px; cursor: point
     </div>
     <hr style="border-color:#333">
     <div class="info-row">
-      <span class="info-label">Type cert number (Enter to save)</span>
+      <span class="info-label">Type cert number — exactly what you see (Enter to save)</span>
       <input id="cert-input" type="text" placeholder="e.g. 12345678"
-             maxlength="12" autocomplete="off" spellcheck="false">
+             maxlength="13" autocomplete="off" spellcheck="false">
     </div>
     <div id="btn-row">
       <button id="btn-save">Save (Enter)</button>
@@ -284,9 +295,9 @@ async function saveLabel(skipped) {
   const inp  = document.getElementById('cert-input');
   const raw  = inp.value.trim().replace(/\\s+/g,'');
 
-  if (!skipped && !/^\\d{8}$|^\\d{10}$/.test(raw)) {
+  if (!skipped && !/^\\d{6,13}$/.test(raw)) {
     inp.classList.add('bad');
-    flash('Need exactly 8 or 10 digits', 'err');
+    flash('Need digits only (6–13 digits)', 'err');
     return;
   }
   inp.classList.remove('bad');

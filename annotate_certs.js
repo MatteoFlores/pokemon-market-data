@@ -158,6 +158,7 @@ const HTML = `<!DOCTYPE html>
   <h1>Annotate Cert Numbers</h1>
   <div class="pos">Item <b id="pos">—</b> / <b id="total">—</b></div>
   <div class="tally">
+  <span id="user-count" style="font-size:12px;color:#8b949e;white-space:nowrap;">1 user</span>
     <span>Annotated: <b id="cnt-annotated">0</b></span>
     <span>Skipped: <b id="cnt-skipped">0</b></span>
     <span>Remaining: <b id="cnt-remaining">0</b></span>
@@ -228,6 +229,26 @@ const GRADER_CLASS = { PSA: 0, BGS: 1, CGC: 2, TAG: 3, TAG: 3 };
 let items = [];
 let idx   = 0;
 let item  = null;
+const _clientId = Math.random().toString(36).slice(2);
+const _claimed  = new Set();
+const _es = new EventSource('/api/events');
+_es.onmessage = e => {
+  const ev = JSON.parse(e.data);
+  if (ev.type === 'users') {
+    const el = document.getElementById('user-count');
+    if (el) el.textContent = ev.count + (ev.count === 1 ? ' user' : ' users');
+  }
+  if (ev.type === 'claimed' && ev.clientId !== _clientId) {
+    if (ev.name) _claimed.add(ev.name); else _claimed.clear();
+  }
+  if (ev.type === 'saved') {
+    const it = items.find(i => i.name === ev.name);
+    if (it) { it.annotated = ev.annotated; it.skipped = ev.skipped; }
+    _claimed.delete(ev.name);
+    updateTally();
+    if (item && item.name === ev.name) advance();
+  }
+};
 
 // Canvas
 const canvas = document.getElementById('canvas');
@@ -334,7 +355,9 @@ canvas.addEventListener('mouseup', () => {
 // ── Item loading ──────────────────────────────────────────────────────────────
 
 function loadItem() {
-  item   = items[idx];
+  item = items[idx];
+  fetch('/api/claim', { method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({ name: item.name, clientId: _clientId }) }).catch(()=>{});
   box    = item.annotation ? annToBox(item.annotation) : null;
   imgEl  = new Image();
   imgEl.onload = () => {
@@ -438,7 +461,7 @@ function clearBox() {
 
 function advance() {
   updateTally();
-  const next = items.findIndex((it, i) => i > idx && !it.annotated && !it.skipped);
+  const next = items.findIndex((it, i) => i > idx && !it.annotated && !it.skipped && !_claimed.has(it.name));
   if (next >= 0) {
     idx = next;
   } else if (idx < items.length - 1) {
@@ -523,6 +546,16 @@ init();
 </body>
 </html>`;
 
+// ── Live sync ─────────────────────────────────────────────────────────────────
+
+const sseClients = new Set();
+const claimed    = new Map();
+
+function broadcast(data) {
+  const msg = 'data: ' + JSON.stringify(data) + '\n\n';
+  for (const c of sseClients) { try { c.write(msg); } catch { sseClients.delete(c); } }
+}
+
 // ── Server ────────────────────────────────────────────────────────────────────
 
 const server = http.createServer((req, res) => {
@@ -566,6 +599,7 @@ const server = http.createServer((req, res) => {
           manifest[name].skipped    = false;
           manifest[name].annotation = { class: cls, cx, cy, w, h };
           saveManifest(manifest);
+          broadcast({ type: 'saved', name, annotated: true, skipped: false });
         }
 
         res.writeHead(200, { 'Content-Type': 'application/json' });
@@ -589,6 +623,7 @@ const server = http.createServer((req, res) => {
           manifest[name].skipped    = true;
           manifest[name].annotated  = false;
           saveManifest(manifest);
+          broadcast({ type: 'saved', name, annotated: false, skipped: true });
         }
         res.writeHead(200, { 'Content-Type': 'application/json' });
         res.end(JSON.stringify({ ok: true }));
@@ -612,12 +647,43 @@ const server = http.createServer((req, res) => {
     return;
   }
 
+  if (req.url === '/api/events') {
+    res.writeHead(200, { 'Content-Type': 'text/event-stream', 'Cache-Control': 'no-cache', 'Connection': 'keep-alive' });
+    res.write('data: ' + JSON.stringify({ type: 'users', count: sseClients.size + 1 }) + '\n\n');
+    sseClients.add(res);
+    broadcast({ type: 'users', count: sseClients.size });
+    req.on('close', () => { sseClients.delete(res); broadcast({ type: 'users', count: sseClients.size }); });
+    return;
+  }
+
+  if (req.url === '/api/claim' && req.method === 'POST') {
+    let body = '';
+    req.on('data', c => body += c);
+    req.on('end', () => {
+      try {
+        const { name, clientId } = JSON.parse(body);
+        for (const [k, v] of claimed) if (v.clientId === clientId) claimed.delete(k);
+        if (name) claimed.set(name, { clientId, ts: Date.now() });
+        broadcast({ type: 'claimed', name, clientId });
+        res.writeHead(200, { 'Content-Type': 'application/json' }); res.end(JSON.stringify({ ok: true }));
+      } catch (e) { res.writeHead(400); res.end(String(e)); }
+    });
+    return;
+  }
+
   res.writeHead(404); res.end();
 });
 
-server.listen(PORT, () => {
+server.listen(PORT, '0.0.0.0', () => {
+  const os   = require('os');
+  const nets = os.networkInterfaces();
+  const ips  = [];
+  for (const iface of Object.values(nets))
+    for (const n of iface) if (n.family === 'IPv4' && !n.internal) ips.push(n.address);
   const stats = getStats();
-  console.log(`\nCert annotation tool at http://localhost:${PORT}`);
+  console.log(`\nCert annotation tool`);
+  console.log(`  This machine : http://localhost:${PORT}`);
+  for (const ip of ips) console.log(`  LAN          : http://${ip}:${PORT}`);
   console.log(`  ${stats.total} crops loaded`);
   console.log(`  ${stats.annotated} annotated · ${stats.skipped} skipped · ${stats.total - stats.annotated - stats.skipped} remaining`);
   if (stats.byGrader) {
