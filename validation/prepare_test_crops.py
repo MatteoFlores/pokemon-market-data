@@ -47,7 +47,7 @@ YOLO_CONF   = 0.75
 CERT_CONF   = 0.50
 CROP_PAD    = 0.12
 CERT_PAD    = 0.08
-CERT_RE     = re.compile(r'\b(\d{10}|\d{8})\b')
+CERT_RE     = re.compile(r'\b(\d{8,13})\b')
 
 
 def get_items_with_images() -> list[str]:

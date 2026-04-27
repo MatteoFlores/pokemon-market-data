@@ -38,10 +38,14 @@ if (!fs.existsSync(LABELS_DIR)) fs.mkdirSync(LABELS_DIR, { recursive: true });
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
+let _manifestCache = null;
 function loadManifest() {
-  try { return JSON.parse(fs.readFileSync(MANIFEST_F, 'utf8')); } catch { return {}; }
+  if (_manifestCache) return _manifestCache;
+  try { _manifestCache = JSON.parse(fs.readFileSync(MANIFEST_F, 'utf8')); } catch { _manifestCache = {}; }
+  return _manifestCache;
 }
 function saveManifest(m) {
+  _manifestCache = m;
   fs.writeFileSync(MANIFEST_F, JSON.stringify(m, null, 2));
 }
 function getItems() {

@@ -392,7 +392,7 @@
     "yoloConf": 0.92,
     "yoloCls": "CGC",
     "cropType": "cert_region",
-    "trueCert": "140101840204",
+    "trueCert": "1401018402040",
     "skipped": false
   },
   "137243099545_crop.jpg": {
@@ -2130,7 +2130,7 @@
     "yoloConf": 0.91,
     "yoloCls": "CGC",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "1401038233029",
     "skipped": false
   },
   "306768145639_crop.jpg": {
@@ -2142,7 +2142,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "168198058276_crop.jpg": {
     "itemId": "168198058276",
@@ -2153,7 +2153,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "136995329982_crop.jpg": {
     "itemId": "136995329982",
@@ -2163,7 +2163,7 @@
     "yoloConf": 0.917,
     "yoloCls": "BGS",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "0018964557",
     "skipped": false
   },
   "267646873661_crop.jpg": {
@@ -2174,7 +2174,7 @@
     "yoloConf": 0.924,
     "yoloCls": "CGC",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "6060055258",
     "skipped": false
   },
   "376954404482_crop.jpg": {
@@ -2185,7 +2185,7 @@
     "yoloConf": 0.95,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "141422349",
     "skipped": false
   },
   "287170654066_crop.jpg": {
@@ -2196,7 +2196,7 @@
     "yoloConf": 0.946,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "146379418",
     "skipped": false
   },
   "227206971372_crop.jpg": {
@@ -2207,7 +2207,7 @@
     "yoloConf": 0.948,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "139575413",
     "skipped": false
   },
   "306791638721_crop.jpg": {
@@ -2219,7 +2219,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "206220563206_crop.jpg": {
     "itemId": "206220563206",
@@ -2230,7 +2230,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "147255720901_crop.jpg": {
     "itemId": "147255720901",
@@ -2241,7 +2241,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "198284020792_crop.jpg": {
     "itemId": "198284020792",
@@ -2251,7 +2251,7 @@
     "yoloConf": 0.922,
     "yoloCls": "CGC",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "6086654028",
     "skipped": false
   },
   "306861463470_crop.jpg": {
@@ -2262,7 +2262,7 @@
     "yoloConf": 0.941,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "125742743",
     "skipped": false
   },
   "206018243443_crop.jpg": {
@@ -2273,7 +2273,7 @@
     "yoloConf": 0.947,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "76623212",
     "skipped": false
   },
   "377061746843_crop.jpg": {
@@ -2284,7 +2284,7 @@
     "yoloConf": 0.942,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "142328387",
     "skipped": false
   },
   "306789221781_crop.jpg": {
@@ -2296,7 +2296,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "127772251233_crop.jpg": {
     "itemId": "127772251233",
@@ -2307,7 +2307,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "188114287774_crop.jpg": {
     "itemId": "188114287774",
@@ -2317,7 +2317,7 @@
     "yoloConf": 0.95,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "110366297",
     "skipped": false
   },
   "358204920697_crop.jpg": {
@@ -2329,7 +2329,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "287025780718_crop.jpg": {
     "itemId": "287025780718",
@@ -2339,7 +2339,7 @@
     "yoloConf": 0.948,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "135379175",
     "skipped": false
   },
   "177943295542_crop.jpg": {
@@ -2351,7 +2351,7 @@
     "yoloCls": "CGC",
     "cropType": "label_crop",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "406854801733_crop.jpg": {
     "itemId": "406854801733",
@@ -2361,7 +2361,7 @@
     "yoloConf": 0.948,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "132507908",
     "skipped": false
   },
   "298148739460_crop.jpg": {
@@ -2372,7 +2372,7 @@
     "yoloConf": 0.934,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "148953792",
     "skipped": false
   },
   "298224327911_crop.jpg": {
@@ -2383,7 +2383,7 @@
     "yoloConf": 0.948,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "149262272",
     "skipped": false
   },
   "188237929744_crop.jpg": {
@@ -2394,7 +2394,7 @@
     "yoloConf": 0.946,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "142590577",
     "skipped": false
   },
   "389726870282_crop.jpg": {
@@ -2406,7 +2406,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "227186542921_crop.jpg": {
     "itemId": "227186542921",
@@ -2416,7 +2416,7 @@
     "yoloConf": 0.939,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "116667277",
     "skipped": false
   },
   "257420253993_crop.jpg": {
@@ -2427,7 +2427,7 @@
     "yoloConf": 0.949,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "144574410",
     "skipped": false
   },
   "127749639218_crop.jpg": {
@@ -2438,7 +2438,7 @@
     "yoloConf": 0.945,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "148383662",
     "skipped": false
   },
   "117086201166_crop.jpg": {
@@ -2449,7 +2449,7 @@
     "yoloConf": 0.928,
     "yoloCls": "CGC",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "6068341012",
     "skipped": false
   },
   "287148589958_crop.jpg": {
@@ -2460,7 +2460,7 @@
     "yoloConf": 0.941,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "98192282",
     "skipped": false
   },
   "157550449090_crop.jpg": {
@@ -2472,7 +2472,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "306750615518_crop.jpg": {
     "itemId": "306750615518",
@@ -2482,7 +2482,7 @@
     "yoloConf": 0.948,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "137260652",
     "skipped": false
   },
   "298065241333_crop.jpg": {
@@ -2493,7 +2493,7 @@
     "yoloConf": 0.924,
     "yoloCls": "CGC",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "6073549098",
     "skipped": false
   },
   "117048536592_crop.jpg": {
@@ -2504,7 +2504,7 @@
     "yoloConf": 0.948,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "144548007",
     "skipped": false
   },
   "406659033251_crop.jpg": {
@@ -2515,7 +2515,7 @@
     "yoloConf": 0.941,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "101739714",
     "skipped": false
   },
   "257449394025_crop.jpg": {
@@ -2526,7 +2526,7 @@
     "yoloConf": 0.954,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "151315848",
     "skipped": false
   },
   "406727407458_crop.jpg": {
@@ -2537,7 +2537,7 @@
     "yoloConf": 0.938,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "141778170",
     "skipped": false
   },
   "277749887675_crop.jpg": {
@@ -2549,7 +2549,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "136765782414_crop.jpg": {
     "itemId": "136765782414",
@@ -2560,7 +2560,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "177886131635_crop.jpg": {
     "itemId": "177886131635",
@@ -2570,7 +2570,7 @@
     "yoloConf": 0.939,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "139437485",
     "skipped": false
   },
   "116884904506_crop.jpg": {
@@ -2581,7 +2581,7 @@
     "yoloConf": 0.94,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "101800986",
     "skipped": false
   },
   "287161308307_crop.jpg": {
@@ -2592,7 +2592,7 @@
     "yoloConf": 0.938,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "130510389",
     "skipped": false
   },
   "206154314450_crop.jpg": {
@@ -2603,7 +2603,7 @@
     "yoloConf": 0.942,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "143765647",
     "skipped": false
   },
   "177928435399_crop.jpg": {
@@ -2614,7 +2614,7 @@
     "yoloConf": 0.934,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "136425958",
     "skipped": false
   },
   "306860029460_crop.jpg": {
@@ -2625,7 +2625,7 @@
     "yoloConf": 0.939,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "132868894",
     "skipped": false
   },
   "206198367474_crop.jpg": {
@@ -2637,7 +2637,7 @@
     "yoloCls": "BGS",
     "cropType": "label_crop",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "358443496393_crop.jpg": {
     "itemId": "358443496393",
@@ -2648,7 +2648,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "117044447089_crop.jpg": {
     "itemId": "117044447089",
@@ -2658,7 +2658,7 @@
     "yoloConf": 0.939,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "148736895",
     "skipped": false
   },
   "306816815026_crop.jpg": {
@@ -2669,7 +2669,7 @@
     "yoloConf": 0.915,
     "yoloCls": "CGC",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "6117606015",
     "skipped": false
   },
   "227255236302_crop.jpg": {
@@ -2680,7 +2680,7 @@
     "yoloConf": 0.949,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "99505970",
     "skipped": false
   },
   "257362060855_crop.jpg": {
@@ -2691,7 +2691,7 @@
     "yoloConf": 0.942,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "85094003",
     "skipped": false
   },
   "287139103160_crop.jpg": {
@@ -2702,7 +2702,7 @@
     "yoloConf": 0.94,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "60617322",
     "skipped": false
   },
   "197698079988_crop.jpg": {
@@ -2713,7 +2713,7 @@
     "yoloConf": 0.913,
     "yoloCls": "CGC",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "1401006796038",
     "skipped": false
   },
   "406559897803_crop.jpg": {
@@ -2725,7 +2725,7 @@
     "yoloCls": "CGC",
     "cropType": "label_crop",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "287281986232_crop.jpg": {
     "itemId": "287281986232",
@@ -2735,7 +2735,7 @@
     "yoloConf": 0.926,
     "yoloCls": "BGS",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "0019788201",
     "skipped": false
   },
   "116831271047_crop.jpg": {
@@ -2747,7 +2747,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "298167573885_crop.jpg": {
     "itemId": "298167573885",
@@ -2757,7 +2757,7 @@
     "yoloConf": 0.943,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "142202899",
     "skipped": false
   },
   "287270736746_crop.jpg": {
@@ -2768,7 +2768,7 @@
     "yoloConf": 0.928,
     "yoloCls": "CGC",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "6020935037",
     "skipped": false
   },
   "277698032466_crop.jpg": {
@@ -2780,7 +2780,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "306684958862_crop.jpg": {
     "itemId": "306684958862",
@@ -2791,7 +2791,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "397609876496_crop.jpg": {
     "itemId": "397609876496",
@@ -2802,7 +2802,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "317877773797_crop.jpg": {
     "itemId": "317877773797",
@@ -2812,7 +2812,7 @@
     "yoloConf": 0.95,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "144721937",
     "skipped": false
   },
   "406625448040_crop.jpg": {
@@ -2823,7 +2823,7 @@
     "yoloConf": 0.946,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "125843445",
     "skipped": false
   },
   "227223451420_crop.jpg": {
@@ -2834,7 +2834,7 @@
     "yoloConf": 0.95,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "142144086",
     "skipped": false
   },
   "127683028733_crop.jpg": {
@@ -2845,7 +2845,7 @@
     "yoloConf": 0.943,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "128649748",
     "skipped": false
   },
   "376620478276_crop.jpg": {
@@ -2856,7 +2856,7 @@
     "yoloConf": 0.948,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "114579215",
     "skipped": false
   },
   "377099566302_crop.jpg": {
@@ -2867,7 +2867,7 @@
     "yoloConf": 0.942,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "148967398",
     "skipped": false
   },
   "389624280301_crop.jpg": {
@@ -2879,7 +2879,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "317835023009_crop.jpg": {
     "itemId": "317835023009",
@@ -2889,7 +2889,7 @@
     "yoloConf": 0.95,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "147924362",
     "skipped": false
   },
   "117058593543_crop.jpg": {
@@ -2901,7 +2901,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "227191632378_crop.jpg": {
     "itemId": "227191632378",
@@ -2912,7 +2912,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "306878315596_crop.jpg": {
     "itemId": "306878315596",
@@ -2923,7 +2923,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "306747969196_crop.jpg": {
     "itemId": "306747969196",
@@ -2934,7 +2934,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "227259007797_crop.jpg": {
     "itemId": "227259007797",
@@ -2944,7 +2944,7 @@
     "yoloConf": 0.946,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "131964271",
     "skipped": false
   },
   "117107930629_crop.jpg": {
@@ -2956,7 +2956,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "178015905178_crop.jpg": {
     "itemId": "178015905178",
@@ -2967,7 +2967,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "397625414701_crop.jpg": {
     "itemId": "397625414701",
@@ -2977,7 +2977,7 @@
     "yoloConf": 0.94,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "98295492",
     "skipped": false
   },
   "157742614955_crop.jpg": {
@@ -2988,7 +2988,7 @@
     "yoloConf": 0.951,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "69931512",
     "skipped": false
   },
   "287130651258_crop.jpg": {
@@ -3000,7 +3000,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "127703101254_crop.jpg": {
     "itemId": "127703101254",
@@ -3010,7 +3010,7 @@
     "yoloConf": 0.931,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "135510822",
     "skipped": false
   },
   "406761869306_crop.jpg": {
@@ -3021,7 +3021,7 @@
     "yoloConf": 0.945,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "136432086",
     "skipped": false
   },
   "298072741883_crop.jpg": {
@@ -3033,7 +3033,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "168259048873_crop.jpg": {
     "itemId": "168259048873",
@@ -3043,7 +3043,7 @@
     "yoloConf": 0.942,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "138755479",
     "skipped": false
   },
   "376673416553_crop.jpg": {
@@ -3055,7 +3055,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "117032413178_crop.jpg": {
     "itemId": "117032413178",
@@ -3065,7 +3065,7 @@
     "yoloConf": 0.938,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "141778170",
     "skipped": false
   },
   "257425138900_crop.jpg": {
@@ -3077,7 +3077,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "377066047707_crop.jpg": {
     "itemId": "377066047707",
@@ -3087,7 +3087,7 @@
     "yoloConf": 0.946,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "146379418",
     "skipped": false
   },
   "297943815887_crop.jpg": {
@@ -3098,7 +3098,7 @@
     "yoloConf": 0.949,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "26733551",
     "skipped": false
   },
   "298196906738_crop.jpg": {
@@ -3109,7 +3109,7 @@
     "yoloConf": 0.95,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "145666025",
     "skipped": false
   },
   "227255227189_crop.jpg": {
@@ -3121,7 +3121,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "298013190038_crop.jpg": {
     "itemId": "298013190038",
@@ -3132,7 +3132,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "317769166967_crop.jpg": {
     "itemId": "317769166967",
@@ -3142,7 +3142,7 @@
     "yoloConf": 0.95,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "136077738",
     "skipped": false
   },
   "236602449046_crop.jpg": {
@@ -3153,7 +3153,7 @@
     "yoloConf": 0.945,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "140243950",
     "skipped": false
   },
   "227265622467_crop.jpg": {
@@ -3165,7 +3165,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "397655262016_crop.jpg": {
     "itemId": "397655262016",
@@ -3175,7 +3175,7 @@
     "yoloConf": 0.944,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "145665099",
     "skipped": false
   },
   "178043628473_crop.jpg": {
@@ -3187,7 +3187,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "298212417517_crop.jpg": {
     "itemId": "298212417517",
@@ -3197,7 +3197,7 @@
     "yoloConf": 0.916,
     "yoloCls": "BGS",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "0017488413",
     "skipped": false
   },
   "127813537782_crop.jpg": {
@@ -3208,7 +3208,7 @@
     "yoloConf": 0.93,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "134299936",
     "skipped": false
   },
   "256558618604_crop.jpg": {
@@ -3220,7 +3220,7 @@
     "yoloCls": "CGC",
     "cropType": "label_crop",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "358195640079_crop.jpg": {
     "itemId": "358195640079",
@@ -3230,7 +3230,7 @@
     "yoloConf": 0.945,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "128930856",
     "skipped": false
   },
   "168213690031_crop.jpg": {
@@ -3241,7 +3241,7 @@
     "yoloConf": 0.942,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "85094003",
     "skipped": false
   },
   "206018245899_crop.jpg": {
@@ -3252,7 +3252,7 @@
     "yoloConf": 0.92,
     "yoloCls": "CGC",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "6082344212",
     "skipped": false
   },
   "298057997387_crop.jpg": {
@@ -3263,7 +3263,7 @@
     "yoloConf": 0.947,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "136107282",
     "skipped": false
   },
   "298092508608_crop.jpg": {
@@ -3274,7 +3274,7 @@
     "yoloConf": 0.947,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "152082315",
     "skipped": false
   },
   "136980592050_crop.jpg": {
@@ -3285,7 +3285,7 @@
     "yoloConf": 0.913,
     "yoloCls": "CGC",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "1401006796038",
     "skipped": false
   },
   "389664809183_crop.jpg": {
@@ -3296,7 +3296,7 @@
     "yoloConf": 0.92,
     "yoloCls": "CGC",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "6032680264",
     "skipped": false
   },
   "366157690831_crop.jpg": {
@@ -3307,7 +3307,7 @@
     "yoloConf": 0.949,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "105689698",
     "skipped": false
   },
   "306789230299_crop.jpg": {
@@ -3318,7 +3318,7 @@
     "yoloConf": 0.92,
     "yoloCls": "CGC",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "6071548001",
     "skipped": false
   },
   "389700218923_crop.jpg": {
@@ -3329,7 +3329,7 @@
     "yoloConf": 0.939,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "148736895",
     "skipped": false
   },
   "188106903651_crop.jpg": {
@@ -3341,7 +3341,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "389817591941_crop.jpg": {
     "itemId": "389817591941",
@@ -3352,7 +3352,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "206136285501_crop.jpg": {
     "itemId": "206136285501",
@@ -3362,7 +3362,7 @@
     "yoloConf": 0.947,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "128659449",
     "skipped": false
   },
   "225579147865_crop.jpg": {
@@ -3374,7 +3374,7 @@
     "yoloCls": "CGC",
     "cropType": "label_crop",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "406748824765_crop.jpg": {
     "itemId": "406748824765",
@@ -3385,7 +3385,7 @@
     "yoloCls": "ACE",
     "cropType": "cert_region",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "287096381157_crop.jpg": {
     "itemId": "287096381157",
@@ -3395,7 +3395,7 @@
     "yoloConf": 0.942,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "142196078",
     "skipped": false
   },
   "376930713643_crop.jpg": {
@@ -3406,7 +3406,7 @@
     "yoloConf": 0.936,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "142502124",
     "skipped": false
   },
   "206051542035_crop.jpg": {
@@ -3417,7 +3417,7 @@
     "yoloConf": 0.943,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "78283977",
     "skipped": false
   },
   "376969278004_crop.jpg": {
@@ -3429,7 +3429,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "397693888508_crop.jpg": {
     "itemId": "397693888508",
@@ -3440,7 +3440,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "168255446952_crop.jpg": {
     "itemId": "168255446952",
@@ -3450,7 +3450,7 @@
     "yoloConf": 0.936,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "55273350",
     "skipped": false
   },
   "389722947426_crop.jpg": {
@@ -3462,7 +3462,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "406787348730_crop.jpg": {
     "itemId": "406787348730",
@@ -3472,7 +3472,7 @@
     "yoloConf": 0.947,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "128884818",
     "skipped": false
   },
   "326835046655_crop.jpg": {
@@ -3483,7 +3483,7 @@
     "yoloConf": 0.945,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "151554692",
     "skipped": false
   },
   "227195469695_crop.jpg": {
@@ -3495,7 +3495,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "287201773617_crop.jpg": {
     "itemId": "287201773617",
@@ -3506,7 +3506,7 @@
     "yoloCls": "CGC",
     "cropType": "label_crop",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "298006896720_crop.jpg": {
     "itemId": "298006896720",
@@ -3516,7 +3516,7 @@
     "yoloConf": 0.947,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "134775693",
     "skipped": false
   },
   "287212655485_crop.jpg": {
@@ -3527,7 +3527,7 @@
     "yoloConf": 0.945,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "145229976",
     "skipped": false
   },
   "406773886155_crop.jpg": {
@@ -3538,7 +3538,7 @@
     "yoloConf": 0.916,
     "yoloCls": "CGC",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "6119968027",
     "skipped": false
   },
   "376895579695_crop.jpg": {
@@ -3550,7 +3550,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "397674279527_crop.jpg": {
     "itemId": "397674279527",
@@ -3560,7 +3560,7 @@
     "yoloConf": 0.95,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "141422349",
     "skipped": false
   },
   "168289439921_crop.jpg": {
@@ -3572,7 +3572,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "336479588968_crop.jpg": {
     "itemId": "336479588968",
@@ -3582,7 +3582,7 @@
     "yoloConf": 0.943,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "100415960",
     "skipped": false
   },
   "137042612291_crop.jpg": {
@@ -3593,7 +3593,7 @@
     "yoloConf": 0.946,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "139919055",
     "skipped": false
   },
   "277689845338_crop.jpg": {
@@ -3605,7 +3605,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "376756951115_crop.jpg": {
     "itemId": "376756951115",
@@ -3615,7 +3615,7 @@
     "yoloConf": 0.95,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "141422349",
     "skipped": false
   },
   "389457993812_crop.jpg": {
@@ -3627,7 +3627,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "389699305193_crop.jpg": {
     "itemId": "389699305193",
@@ -3638,7 +3638,7 @@
     "yoloCls": "CGC",
     "cropType": "label_crop",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "358141001708_crop.jpg": {
     "itemId": "358141001708",
@@ -3649,7 +3649,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "136960514388_crop.jpg": {
     "itemId": "136960514388",
@@ -3659,7 +3659,7 @@
     "yoloConf": 0.947,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "133287185",
     "skipped": false
   },
   "236407669132_crop.jpg": {
@@ -3671,7 +3671,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "227171775021_crop.jpg": {
     "itemId": "227171775021",
@@ -3681,7 +3681,7 @@
     "yoloConf": 0.948,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "56121153",
     "skipped": false
   },
   "327006549722_crop.jpg": {
@@ -3692,7 +3692,7 @@
     "yoloConf": 0.948,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "142293523",
     "skipped": false
   },
   "357970987188_crop.jpg": {
@@ -3704,7 +3704,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "177873324783_crop.jpg": {
     "itemId": "177873324783",
@@ -3714,7 +3714,7 @@
     "yoloConf": 0.939,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "132868894",
     "skipped": false
   },
   "236691105341_crop.jpg": {
@@ -3726,7 +3726,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "318131425498_crop.jpg": {
     "itemId": "318131425498",
@@ -3736,7 +3736,7 @@
     "yoloConf": 0.938,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "138416065",
     "skipped": false
   },
   "397715350414_crop.jpg": {
@@ -3747,7 +3747,7 @@
     "yoloConf": 0.942,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "83641707",
     "skipped": false
   },
   "168091854688_crop.jpg": {
@@ -3758,7 +3758,7 @@
     "yoloConf": 0.948,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "54845541",
     "skipped": false
   },
   "267464920636_crop.jpg": {
@@ -3769,7 +3769,7 @@
     "yoloConf": 0.907,
     "yoloCls": "CGC",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "6085450030",
     "skipped": false
   },
   "198131474487_crop.jpg": {
@@ -3780,7 +3780,7 @@
     "yoloConf": 0.947,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "146083140",
     "skipped": false
   },
   "188268092556_crop.jpg": {
@@ -3791,7 +3791,7 @@
     "yoloConf": 0.943,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "150048645",
     "skipped": false
   },
   "277353058950_crop.jpg": {
@@ -3803,7 +3803,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "389894140962_crop.jpg": {
     "itemId": "389894140962",
@@ -3813,7 +3813,7 @@
     "yoloConf": 0.95,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "147924362",
     "skipped": false
   },
   "397598192931_crop.jpg": {
@@ -3825,7 +3825,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "327099806975_crop.jpg": {
     "itemId": "327099806975",
@@ -3836,7 +3836,7 @@
     "yoloCls": null,
     "cropType": "fallback",
     "trueCert": null,
-    "skipped": false
+    "skipped": true
   },
   "227173006557_crop.jpg": {
     "itemId": "227173006557",
@@ -3846,7 +3846,7 @@
     "yoloConf": 0.944,
     "yoloCls": "PSA",
     "cropType": "cert_region",
-    "trueCert": null,
+    "trueCert": "121243451",
     "skipped": false
   }
 }

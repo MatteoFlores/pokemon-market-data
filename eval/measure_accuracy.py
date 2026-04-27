@@ -27,7 +27,7 @@ MODEL_PATH  = BASE / 'models' / 'grading_labels_v3.pt'
 IMAGES_DIR  = BASE / 'data' / 'images'
 CONF_THRESH = 0.75
 CERT_CONF   = 0.50
-CERT_RE     = re.compile(r'\b(\d{10}|\d{8})\b')
+CERT_RE     = re.compile(r'\b(\d{8,13})\b')
 
 
 # ── Metric helpers ─────────────────────────────────────────────────────────────
@@ -54,6 +54,7 @@ def digit_confusion(pred: str, true: str) -> list[tuple[str, str]]:
 def run_pipeline_on_crop(crop_path: str, model1, model2):
     """
     Run the current extraction pipeline on a pre-generated crop.
+    Mirrors production: EasyOCR + PaddleOCR in parallel.
     Returns the extracted cert string or None.
     """
     import cv2
@@ -64,36 +65,40 @@ def run_pipeline_on_crop(crop_path: str, model1, model2):
         return None
 
     try:
-        import easyocr
-        import os
-        # EasyOCR with English
-        reader = getattr(run_pipeline_on_crop, '_reader', None)
-        if reader is None:
-            run_pipeline_on_crop._reader = easyocr.Reader(['en'], gpu=True, verbose=False)
-            reader = run_pipeline_on_crop._reader
+        # Lazy-load OCR engines
+        if not hasattr(run_pipeline_on_crop, '_easy'):
+            import easyocr
+            run_pipeline_on_crop._easy = easyocr.Reader(['en'], gpu=True, verbose=False)
+        if not hasattr(run_pipeline_on_crop, '_paddle'):
+            import warnings, os
+            os.environ['PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK'] = 'True'
+            from paddleocr import PaddleOCR
+            with warnings.catch_warnings():
+                warnings.simplefilter('ignore')
+                run_pipeline_on_crop._paddle = PaddleOCR(use_textline_orientation=True, lang='en')
 
-        # Run cert detector (Model 2) on the crop to get the cert sub-region
+        easy   = run_pipeline_on_crop._easy
+        paddle = run_pipeline_on_crop._paddle
+
+        # The saved crop is already the cert region — OCR directly
         cert_crop = img
-        if model2 is not None:
-            r2 = model2(img, conf=CERT_CONF, verbose=False)
-            if r2 and r2[0].boxes and len(r2[0].boxes):
-                b = r2[0].boxes
-                best = b[b.conf.argmax()]
-                x1, y1, x2, y2 = best.xyxy[0].cpu().numpy()
-                h, w = img.shape[:2]
-                pad_x = (x2-x1)*0.08; pad_y = (y2-y1)*0.08
-                sub = img[max(0,int(y1-pad_y)):min(h,int(y2+pad_y)),
-                          max(0,int(x1-pad_x)):min(w,int(x2+pad_x))]
-                if sub.size > 0:
-                    cert_crop = sub
 
-        # EasyOCR
-        rgb    = cv2.cvtColor(cert_crop, cv2.COLOR_BGR2RGB)
-        texts  = reader.readtext(rgb, detail=0)
-        combined = ' '.join(str(t) for t in texts)
-        m = CERT_RE.search(combined)
-        if m:
-            return m.group(1)
+        try:
+            rgb = cv2.cvtColor(cert_crop, cv2.COLOR_BGR2RGB)
+            easy_texts = [str(t) for t in easy.readtext(rgb, detail=0)]
+        except Exception:
+            easy_texts = []
+
+        try:
+            r = paddle.ocr(cert_crop, cls=True)
+            paddle_texts = [str(line[1][0]) for line in (r[0] or []) if line and len(line) >= 2]
+        except Exception:
+            paddle_texts = []
+
+        for texts in [easy_texts + paddle_texts, easy_texts, paddle_texts]:
+            m = CERT_RE.search(' '.join(texts))
+            if m:
+                return m.group(1)
 
     except Exception:
         pass

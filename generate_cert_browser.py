@@ -38,7 +38,7 @@ YOLO_CONF   = 0.75
 CERT_CONF   = 0.50
 SAMPLE_SIZE = 500
 SEED        = 7
-CERT_RE     = re.compile(r'\b(\d{10}|\d{8})\b')
+CERT_RE     = re.compile(r'\b(\d{8,13})\b')
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 

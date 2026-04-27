@@ -34,7 +34,7 @@ CERT_JSON   = BASE / 'data' / 'cert_results' / 'cert_numbers.json'
 IMAGES_DIR  = BASE / 'data' / 'images'
 OUT_HTML    = BASE / 'data' / 'cert_results' / 'spotcheck_barcodes.html'
 
-CERT_RE = re.compile(r'\b(\d{10}|\d{8})\b')
+CERT_RE = re.compile(r'\b(\d{8,13})\b')
 
 
 @contextlib.contextmanager

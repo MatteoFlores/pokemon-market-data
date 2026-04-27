@@ -87,13 +87,18 @@ LABEL_CLASSES = {0, 1, 2, 3}
 TAG_CLASS     = 3   # use QR code reading instead of OCR
 
 # Cert number pattern: 8 digits (PSA) or 10 digits (CGC) — word-boundary anchored
-CERT_RE = re.compile(r'\b(\d{10}|\d{8})\b')
+CERT_RE = re.compile(r'\b(\d{8,13})\b')
 
 # Crop padding fraction — adds context around the detected label
 CROP_PADDING = 0.12
 
 # Cert detector confidence threshold (Model 2)
 CERT_CONF_THRESHOLD = 0.50
+
+# Max images to inspect per item — listings often have 40-80 photos but the
+# graded card label is almost always in the first few. Cap avoids ~130 pyzbar
+# calls per item and keeps OCR throughput high.
+MAX_IMAGES_PER_ITEM = 8
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
@@ -160,7 +165,7 @@ def try_barcode(image_path: Path) -> str | None:
         img = cv2.imread(str(image_path))
         if img is None:
             return None
-        for scale in [1.0, 2.0, 0.5]:
+        for scale in [1.0, 2.0]:
             if scale != 1.0:
                 h, w = img.shape[:2]
                 scaled = cv2.resize(img, (int(w * scale), int(h * scale)))
@@ -330,7 +335,7 @@ def get_paddle_ocr():
         from paddleocr import PaddleOCR
         with warnings.catch_warnings():
             warnings.simplefilter("ignore")
-            _paddle_ocr = PaddleOCR(use_textline_orientation=True, lang="en", show_log=False)
+            _paddle_ocr = PaddleOCR(use_textline_orientation=True, lang="en")
     return _paddle_ocr
 
 
@@ -359,17 +364,18 @@ def ocr_paddle(crop_bgr: np.ndarray) -> list[str]:
 
 def run_ocr_both(crop_bgr: np.ndarray) -> tuple[str | None, str | None, str]:
     """
-    Run both OCR engines, return (easy_cert, paddle_cert, agreement_status).
-    agreement_status: 'both' | 'easy_only' | 'paddle_only' | 'none'
+    Run OCR engines, returning (easy_cert, paddle_cert, agreement_status).
+    EasyOCR runs first; PaddleOCR is only called if EasyOCR finds nothing,
+    avoiding unnecessary compute on the ~94% of crops EasyOCR handles alone.
     """
-    with ThreadPoolExecutor(max_workers=2) as ex:
-        fut_easy   = ex.submit(ocr_easy,   crop_bgr)
-        fut_paddle = ex.submit(ocr_paddle, crop_bgr)
-        easy_texts   = fut_easy.result()
-        paddle_texts = fut_paddle.result()
+    easy_texts = ocr_easy(crop_bgr)
+    easy_cert  = extract_cert_from_text(easy_texts)
 
-    easy_cert   = extract_cert_from_text(easy_texts)
-    paddle_cert = extract_cert_from_text(paddle_texts)
+    if easy_cert:
+        return easy_cert, None, "easy_only"
+
+    paddle_texts = ocr_paddle(crop_bgr)
+    paddle_cert  = extract_cert_from_text(paddle_texts)
 
     if easy_cert and paddle_cert:
         status = "both" if easy_cert == paddle_cert else "disagree"
@@ -401,10 +407,14 @@ def route_result(item_id: str, cert: str | None, yolo_conf: float,
     elif method == "barcode":
         folder = "cert_extracted"
         confidence = 1.0
+    elif cert and (len(cert) > 11 or cert.startswith("1401")):
+        # CGC slab barcodes read as cert numbers (13-digit, starts with 1401)
+        folder = "verify_later"
+        confidence = yolo_conf
     elif ocr_status == "both" and yolo_conf >= HIGH_CONF_THRESHOLD:
         folder = "cert_extracted"
         confidence = yolo_conf
-    elif ocr_status in ("both", "easy_only", "paddle_only") and yolo_conf >= HIGH_CONF_THRESHOLD:
+    elif cert and yolo_conf >= YOLO_CONF_THRESHOLD:
         folder = "ocr_success"
         confidence = yolo_conf
     elif cert:
@@ -485,7 +495,7 @@ def process_item(item_id: str, image_dir: Path, model: YOLO, cert_model: YOLO,
     meta_path = image_dir / "_meta.json"
     meta = json.loads(meta_path.read_text(encoding='utf-8')) if meta_path.exists() else {}
 
-    images = sorted(image_dir.glob("*.jpg"))
+    images = sorted(image_dir.glob("*.jpg"))[:MAX_IMAGES_PER_ITEM]
     if not images:
         progress[item_id] = {"done": True, "folder": "unextractable", "certNumber": None}
         return "unextractable"
@@ -545,6 +555,10 @@ def process_item(item_id: str, image_dir: Path, model: YOLO, cert_model: YOLO,
             best_conf       = conf
             best_ocr_status = ocr_status
 
+        # Early exit: once we have a high-confidence cert, stop processing crops
+        if best_cert and best_conf >= HIGH_CONF_THRESHOLD:
+            break
+
     route_result(item_id, best_cert, best_conf, "yolo+ocr", best_ocr_status,
                  meta, image_dir, progress, cert_db, all_certs=all_certs,
                  yolo_detected=model1_detected,
@@ -584,7 +598,8 @@ def print_summary(counts: dict, watch: bool = False):
     else:
         print(f"\n  cert_numbers.json : {CERT_JSON}")
         print(f"  verify_later folder : {RESULTS_DIR / 'verify_later'}")
-        print(f"\n  To re-process verify_later:  python extract_certs.py --recheck")
+        print(f"\n  To re-process verify_later:   python extract_certs.py --recheck")
+        print(f"  To re-process all on disk:    python extract_certs.py --recheck-all")
         print(f"  To watch continuously:        python extract_certs.py --watch")
 
 
@@ -613,11 +628,13 @@ def run_batch(item_ids: list[str], model, cert_model, progress: dict, cert_db: d
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--limit",   type=int, default=0,
-                        help="Process only first N items (0 = no limit, ignored in --watch mode)")
-    parser.add_argument("--recheck", action="store_true",
+    parser.add_argument("--limit",       type=int, default=0,
+                        help="Process only first N items (0 = no limit)")
+    parser.add_argument("--recheck",     action="store_true",
                         help="Re-process items currently in verify_later/")
-    parser.add_argument("--watch",   action="store_true",
+    parser.add_argument("--recheck-all", action="store_true",
+                        help="Re-process every item that still has images on disk, regardless of prior result")
+    parser.add_argument("--watch",       action="store_true",
                         help=f"Keep running — pick up new images every {WATCH_POLL_SECONDS}s as scrapers download them")
     args = parser.parse_args()
 
@@ -652,6 +669,43 @@ def main():
     ocr_easy(dummy)
     ocr_paddle(dummy)
     print("  OCR engines ready.\n")
+
+    # ── --recheck-all mode ────────────────────────────────────────────────────
+    if getattr(args, 'recheck_all', False):
+        if not IMAGES_DIR.exists():
+            print("  No images directory found.\n")
+            return
+
+        item_ids_with_images = [
+            d.name for d in sorted(IMAGES_DIR.iterdir())
+            if d.is_dir() and any(d.glob("*.jpg"))
+        ]
+        print(f"  Found {len(item_ids_with_images):,} items with images on disk")
+
+        removed_db = 0
+        cleaned    = 0
+        for item_id in item_ids_with_images:
+            progress.pop(item_id, None)
+            if item_id in cert_db:
+                cert_db.pop(item_id)
+                removed_db += 1
+            for folder in ("cert_extracted", "ocr_success", "verify_later", "unextractable"):
+                old = RESULTS_DIR / folder / f"{item_id}.json"
+                if old.exists():
+                    old.unlink()
+                    cleaned += 1
+
+        print(f"  Cleared {removed_db:,} prior cert_db entries")
+        print(f"  Removed {cleaned:,} stale result JSONs")
+
+        ids = item_ids_with_images
+        if args.limit > 0:
+            ids = ids[:args.limit]
+        print(f"  Processing {len(ids):,} items...\n")
+
+        counts = run_batch(ids, model, cert_model, progress, cert_db)
+        print_summary(counts)
+        return
 
     # ── --recheck mode ────────────────────────────────────────────────────────
     if args.recheck:

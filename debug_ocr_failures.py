@@ -39,7 +39,7 @@ SEED        = 42
 FONT_SIZE   = 20
 REPEATED_MIN = 4   # flag cert numbers appearing this many times or more
 
-CERT_RE = re.compile(r'\b(\d{10}|\d{8})\b')
+CERT_RE = re.compile(r'\b(\d{8,13})\b')
 
 # ── Font ──────────────────────────────────────────────────────────────────────
 
