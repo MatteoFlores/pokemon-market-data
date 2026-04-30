@@ -45,7 +45,7 @@ EPOCHS        = 150
 BATCH_SIZE    = 32      # fits comfortably in 12 GB with yolo11s
 IMAGE_SIZE    = 640
 PATIENCE      = 30      # early stop if val/mAP doesn't improve for 30 epochs
-WORKERS       = 4
+WORKERS       = 2
 
 # ── Fix data.yaml paths (Roboflow uses relative paths that break on Windows) ──
 

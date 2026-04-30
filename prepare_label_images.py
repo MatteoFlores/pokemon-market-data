@@ -34,7 +34,7 @@ def main():
     parser.add_argument('--per-grader', type=int, default=150,
                         help='Images to sample per grader (default 150)')
     parser.add_argument('--grader', type=str, default=None,
-                        help='Only sample one grader: PSA / CGC / BGS / ACE')
+                        help='Only sample one grader: PSA / CGC / BGS / TAG')
     parser.add_argument('--limit', type=int, default=None,
                         help='Hard cap on total images (used with --grader)')
     args = parser.parse_args()
@@ -54,7 +54,7 @@ def main():
                 if e.get('folder') in ('cert_extracted', 'unextractable')]
     random.shuffle(targets)
 
-    counts  = {'PSA': 0, 'CGC': 0, 'BGS': 0, 'ACE': 0, 'OTHER': 0}
+    counts  = {'PSA': 0, 'CGC': 0, 'BGS': 0, 'TAG': 0, 'OTHER': 0}
     total   = 0
     # When targeting a single grader, cap = --limit if given, else --per-grader
     cap     = args.limit if args.limit else (args.per_grader if args.grader else 999_999)
@@ -68,7 +68,7 @@ def main():
             if total >= cap:
                 break
         else:
-            if all(counts.get(g, 0) >= args.per_grader for g in ('PSA', 'CGC', 'BGS', 'ACE')):
+            if all(counts.get(g, 0) >= args.per_grader for g in ('PSA', 'CGC', 'BGS', 'TAG')):
                 break
 
         img_dir = IMAGES_DIR / itemId
@@ -140,14 +140,14 @@ def main():
             if total % 50 == 0:
                 MANIFEST_F.write_text(json.dumps(manifest, indent=2))
                 print(f"  {total}  —  PSA:{counts['PSA']}  CGC:{counts['CGC']}  "
-                      f"BGS:{counts['BGS']}  ACE:{counts['ACE']}")
+                      f"BGS:{counts['BGS']}  TAG:{counts['TAG']}")
 
         except Exception:
             continue
 
     MANIFEST_F.write_text(json.dumps(manifest, indent=2))
     print(f"\nDone.  {total} images saved to data/label_annotation/images/")
-    print(f"  PSA:{counts['PSA']}  CGC:{counts['CGC']}  BGS:{counts['BGS']}  ACE:{counts['ACE']}")
+    print(f"  PSA:{counts['PSA']}  CGC:{counts['CGC']}  BGS:{counts['BGS']}  TAG:{counts['TAG']}")
     print(f"\nNext: node annotate_labels.js  →  http://localhost:3005\n")
 
 if __name__ == '__main__':

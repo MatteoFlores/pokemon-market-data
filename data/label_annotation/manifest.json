@@ -41226,5 +41226,6373 @@
         "h": 0.10861823361823367
       }
     ]
+  },
+  "177972503952_1.jpg": {
+    "itemId": "177972503952",
+    "grader": "PSA",
+    "cardName": "Spidops ex",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "389880986132_1.jpg": {
+    "itemId": "389880986132",
+    "grader": "PSA",
+    "cardName": "Sylveon V",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "397718229470_1.jpg": {
+    "itemId": "397718229470",
+    "grader": "PSA",
+    "cardName": "Spewpa",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "406724729649_1.jpg": {
+    "itemId": "406724729649",
+    "grader": "PSA",
+    "cardName": "Penny",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "376473883186_1.jpg": {
+    "itemId": "376473883186",
+    "grader": "PSA",
+    "cardName": "Alolan Dugtrio",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "298000769586_1.jpg": {
+    "itemId": "298000769586",
+    "grader": "PSA",
+    "cardName": "Pikipek",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "117034835729_1.jpg": {
+    "itemId": "117034835729",
+    "grader": "PSA",
+    "cardName": "Team Rocket's Articuno",
+    "predictedBbox": {
+      "x1": 0.10246683459564285,
+      "y1": 0.046572491405456044,
+      "x2": 0.8359560294385947,
+      "y2": 0.9546342745954502
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.938,
+    "annotated": false,
+    "skipped": true
+  },
+  "336416806930_1.jpg": {
+    "itemId": "336416806930",
+    "grader": "PSA",
+    "cardName": "Leafeon VMAX",
+    "predictedBbox": {
+      "x1": 0,
+      "y1": 0.0032022476196289064,
+      "x2": 0.987989501953125,
+      "y2": 0.9171461181640626
+    },
+    "predictedCls": 10,
+    "predictedName": "?",
+    "predictedConf": 0.861,
+    "annotated": false,
+    "skipped": false
+  },
+  "147243326956_1.jpg": {
+    "itemId": "147243326956",
+    "grader": "PSA",
+    "cardName": "Azumarill",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "306811250743_1.jpg": {
+    "itemId": "306811250743",
+    "grader": "PSA",
+    "cardName": "Marnie's Purrloin",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "298115725326_1.jpg": {
+    "itemId": "298115725326",
+    "grader": "PSA",
+    "cardName": "Pawmi",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "316674058408_1.jpg": {
+    "itemId": "316674058408",
+    "grader": "PSA",
+    "cardName": "Rabsca",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "297972249830_1.jpg": {
+    "itemId": "297972249830",
+    "grader": "PSA",
+    "cardName": "Huntail",
+    "predictedBbox": {
+      "x1": 0.10959801030001402,
+      "y1": 0.23091699018255488,
+      "x2": 0.8922824013109361,
+      "y2": 0.9462835874575568
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.883,
+    "annotated": false,
+    "skipped": true
+  },
+  "358096481340_1.jpg": {
+    "itemId": "358096481340",
+    "grader": "PSA",
+    "cardName": "Eevee-GX",
+    "predictedBbox": {
+      "x1": 0.0780206308899933,
+      "y1": 0.019102476963271987,
+      "x2": 0.8783030158484598,
+      "y2": 0.8458003385961471
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.346,
+    "annotated": false,
+    "skipped": true
+  },
+  "389627856465_1.jpg": {
+    "itemId": "389627856465",
+    "grader": "PSA",
+    "cardName": "Alolan Dugtrio",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "287220079042_1.jpg": {
+    "itemId": "287220079042",
+    "grader": "BGS",
+    "cardName": "Kirlia",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "306829480615_1.jpg": {
+    "itemId": "306829480615",
+    "grader": "PSA",
+    "cardName": "Cinderace ex",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "389618316137_1.jpg": {
+    "itemId": "389618316137",
+    "grader": "PSA",
+    "cardName": "Dragonair",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "327038279732_1.jpg": {
+    "itemId": "327038279732",
+    "grader": "CGC",
+    "cardName": "Counter Gain",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "287124136228_1.jpg": {
+    "itemId": "287124136228",
+    "grader": "PSA",
+    "cardName": "White Kyurem-GX",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "389599704672_1.jpg": {
+    "itemId": "389599704672",
+    "grader": "PSA",
+    "cardName": "Raichu & Alolan Raichu-GX",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "298244316610_1.jpg": {
+    "itemId": "298244316610",
+    "grader": "PSA",
+    "cardName": "Spidops ex",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "198159111267_1.jpg": {
+    "itemId": "198159111267",
+    "grader": "BGS",
+    "cardName": "Cacnea",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "117116832250_1.jpg": {
+    "itemId": "117116832250",
+    "grader": "PSA",
+    "cardName": "Cinderace ex",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "389591868681_1.jpg": {
+    "itemId": "389591868681",
+    "grader": "CGC",
+    "cardName": "Sprigatito",
+    "predictedBbox": {
+      "x1": 0.1162326176961263,
+      "y1": 0.19487733840942384,
+      "x2": 0.9187021891276042,
+      "y2": 0.9503439331054687
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.919,
+    "annotated": false,
+    "skipped": true
+  },
+  "317895243793_1.jpg": {
+    "itemId": "317895243793",
+    "grader": "CGC",
+    "cardName": "Armarouge",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "306720187609_1.jpg": {
+    "itemId": "306720187609",
+    "grader": "CGC",
+    "cardName": "Mimikyu",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "358140717475_1.jpg": {
+    "itemId": "358140717475",
+    "grader": "CGC",
+    "cardName": "Blaziken",
+    "predictedBbox": {
+      "x1": 0.10959801030001402,
+      "y1": 0.23091699018255488,
+      "x2": 0.8922824013109361,
+      "y2": 0.9462835874575568
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.883,
+    "annotated": false,
+    "skipped": false
+  },
+  "277791806851_1.jpg": {
+    "itemId": "277791806851",
+    "grader": "PSA",
+    "cardName": "Jigglypuff",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "168206021164_1.jpg": {
+    "itemId": "168206021164",
+    "grader": "PSA",
+    "cardName": "Lycanroc V",
+    "predictedBbox": {
+      "x1": 0.05146188735961914,
+      "y1": 0.001073741912841797,
+      "x2": 0.9865582275390625,
+      "y2": 1
+    },
+    "predictedCls": 10,
+    "predictedName": "?",
+    "predictedConf": 0.515,
+    "annotated": false,
+    "skipped": true
+  },
+  "318055362806_1.jpg": {
+    "itemId": "318055362806",
+    "grader": "PSA",
+    "cardName": "Jolteon V",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "326996022823_1.jpg": {
+    "itemId": "326996022823",
+    "grader": "CGC",
+    "cardName": "Drifloon",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "298129849311_1.jpg": {
+    "itemId": "298129849311",
+    "grader": "PSA",
+    "cardName": "Crustle",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "147048543792_1.jpg": {
+    "itemId": "147048543792",
+    "grader": "PSA",
+    "cardName": "Iron Hands ex",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "298163224818_1.jpg": {
+    "itemId": "298163224818",
+    "grader": "PSA",
+    "cardName": "Arven",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "306752173943_1.jpg": {
+    "itemId": "306752173943",
+    "grader": "PSA",
+    "cardName": "Litten",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "358418898673_1.jpg": {
+    "itemId": "358418898673",
+    "grader": "PSA",
+    "cardName": "Latias ex",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "306778016593_1.jpg": {
+    "itemId": "306778016593",
+    "grader": "PSA",
+    "cardName": "Mienshao",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "358306921900_1.jpg": {
+    "itemId": "358306921900",
+    "grader": "PSA",
+    "cardName": "Spheal",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "297618647478_1.jpg": {
+    "itemId": "297618647478",
+    "grader": "PSA",
+    "cardName": "Falkner",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "358033747799_1.jpg": {
+    "itemId": "358033747799",
+    "grader": "PSA",
+    "cardName": "Zapdos",
+    "predictedBbox": {
+      "x1": 0.29767383575439454,
+      "y1": 0.4395790100097656,
+      "x2": 0.6118873977661132,
+      "y2": 0.8644416809082032
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.95,
+    "annotated": true,
+    "skipped": false,
+    "annotations": [
+      {
+        "class": 1,
+        "cx": 0.4492521367521367,
+        "cy": 0.3438983833008682,
+        "w": 0.3062678062678063,
+        "h": 0.12108262108262108
+      }
+    ]
+  },
+  "336495223643_1.jpg": {
+    "itemId": "336495223643",
+    "grader": "PSA",
+    "cardName": "Zinnia's Resolve",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "327071224495_1.jpg": {
+    "itemId": "327071224495",
+    "grader": "PSA",
+    "cardName": "Rayquaza VMAX",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "257453089544_1.jpg": {
+    "itemId": "257453089544",
+    "grader": "PSA",
+    "cardName": "Phanpy",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "277747590606_1.jpg": {
+    "itemId": "277747590606",
+    "grader": "PSA",
+    "cardName": "Pikipek",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "277727323049_1.jpg": {
+    "itemId": "277727323049",
+    "grader": "PSA",
+    "cardName": "Nemona",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "257399391713_1.jpg": {
+    "itemId": "257399391713",
+    "grader": "PSA",
+    "cardName": "Popplio",
+    "predictedBbox": {
+      "x1": 0.13568058013916015,
+      "y1": 0.04879188537597656,
+      "x2": 0.8500346374511719,
+      "y2": 0.8798698425292969
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.965,
+    "annotated": false,
+    "skipped": true
+  },
+  "297983598097_1.jpg": {
+    "itemId": "297983598097",
+    "grader": "PSA",
+    "cardName": "Skarmory",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "335981911686_1.jpg": {
+    "itemId": "335981911686",
+    "grader": "PSA",
+    "cardName": "Castform Sunny Form",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "366331415577_1.jpg": {
+    "itemId": "366331415577",
+    "grader": "PSA",
+    "cardName": "Team Rocket's Spidops",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "403703041201_1.jpg": {
+    "itemId": "403703041201",
+    "grader": "PSA",
+    "cardName": "Pikachu",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "298069231711_1.jpg": {
+    "itemId": "298069231711",
+    "grader": "PSA",
+    "cardName": "Wo-Chien",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "277781923482_1.jpg": {
+    "itemId": "277781923482",
+    "grader": "PSA",
+    "cardName": "Counter Gain",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "397531367080_1.jpg": {
+    "itemId": "397531367080",
+    "grader": "CGC",
+    "cardName": "Grusha",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "298028197674_1.jpg": {
+    "itemId": "298028197674",
+    "grader": "PSA",
+    "cardName": "Chikorita",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "236744577970_1.jpg": {
+    "itemId": "236744577970",
+    "grader": "PSA",
+    "cardName": "Pikachu",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "287096123646_1.jpg": {
+    "itemId": "287096123646",
+    "grader": "PSA",
+    "cardName": "Wattrel",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "366286989541_1.jpg": {
+    "itemId": "366286989541",
+    "grader": "PSA",
+    "cardName": "Gardevoir ex",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "137008288794_1.jpg": {
+    "itemId": "137008288794",
+    "grader": "PSA",
+    "cardName": "Eevee",
+    "predictedBbox": {
+      "x1": 0.197152582804362,
+      "y1": 0.26715187072753904,
+      "x2": 0.754773203531901,
+      "y2": 0.7962267303466797
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.952,
+    "annotated": true,
+    "skipped": false,
+    "annotations": [
+      {
+        "class": 3,
+        "cx": 0.4744776828110162,
+        "cy": 0.14936490751739234,
+        "w": 0.5899810066476734,
+        "h": 0.17539173789173793
+      }
+    ]
+  },
+  "327014111233_1.jpg": {
+    "itemId": "327014111233",
+    "grader": "PSA",
+    "cardName": "Sylveon V",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "306850639739_1.jpg": {
+    "itemId": "306850639739",
+    "grader": "PSA",
+    "cardName": "Pikachu",
+    "predictedBbox": {
+      "x1": 0.13261909484863282,
+      "y1": 0.10151910781860352,
+      "x2": 0.8051063537597656,
+      "y2": 0.8685196685791016
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.955,
+    "annotated": false,
+    "skipped": false
+  },
+  "336468534061_1.jpg": {
+    "itemId": "336468534061",
+    "grader": "PSA",
+    "cardName": "Iron Crown",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "336359657302_1.jpg": {
+    "itemId": "336359657302",
+    "grader": "PSA",
+    "cardName": "Alolan Raichu",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "117110898003_1.jpg": {
+    "itemId": "117110898003",
+    "grader": "PSA",
+    "cardName": "Frosmoth",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "177286826443_1.jpg": {
+    "itemId": "177286826443",
+    "grader": "PSA",
+    "cardName": "Surskit",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "137040550837_1.jpg": {
+    "itemId": "137040550837",
+    "grader": "PSA",
+    "cardName": "Eevee",
+    "predictedBbox": {
+      "x1": 0.197152582804362,
+      "y1": 0.26715187072753904,
+      "x2": 0.754773203531901,
+      "y2": 0.7962267303466797
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.952,
+    "annotated": true,
+    "skipped": false,
+    "annotations": [
+      {
+        "class": 3,
+        "cx": 0.4726970560303895,
+        "cy": 0.14891975082223566,
+        "w": 0.5935422602089269,
+        "h": 0.17984330484330485
+      }
+    ]
+  },
+  "376989151156_1.jpg": {
+    "itemId": "376989151156",
+    "grader": "PSA",
+    "cardName": "Blaziken",
+    "predictedBbox": {
+      "x1": 0.10959801030001402,
+      "y1": 0.23091699018255488,
+      "x2": 0.8922824013109361,
+      "y2": 0.9462835874575568
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.883,
+    "annotated": false,
+    "skipped": true
+  },
+  "397687877038_1.jpg": {
+    "itemId": "397687877038",
+    "grader": "PSA",
+    "cardName": "Xurkitree",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "277721413686_1.jpg": {
+    "itemId": "277721413686",
+    "grader": "CGC",
+    "cardName": "Komala",
+    "predictedBbox": {
+      "x1": 0.13261909484863282,
+      "y1": 0.10151910781860352,
+      "x2": 0.8051063537597656,
+      "y2": 0.8685196685791016
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.955,
+    "annotated": false,
+    "skipped": false
+  },
+  "306795278268_1.jpg": {
+    "itemId": "306795278268",
+    "grader": "CGC",
+    "cardName": "Wooloo",
+    "predictedBbox": {
+      "x1": 0.20438413619995116,
+      "y1": 0.037850705019273775,
+      "x2": 0.7609114837646485,
+      "y2": 0.922449872243801
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.952,
+    "annotated": false,
+    "skipped": true
+  },
+  "406761701041_1.jpg": {
+    "itemId": "406761701041",
+    "grader": "PSA",
+    "cardName": "Ceruledge",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "389487645055_1.jpg": {
+    "itemId": "389487645055",
+    "grader": "PSA",
+    "cardName": "Dark Dragonite",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "306720397179_1.jpg": {
+    "itemId": "306720397179",
+    "grader": "PSA",
+    "cardName": "Duraludon V",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "157644134024_1.jpg": {
+    "itemId": "157644134024",
+    "grader": "PSA",
+    "cardName": "Cynthia's Garchomp ex",
+    "predictedBbox": {
+      "x1": 0.1702802022298177,
+      "y1": 0.1713818359375,
+      "x2": 0.7731791687011719,
+      "y2": 0.9338711547851563
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.909,
+    "annotated": true,
+    "skipped": false,
+    "annotations": [
+      {
+        "class": 3,
+        "cx": 0.4744776828110162,
+        "cy": 0.26777658842907326,
+        "w": 0.47364672364672367,
+        "h": 0.13621794871794873
+      }
+    ]
+  },
+  "267555651819_1.jpg": {
+    "itemId": "267555651819",
+    "grader": "PSA",
+    "cardName": "Phanpy",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "336415494083_1.jpg": {
+    "itemId": "336415494083",
+    "grader": "CGC",
+    "cardName": "Wo-Chien",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "287273274283_1.jpg": {
+    "itemId": "287273274283",
+    "grader": "PSA",
+    "cardName": "Pikachu ex",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "147132435336_1.jpg": {
+    "itemId": "147132435336",
+    "grader": "PSA",
+    "cardName": "Ivysaur",
+    "predictedBbox": {
+      "x1": 0.24520055135091146,
+      "y1": 0.2310429573059082,
+      "x2": 0.7094820658365886,
+      "y2": 0.7211773681640625
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.95,
+    "annotated": false,
+    "skipped": true
+  },
+  "336448853015_1.jpg": {
+    "itemId": "336448853015",
+    "grader": "PSA",
+    "cardName": "Charizard-GX",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "177688424982_1.jpg": {
+    "itemId": "177688424982",
+    "grader": "PSA",
+    "cardName": "Armarouge ex",
+    "predictedBbox": {
+      "x1": 0,
+      "y1": 0.010075187683105469,
+      "x2": 1,
+      "y2": 0.9913904282653216
+    },
+    "predictedCls": 10,
+    "predictedName": "?",
+    "predictedConf": 0.343,
+    "annotated": false,
+    "skipped": true
+  },
+  "257377265168_1.jpg": {
+    "itemId": "257377265168",
+    "grader": "BGS",
+    "cardName": "Litten",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "298213872990_1.jpg": {
+    "itemId": "298213872990",
+    "grader": "PSA",
+    "cardName": "Charcadet",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "406660995314_1.jpg": {
+    "itemId": "406660995314",
+    "grader": "PSA",
+    "cardName": "Gimmighoul",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "184927179449_1.jpg": {
+    "itemId": "184927179449",
+    "grader": "PSA",
+    "cardName": "Haunter",
+    "predictedBbox": {
+      "x1": 0,
+      "y1": 0.008425617218017578,
+      "x2": 0.9297280438871599,
+      "y2": 0.9923590087890625
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.944,
+    "annotated": false,
+    "skipped": true
+  },
+  "358176955891_1.jpg": {
+    "itemId": "358176955891",
+    "grader": "PSA",
+    "cardName": "Rabsca",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "287182336284_1.jpg": {
+    "itemId": "287182336284",
+    "grader": "CGC",
+    "cardName": "Gimmighoul",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "318091567983_1.jpg": {
+    "itemId": "318091567983",
+    "grader": "PSA",
+    "cardName": "Charcadet",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "397497164813_1.jpg": {
+    "itemId": "397497164813",
+    "grader": "PSA",
+    "cardName": "Ting-Lu ex",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "377078941540_1.jpg": {
+    "itemId": "377078941540",
+    "grader": "PSA",
+    "cardName": "Sylveon V",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "257432226928_1.jpg": {
+    "itemId": "257432226928",
+    "grader": "PSA",
+    "cardName": "Mesprit",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "306692131564_1.jpg": {
+    "itemId": "306692131564",
+    "grader": "CGC",
+    "cardName": "Lucario",
+    "predictedBbox": {
+      "x1": 0.11605868869357638,
+      "y1": 0.11494264602661133,
+      "x2": 0.8868150499131945,
+      "y2": 0.8420669555664062
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.945,
+    "annotated": true,
+    "skipped": false,
+    "annotations": [
+      {
+        "class": 3,
+        "cx": 0.5007913896802786,
+        "cy": 0.20768043458291943,
+        "w": 0.6157011712567269,
+        "h": 0.129985754985755
+      }
+    ]
+  },
+  "317973439564_1.jpg": {
+    "itemId": "317973439564",
+    "grader": "CGC",
+    "cardName": "Eevee",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "306775082183_1.jpg": {
+    "itemId": "306775082183",
+    "grader": "PSA",
+    "cardName": "Marnie's Purrloin",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "286819231644_1.jpg": {
+    "itemId": "286819231644",
+    "grader": "PSA",
+    "cardName": "Bombirdier",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "306727422438_1.jpg": {
+    "itemId": "306727422438",
+    "grader": "PSA",
+    "cardName": "Mewtwo & Mew-GX",
+    "predictedBbox": {
+      "x1": 0.13568058013916015,
+      "y1": 0.04879188537597656,
+      "x2": 0.8500346374511719,
+      "y2": 0.8798698425292969
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.965,
+    "annotated": false,
+    "skipped": false
+  },
+  "297699561293_1.jpg": {
+    "itemId": "297699561293",
+    "grader": "PSA",
+    "cardName": "Breloom V",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "389713616748_1.jpg": {
+    "itemId": "389713616748",
+    "grader": "PSA",
+    "cardName": "Gimmighoul",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "406646230379_1.jpg": {
+    "itemId": "406646230379",
+    "grader": "PSA",
+    "cardName": "Raichu & Alolan Raichu-GX",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "326892606543_1.jpg": {
+    "itemId": "326892606543",
+    "grader": "CGC",
+    "cardName": "Popplio",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "366233100485_1.jpg": {
+    "itemId": "366233100485",
+    "grader": "PSA",
+    "cardName": "Meowscarada ex",
+    "predictedBbox": {
+      "x1": 0,
+      "y1": 0.00025434494018554686,
+      "x2": 1,
+      "y2": 1
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.441,
+    "annotated": false,
+    "skipped": true
+  },
+  "306727661467_1.jpg": {
+    "itemId": "306727661467",
+    "grader": "CGC",
+    "cardName": "Maractus",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "366329388055_1.jpg": {
+    "itemId": "366329388055",
+    "grader": "PSA",
+    "cardName": "Lisia's Appeal",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "389880134573_1.jpg": {
+    "itemId": "389880134573",
+    "grader": "PSA",
+    "cardName": "Larvesta",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "117115503887_1.jpg": {
+    "itemId": "117115503887",
+    "grader": "PSA",
+    "cardName": "Mow Rotom",
+    "predictedBbox": {
+      "x1": 0.10959801030001402,
+      "y1": 0.23091699018255488,
+      "x2": 0.8922824013109361,
+      "y2": 0.9462835874575568
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.883,
+    "annotated": false,
+    "skipped": true
+  },
+  "227271432086_1.jpg": {
+    "itemId": "227271432086",
+    "grader": "CGC",
+    "cardName": "Toxtricity",
+    "predictedBbox": {
+      "x1": 0.1874497095743815,
+      "y1": 0.0725257396697998,
+      "x2": 0.7995423380533854,
+      "y2": 0.7601898956298828
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.939,
+    "annotated": true,
+    "skipped": false,
+    "annotations": [
+      {
+        "class": 1,
+        "cx": 0.49881291547958223,
+        "cy": 0.19432573372821857,
+        "w": 0.4867046533713201,
+        "h": 0.15313390313390313
+      }
+    ]
+  },
+  "377074799565_1.jpg": {
+    "itemId": "377074799565",
+    "grader": "PSA",
+    "cardName": "Ceruledge",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "277699955864_1.jpg": {
+    "itemId": "277699955864",
+    "grader": "CGC",
+    "cardName": "Shiinotic",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "306859535294_1.jpg": {
+    "itemId": "306859535294",
+    "grader": "PSA",
+    "cardName": "Brilliant Blender",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "406716346564_1.jpg": {
+    "itemId": "406716346564",
+    "grader": "PSA",
+    "cardName": "Great Tusk ex",
+    "predictedBbox": {
+      "x1": 0.2854080581665039,
+      "y1": 0.34473846435546873,
+      "x2": 0.6848625946044922,
+      "y2": 0.8457935333251954
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.953,
+    "annotated": true,
+    "skipped": false,
+    "annotations": [
+      {
+        "class": 3,
+        "cx": 0.4875356125356125,
+        "cy": 0.2165835684860533,
+        "w": 0.430911680911681,
+        "h": 0.19052706552706555
+      }
+    ]
+  },
+  "227234228140_1.jpg": {
+    "itemId": "227234228140",
+    "grader": "PSA",
+    "cardName": "Cynthia's Spiritomb",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "389877909942_1.jpg": {
+    "itemId": "389877909942",
+    "grader": "PSA",
+    "cardName": "Spheal",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "227307356083_1.jpg": {
+    "itemId": "227307356083",
+    "grader": "CGC",
+    "cardName": "Mimikyu",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "117134370979_1.jpg": {
+    "itemId": "117134370979",
+    "grader": "PSA",
+    "cardName": "Sneasel",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "117017250027_1.jpg": {
+    "itemId": "117017250027",
+    "grader": "PSA",
+    "cardName": "Koraidon",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "287237190642_1.jpg": {
+    "itemId": "287237190642",
+    "grader": "PSA",
+    "cardName": "Skarmory",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "389810068029_1.jpg": {
+    "itemId": "389810068029",
+    "grader": "PSA",
+    "cardName": "Weavile",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "388455584433_1.jpg": {
+    "itemId": "388455584433",
+    "grader": "PSA",
+    "cardName": "Spheal",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "147260838567_1.jpg": {
+    "itemId": "147260838567",
+    "grader": "PSA",
+    "cardName": "Feebas",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "117068475333_1.jpg": {
+    "itemId": "117068475333",
+    "grader": "PSA",
+    "cardName": "Crustle",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "306703147538_1.jpg": {
+    "itemId": "306703147538",
+    "grader": "PSA",
+    "cardName": "Pokémon Center",
+    "predictedBbox": {
+      "x1": 0.197152582804362,
+      "y1": 0.26715187072753904,
+      "x2": 0.754773203531901,
+      "y2": 0.7962267303466797
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.952,
+    "annotated": true,
+    "skipped": false,
+    "annotations": [
+      {
+        "class": 3,
+        "cx": 0.4697293447293448,
+        "cy": 0.1453584972609821,
+        "w": 0.5899810066476734,
+        "h": 0.18696581196581197
+      }
+    ]
+  },
+  "227284181846_1.jpg": {
+    "itemId": "227284181846",
+    "grader": "PSA",
+    "cardName": "Reshiram-GX",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "306772673718_1.jpg": {
+    "itemId": "306772673718",
+    "grader": "PSA",
+    "cardName": "Wo-Chien",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "198217673338_1.jpg": {
+    "itemId": "198217673338",
+    "grader": "PSA",
+    "cardName": "Mega Feraligatr ex",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "326790275452_1.jpg": {
+    "itemId": "326790275452",
+    "grader": "CGC",
+    "cardName": "Team Rocket's Meowth",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "236634709228_1.jpg": {
+    "itemId": "236634709228",
+    "grader": "PSA",
+    "cardName": "Mew",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "267408234703_1.jpg": {
+    "itemId": "267408234703",
+    "grader": "PSA",
+    "cardName": "Eevee",
+    "predictedBbox": {
+      "x1": 0.197152582804362,
+      "y1": 0.26715187072753904,
+      "x2": 0.754773203531901,
+      "y2": 0.7962267303466797
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.952,
+    "annotated": false,
+    "skipped": false
+  },
+  "366136660011_1.jpg": {
+    "itemId": "366136660011",
+    "grader": "PSA",
+    "cardName": "Nemona",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "297978097674_1.jpg": {
+    "itemId": "297978097674",
+    "grader": "PSA",
+    "cardName": "Charmeleon",
+    "predictedBbox": {
+      "x1": 0.23448266983032226,
+      "y1": 0.3000819206237793,
+      "x2": 0.6936801147460937,
+      "y2": 0.9350088500976562
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.947,
+    "annotated": true,
+    "skipped": false,
+    "annotations": [
+      {
+        "class": 1,
+        "cx": 0.4648326210826211,
+        "cy": 0.17073242888491372,
+        "w": 0.4585113960113961,
+        "h": 0.18963675213675218
+      }
+    ]
+  },
+  "317160699556_1.jpg": {
+    "itemId": "317160699556",
+    "grader": "PSA",
+    "cardName": "Toedscool",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "298188301144_1.jpg": {
+    "itemId": "298188301144",
+    "grader": "PSA",
+    "cardName": "Litten",
+    "predictedBbox": {
+      "x1": 0.13568058013916015,
+      "y1": 0.04879188537597656,
+      "x2": 0.8500346374511719,
+      "y2": 0.8798698425292969
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.965,
+    "annotated": false,
+    "skipped": false
+  },
+  "406639172839_1.jpg": {
+    "itemId": "406639172839",
+    "grader": "PSA",
+    "cardName": "Exeggcute",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "377023452870_1.jpg": {
+    "itemId": "377023452870",
+    "grader": "PSA",
+    "cardName": "Scorbunny",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "297990263786_1.jpg": {
+    "itemId": "297990263786",
+    "grader": "PSA",
+    "cardName": "Venomoth-GX",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "335957932622_1.jpg": {
+    "itemId": "335957932622",
+    "grader": "PSA",
+    "cardName": "Braviary",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "377019804638_1.jpg": {
+    "itemId": "377019804638",
+    "grader": "PSA",
+    "cardName": "Stunfisk",
+    "predictedBbox": {
+      "x1": 0.11535668700398462,
+      "y1": 0.2584423065185547,
+      "x2": 0.9087455451425555,
+      "y2": 0.9193598937988281
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.945,
+    "annotated": true,
+    "skipped": false,
+    "annotations": [
+      {
+        "class": 0,
+        "cx": 0.5060169014762467,
+        "cy": 0.11330721520970005,
+        "w": 0.8423662066745489,
+        "h": 0.1477920227920228
+      }
+    ]
+  },
+  "297958408604_1.jpg": {
+    "itemId": "297958408604",
+    "grader": "BGS",
+    "cardName": "Pikachu",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "318092772114_1.jpg": {
+    "itemId": "318092772114",
+    "grader": "CGC",
+    "cardName": "Spheal",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "298013304694_1.jpg": {
+    "itemId": "298013304694",
+    "grader": "PSA",
+    "cardName": "Mew",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "376204548552_1.jpg": {
+    "itemId": "376204548552",
+    "grader": "CGC",
+    "cardName": "Gyarados ex",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "287095471313_1.jpg": {
+    "itemId": "287095471313",
+    "grader": "CGC",
+    "cardName": "Starmie",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "236674754403_1.jpg": {
+    "itemId": "236674754403",
+    "grader": "PSA",
+    "cardName": "Katy",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "177463685801_1.jpg": {
+    "itemId": "177463685801",
+    "grader": "PSA",
+    "cardName": "Arven",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "336387543039_1.jpg": {
+    "itemId": "336387543039",
+    "grader": "PSA",
+    "cardName": "Deoxys",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "227269081996_1.jpg": {
+    "itemId": "227269081996",
+    "grader": "PSA",
+    "cardName": "Lapras",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "358147788350_1.jpg": {
+    "itemId": "358147788350",
+    "grader": "PSA",
+    "cardName": "Gardevoir ex",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "358347617999_1.jpg": {
+    "itemId": "358347617999",
+    "grader": "PSA",
+    "cardName": "Blaziken",
+    "predictedBbox": {
+      "x1": 0.10959801030001402,
+      "y1": 0.23091699018255488,
+      "x2": 0.8922824013109361,
+      "y2": 0.9462835874575568
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.883,
+    "annotated": false,
+    "skipped": false
+  },
+  "297828625818_1.jpg": {
+    "itemId": "297828625818",
+    "grader": "PSA",
+    "cardName": "Pikachu",
+    "predictedBbox": {
+      "x1": 0.13261909484863282,
+      "y1": 0.10151910781860352,
+      "x2": 0.8051063537597656,
+      "y2": 0.8685196685791016
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.955,
+    "annotated": false,
+    "skipped": true
+  },
+  "306860666433_1.jpg": {
+    "itemId": "306860666433",
+    "grader": "CGC",
+    "cardName": "Cynthia's Garchomp ex",
+    "predictedBbox": {
+      "x1": 0.1702802022298177,
+      "y1": 0.1713818359375,
+      "x2": 0.7731791687011719,
+      "y2": 0.9338711547851563
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.909,
+    "annotated": true,
+    "skipped": false,
+    "annotations": [
+      {
+        "class": 3,
+        "cx": 0.4721035137701805,
+        "cy": 0.27356362546611035,
+        "w": 0.4807692307692307,
+        "h": 0.13710826210826213
+      }
+    ]
+  },
+  "397527385948_1.jpg": {
+    "itemId": "397527385948",
+    "grader": "CGC",
+    "cardName": "Pikachu",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "377024245266_1.jpg": {
+    "itemId": "377024245266",
+    "grader": "PSA",
+    "cardName": "Rockruff",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "298237027026_1.jpg": {
+    "itemId": "298237027026",
+    "grader": "PSA",
+    "cardName": "Slowpoke",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "277172523098_1.jpg": {
+    "itemId": "277172523098",
+    "grader": "PSA",
+    "cardName": "Professor Elm's Lecture",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "178041265695_1.jpg": {
+    "itemId": "178041265695",
+    "grader": "CGC",
+    "cardName": "Umbreon VMAX",
+    "predictedBbox": {
+      "x1": 0.2973604202270508,
+      "y1": 0.35923675537109373,
+      "x2": 0.7308477783203124,
+      "y2": 0.8602832794189453
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.949,
+    "annotated": false,
+    "skipped": true
+  },
+  "397586835759_1.jpg": {
+    "itemId": "397586835759",
+    "grader": "PSA",
+    "cardName": "Penny",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "267643631155_1.jpg": {
+    "itemId": "267643631155",
+    "grader": "PSA",
+    "cardName": "Blaziken",
+    "predictedBbox": {
+      "x1": 0.10959801030001402,
+      "y1": 0.23091699018255488,
+      "x2": 0.8922824013109361,
+      "y2": 0.9462835874575568
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.883,
+    "annotated": false,
+    "skipped": true
+  },
+  "377027246078_1.jpg": {
+    "itemId": "377027246078",
+    "grader": "PSA",
+    "cardName": "Mew",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "358229787519_1.jpg": {
+    "itemId": "358229787519",
+    "grader": "PSA",
+    "cardName": "Spidops ex",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "287212318091_1.jpg": {
+    "itemId": "287212318091",
+    "grader": "PSA",
+    "cardName": "Lapras",
+    "predictedBbox": {
+      "x1": 0.008836836309476931,
+      "y1": 0.0023414611518196645,
+      "x2": 1,
+      "y2": 1
+    },
+    "predictedCls": 10,
+    "predictedName": "?",
+    "predictedConf": 0.498,
+    "annotated": false,
+    "skipped": false
+  },
+  "297993546930_1.jpg": {
+    "itemId": "297993546930",
+    "grader": "CGC",
+    "cardName": "Starmie",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "178008487063_1.jpg": {
+    "itemId": "178008487063",
+    "grader": "PSA",
+    "cardName": "Alolan Raichu",
+    "predictedBbox": {
+      "x1": 0.16423753102620442,
+      "y1": 0.09447431564331055,
+      "x2": 0.8185128953721789,
+      "y2": 0.8965604782104493
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.962,
+    "annotated": false,
+    "skipped": true
+  },
+  "306712681054_1.jpg": {
+    "itemId": "306712681054",
+    "grader": "CGC",
+    "cardName": "Shiinotic",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "297916607439_1.jpg": {
+    "itemId": "297916607439",
+    "grader": "PSA",
+    "cardName": "Professor Elm's Lecture",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "366170349347_1.jpg": {
+    "itemId": "366170349347",
+    "grader": "PSA",
+    "cardName": "Lapras",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "336537472176_1.jpg": {
+    "itemId": "336537472176",
+    "grader": "PSA",
+    "cardName": "Exeggcute",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "236650564698_1.jpg": {
+    "itemId": "236650564698",
+    "grader": "PSA",
+    "cardName": "Mewtwo",
+    "predictedBbox": {
+      "x1": 0.13568058013916015,
+      "y1": 0.04879188537597656,
+      "x2": 0.8500346374511719,
+      "y2": 0.8798698425292969
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.965,
+    "annotated": false,
+    "skipped": true
+  },
+  "117066262007_1.jpg": {
+    "itemId": "117066262007",
+    "grader": "PSA",
+    "cardName": "Dragapult",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "389638825721_1.jpg": {
+    "itemId": "389638825721",
+    "grader": "PSA",
+    "cardName": "Mimikyu",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "297143310968_1.jpg": {
+    "itemId": "297143310968",
+    "grader": "PSA",
+    "cardName": "Clemont's Quick Wit",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "277545298394_1.jpg": {
+    "itemId": "277545298394",
+    "grader": "PSA",
+    "cardName": "Muk & Alolan Muk-GX",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "306639570543_1.jpg": {
+    "itemId": "306639570543",
+    "grader": "PSA",
+    "cardName": "Vivillon",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "397698364326_1.jpg": {
+    "itemId": "397698364326",
+    "grader": "BGS",
+    "cardName": "Shroomish",
+    "predictedBbox": {
+      "x1": 0.31991939544677733,
+      "y1": 0.3038741111755371,
+      "x2": 0.8374278259277343,
+      "y2": 0.884975814819336
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.952,
+    "annotated": true,
+    "skipped": false,
+    "annotations": [
+      {
+        "class": 0,
+        "cx": 0.5489672364672364,
+        "cy": 0.21480294170542655,
+        "w": 0.40598290598290604,
+        "h": 0.08012820512820512
+      }
+    ]
+  },
+  "389856556668_1.jpg": {
+    "itemId": "389856556668",
+    "grader": "PSA",
+    "cardName": "Lucario",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "267552197892_1.jpg": {
+    "itemId": "267552197892",
+    "grader": "PSA",
+    "cardName": "Team Rocket's Persian ex",
+    "predictedBbox": {
+      "x1": 0.31991939544677733,
+      "y1": 0.3038741111755371,
+      "x2": 0.8374278259277343,
+      "y2": 0.884975814819336
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.952,
+    "annotated": false,
+    "skipped": false
+  },
+  "206126543729_1.jpg": {
+    "itemId": "206126543729",
+    "grader": "PSA",
+    "cardName": "Bewear-GX",
+    "predictedBbox": {
+      "x1": 0.13568058013916015,
+      "y1": 0.04879188537597656,
+      "x2": 0.8500346374511719,
+      "y2": 0.8798698425292969
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.965,
+    "annotated": false,
+    "skipped": true
+  },
+  "377039779631_1.jpg": {
+    "itemId": "377039779631",
+    "grader": "PSA",
+    "cardName": "Spidops ex",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "147175078479_1.jpg": {
+    "itemId": "147175078479",
+    "grader": "PSA",
+    "cardName": "Night Stretcher",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "277660023022_1.jpg": {
+    "itemId": "277660023022",
+    "grader": "PSA",
+    "cardName": "Lapras",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "336507457018_1.jpg": {
+    "itemId": "336507457018",
+    "grader": "PSA",
+    "cardName": "Charizard-GX",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "306748409479_1.jpg": {
+    "itemId": "306748409479",
+    "grader": "PSA",
+    "cardName": "Rockruff",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "136986992975_1.jpg": {
+    "itemId": "136986992975",
+    "grader": "PSA",
+    "cardName": "Cynthia's Garchomp ex",
+    "predictedBbox": {
+      "x1": 0.1702802022298177,
+      "y1": 0.1713818359375,
+      "x2": 0.7731791687011719,
+      "y2": 0.9338711547851563
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.909,
+    "annotated": true,
+    "skipped": false,
+    "annotations": [
+      {
+        "class": 3,
+        "cx": 0.47150997150997154,
+        "cy": 0.26911205851454334,
+        "w": 0.45584045584045585,
+        "h": 0.13532763532763534
+      }
+    ]
+  },
+  "306794554372_1.jpg": {
+    "itemId": "306794554372",
+    "grader": "PSA",
+    "cardName": "N's Darumaka",
+    "predictedBbox": {
+      "x1": 0,
+      "y1": 0.006648063659667969,
+      "x2": 0.1016131995644771,
+      "y2": 0.9075292944908142
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.251,
+    "annotated": false,
+    "skipped": false
+  },
+  "306856065762_1.jpg": {
+    "itemId": "306856065762",
+    "grader": "PSA",
+    "cardName": "Pikachu",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "406722970690_1.jpg": {
+    "itemId": "406722970690",
+    "grader": "PSA",
+    "cardName": "Rellor",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "406708599178_1.jpg": {
+    "itemId": "406708599178",
+    "grader": "PSA",
+    "cardName": "Zygarde",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "298114244126_1.jpg": {
+    "itemId": "298114244126",
+    "grader": "PSA",
+    "cardName": "Pawmi",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "327085630529_1.jpg": {
+    "itemId": "327085630529",
+    "grader": "PSA",
+    "cardName": "Pal Pad",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "317536772788_1.jpg": {
+    "itemId": "317536772788",
+    "grader": "PSA",
+    "cardName": "Mesagoza",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "406720148135_1.jpg": {
+    "itemId": "406720148135",
+    "grader": "PSA",
+    "cardName": "Ivysaur",
+    "predictedBbox": {
+      "x1": 0.24520055135091146,
+      "y1": 0.2310429573059082,
+      "x2": 0.7094820658365886,
+      "y2": 0.7211773681640625
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.95,
+    "annotated": false,
+    "skipped": true
+  },
+  "287134743794_1.jpg": {
+    "itemId": "287134743794",
+    "grader": "PSA",
+    "cardName": "Clobbopus",
+    "predictedBbox": {
+      "x1": 0.11062020753559314,
+      "y1": 0.2541769913801058,
+      "x2": 0.8978350990696957,
+      "y2": 0.9203841081754429
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.948,
+    "annotated": false,
+    "skipped": false
+  },
+  "206172550172_1.jpg": {
+    "itemId": "206172550172",
+    "grader": "PSA",
+    "cardName": "Mew VMAX",
+    "predictedBbox": {
+      "x1": 0.03467470837205623,
+      "y1": 0.03194260431788201,
+      "x2": 0.4872669999734945,
+      "y2": 0.7149753732320981
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.963,
+    "annotated": true,
+    "skipped": false,
+    "annotations": [
+      {
+        "class": 1,
+        "cx": 0.26053175043314997,
+        "cy": 0.1373456767481616,
+        "w": 0.3535707079494187,
+        "h": 0.14245014245014248
+      }
+    ]
+  },
+  "389867980611_1.jpg": {
+    "itemId": "389867980611",
+    "grader": "PSA",
+    "cardName": "Pikachu",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "358282515145_1.jpg": {
+    "itemId": "358282515145",
+    "grader": "PSA",
+    "cardName": "Miriam",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "306841531549_1.jpg": {
+    "itemId": "306841531549",
+    "grader": "CGC",
+    "cardName": "Litten",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "287093070184_1.jpg": {
+    "itemId": "287093070184",
+    "grader": "PSA",
+    "cardName": "Spheal",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "117120615716_1.jpg": {
+    "itemId": "117120615716",
+    "grader": "PSA",
+    "cardName": "Wash Rotom",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "117123890660_1.jpg": {
+    "itemId": "117123890660",
+    "grader": "PSA",
+    "cardName": "Dedenne",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "298133765056_1.jpg": {
+    "itemId": "298133765056",
+    "grader": "PSA",
+    "cardName": "Slurpuff",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "306732935050_1.jpg": {
+    "itemId": "306732935050",
+    "grader": "PSA",
+    "cardName": "Palafin",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "277808769160_1.jpg": {
+    "itemId": "277808769160",
+    "grader": "PSA",
+    "cardName": "Gardevoir & Sylveon-GX",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "317891883816_1.jpg": {
+    "itemId": "317891883816",
+    "grader": "CGC",
+    "cardName": "Alolan Meowth",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "317888944441_1.jpg": {
+    "itemId": "317888944441",
+    "grader": "PSA",
+    "cardName": "Mega Dragonite ex",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "188179178751_1.jpg": {
+    "itemId": "188179178751",
+    "grader": "CGC",
+    "cardName": "Heatran",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "377095430764_1.jpg": {
+    "itemId": "377095430764",
+    "grader": "CGC",
+    "cardName": "Litten",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "397613819178_1.jpg": {
+    "itemId": "397613819178",
+    "grader": "PSA",
+    "cardName": "Weavile",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "376969302742_1.jpg": {
+    "itemId": "376969302742",
+    "grader": "PSA",
+    "cardName": "Espeon VMAX",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "397755271410_1.jpg": {
+    "itemId": "397755271410",
+    "grader": "PSA",
+    "cardName": "Cynthia's Garchomp ex",
+    "predictedBbox": {
+      "x1": 0.1702802022298177,
+      "y1": 0.1713818359375,
+      "x2": 0.7731791687011719,
+      "y2": 0.9338711547851563
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.909,
+    "annotated": true,
+    "skipped": false,
+    "annotations": [
+      {
+        "class": 3,
+        "cx": 0.4738841405508073,
+        "cy": 0.2744539388564237,
+        "w": 0.4748338081671415,
+        "h": 0.13176638176638178
+      }
+    ]
+  },
+  "376666570155_1.jpg": {
+    "itemId": "376666570155",
+    "grader": "CGC",
+    "cardName": "Spinarak",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "306834248563_1.jpg": {
+    "itemId": "306834248563",
+    "grader": "PSA",
+    "cardName": "Cofagrigus",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "126537567276_1.jpg": {
+    "itemId": "126537567276",
+    "grader": "PSA",
+    "cardName": "Heatran",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "298130681224_1.jpg": {
+    "itemId": "298130681224",
+    "grader": "PSA",
+    "cardName": "Frosmoth",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "306720834085_1.jpg": {
+    "itemId": "306720834085",
+    "grader": "PSA",
+    "cardName": "Iron Treads ex",
+    "predictedBbox": {
+      "x1": 0.14659105936686198,
+      "y1": 0.007568824291229248,
+      "x2": 0.7756281534830729,
+      "y2": 0.17755718231201173
+    },
+    "predictedCls": 5,
+    "predictedName": "?",
+    "predictedConf": 0.947,
+    "annotated": true,
+    "skipped": false,
+    "annotations": [
+      {
+        "class": 1,
+        "cx": 0.4691358024691359,
+        "cy": 0.09550094740343223,
+        "w": 0.6077872744539412,
+        "h": 0.1673789173789174
+      }
+    ]
+  },
+  "306765004968_1.jpg": {
+    "itemId": "306765004968",
+    "grader": "PSA",
+    "cardName": "Bayleef",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "326187965608_1.jpg": {
+    "itemId": "326187965608",
+    "grader": "CGC",
+    "cardName": "Raichu",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "397622946907_1.jpg": {
+    "itemId": "397622946907",
+    "grader": "CGC",
+    "cardName": "Latias ex",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "267623566940_1.jpg": {
+    "itemId": "267623566940",
+    "grader": "PSA",
+    "cardName": "Litten",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "236725597519_1.jpg": {
+    "itemId": "236725597519",
+    "grader": "PSA",
+    "cardName": "Crustle",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "267584352686_1.jpg": {
+    "itemId": "267584352686",
+    "grader": "PSA",
+    "cardName": "Kecleon",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "168275264593_1.jpg": {
+    "itemId": "168275264593",
+    "grader": "PSA",
+    "cardName": "Raichu-GX",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "306817935918_1.jpg": {
+    "itemId": "306817935918",
+    "grader": "PSA",
+    "cardName": "Litten",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "326994126327_1.jpg": {
+    "itemId": "326994126327",
+    "grader": "CGC",
+    "cardName": "Litten",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "317932573972_1.jpg": {
+    "itemId": "317932573972",
+    "grader": "PSA",
+    "cardName": "Zinnia's Resolve",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "236590774103_1.jpg": {
+    "itemId": "236590774103",
+    "grader": "CGC",
+    "cardName": "Spewpa",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "376527952622_1.jpg": {
+    "itemId": "376527952622",
+    "grader": "PSA",
+    "cardName": "Swadloon",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "318106181866_1.jpg": {
+    "itemId": "318106181866",
+    "grader": "PSA",
+    "cardName": "Mew VMAX",
+    "predictedBbox": {
+      "x1": 0.03467470837205623,
+      "y1": 0.03194260431788201,
+      "x2": 0.4872669999734945,
+      "y2": 0.7149753732320981
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.963,
+    "annotated": true,
+    "skipped": false,
+    "annotations": [
+      {
+        "class": 1,
+        "cx": 0.258083199824082,
+        "cy": 0.1351198932723781,
+        "w": 0.35455012819304593,
+        "h": 0.13799857549857553
+      }
+    ]
+  },
+  "287215804565_1.jpg": {
+    "itemId": "287215804565",
+    "grader": "PSA",
+    "cardName": "Mimikyu",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "397653857151_1.jpg": {
+    "itemId": "397653857151",
+    "grader": "PSA",
+    "cardName": "Skarmory",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "336496649851_1.jpg": {
+    "itemId": "336496649851",
+    "grader": "PSA",
+    "cardName": "Gardevoir & Sylveon-GX",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "188021505706_1.jpg": {
+    "itemId": "188021505706",
+    "grader": "PSA",
+    "cardName": "Feebas",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "287220078431_1.jpg": {
+    "itemId": "287220078431",
+    "grader": "PSA",
+    "cardName": "Coalossal",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "366147899312_1.jpg": {
+    "itemId": "366147899312",
+    "grader": "CGC",
+    "cardName": "Hoppip",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "389856577690_1.jpg": {
+    "itemId": "389856577690",
+    "grader": "PSA",
+    "cardName": "Pikachu & Zekrom-GX",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "389599173822_1.jpg": {
+    "itemId": "389599173822",
+    "grader": "CGC",
+    "cardName": "Lapras",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "298057200636_1.jpg": {
+    "itemId": "298057200636",
+    "grader": "CGC",
+    "cardName": "Tangrowth",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "298069182482_1.jpg": {
+    "itemId": "298069182482",
+    "grader": "CGC",
+    "cardName": "Team Rocket's Persian ex",
+    "predictedBbox": {
+      "x1": 0.31991939544677733,
+      "y1": 0.3038741111755371,
+      "x2": 0.8374278259277343,
+      "y2": 0.884975814819336
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.952,
+    "annotated": true,
+    "skipped": false,
+    "annotations": [
+      {
+        "class": 0,
+        "cx": 0.5489672364672364,
+        "cy": 0.2174738818763667,
+        "w": 0.41132478632478636,
+        "h": 0.08903133903133903
+      }
+    ]
+  },
+  "376957610307_1.jpg": {
+    "itemId": "376957610307",
+    "grader": "CGC",
+    "cardName": "Clive",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "306856022383_1.jpg": {
+    "itemId": "306856022383",
+    "grader": "PSA",
+    "cardName": "Spewpa",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "317918213551_1.jpg": {
+    "itemId": "317918213551",
+    "grader": "PSA",
+    "cardName": "Kecleon",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "317950689501_1.jpg": {
+    "itemId": "317950689501",
+    "grader": "PSA",
+    "cardName": "Spheal",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "287136215319_1.jpg": {
+    "itemId": "287136215319",
+    "grader": "PSA",
+    "cardName": "Lucario-GX",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "306783867354_1.jpg": {
+    "itemId": "306783867354",
+    "grader": "PSA",
+    "cardName": "Natu",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "286934442811_1.jpg": {
+    "itemId": "286934442811",
+    "grader": "PSA",
+    "cardName": "Larry",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "406643204123_1.jpg": {
+    "itemId": "406643204123",
+    "grader": "PSA",
+    "cardName": "Lucario & Melmetal-GX",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "267615850816_1.jpg": {
+    "itemId": "267615850816",
+    "grader": "PSA",
+    "cardName": "Exeggcute",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "227299354289_1.jpg": {
+    "itemId": "227299354289",
+    "grader": "PSA",
+    "cardName": "Accelgor",
+    "predictedBbox": {
+      "x1": 0.03467470837205623,
+      "y1": 0.03194260431788201,
+      "x2": 0.4872669999734945,
+      "y2": 0.7149753732320981
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.963,
+    "annotated": true,
+    "skipped": false,
+    "annotations": [
+      {
+        "class": 1,
+        "cx": 0.26102146055496356,
+        "cy": 0.1364553633578482,
+        "w": 0.3525912877057915,
+        "h": 0.13532763532763536
+      }
+    ]
+  },
+  "257267577631_1.jpg": {
+    "itemId": "257267577631",
+    "grader": "PSA",
+    "cardName": "Clobbopus",
+    "predictedBbox": {
+      "x1": 0.11062020753559314,
+      "y1": 0.2541769913801058,
+      "x2": 0.8978350990696957,
+      "y2": 0.9203841081754429
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.948,
+    "annotated": true,
+    "skipped": false,
+    "annotations": [
+      {
+        "class": 0,
+        "cx": 0.49851223946618684,
+        "cy": 0.1150878419903269,
+        "w": 0.8450479832058779,
+        "h": 0.15135327635327633
+      }
+    ]
+  },
+  "317741262615_1.jpg": {
+    "itemId": "317741262615",
+    "grader": "CGC",
+    "cardName": "Phanpy",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "377109291490_1.jpg": {
+    "itemId": "377109291490",
+    "grader": "CGC",
+    "cardName": "Ceruledge",
+    "predictedBbox": {
+      "x1": 0,
+      "y1": 0.00576019287109375,
+      "x2": 0.9924462890625,
+      "y2": 1
+    },
+    "predictedCls": 10,
+    "predictedName": "?",
+    "predictedConf": 0.311,
+    "annotated": false,
+    "skipped": false
+  },
+  "287174902502_1.jpg": {
+    "itemId": "287174902502",
+    "grader": "BGS",
+    "cardName": "Starmie",
+    "predictedBbox": {
+      "x1": 0.14905555225978387,
+      "y1": 0.08102617263793946,
+      "x2": 0.8692299219745646,
+      "y2": 0.9241420745849609
+    },
+    "predictedCls": 3,
+    "predictedName": "TAG",
+    "predictedConf": 0.954,
+    "annotated": true,
+    "skipped": false,
+    "annotations": [
+      {
+        "class": 2,
+        "cx": 0.49576401445560325,
+        "cy": 0.16984211549460032,
+        "w": 0.5942482577996597,
+        "h": 0.10416666666666667
+      }
+    ]
+  },
+  "376957609903_1.jpg": {
+    "itemId": "376957609903",
+    "grader": "CGC",
+    "cardName": "Precious Trolley",
+    "predictedBbox": {
+      "x1": 0,
+      "y1": 0.00030528007500886685,
+      "x2": 0.7420529768770974,
+      "y2": 0.023826343459126573
+    },
+    "predictedCls": 8,
+    "predictedName": "?",
+    "predictedConf": 0.396,
+    "annotated": false,
+    "skipped": false
+  },
+  "376996430278_1.jpg": {
+    "itemId": "376996430278",
+    "grader": "CGC",
+    "cardName": "Entei",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "287195485381_1.jpg": {
+    "itemId": "287195485381",
+    "grader": "CGC",
+    "cardName": "Starmie",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "178035605811_1.jpg": {
+    "itemId": "178035605811",
+    "grader": "CGC",
+    "cardName": "Mew",
+    "predictedBbox": {
+      "x1": 0.11605868869357638,
+      "y1": 0.11494264602661133,
+      "x2": 0.8868150499131945,
+      "y2": 0.8420669555664062
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.945,
+    "annotated": true,
+    "skipped": false,
+    "annotations": [
+      {
+        "class": 3,
+        "cx": 0.4960430515986072,
+        "cy": 0.20500949441197927,
+        "w": 0.6125356125356125,
+        "h": 0.12820512820512825
+      }
+    ]
+  },
+  "397702284240_1.jpg": {
+    "itemId": "397702284240",
+    "grader": "CGC",
+    "cardName": "Miriam",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "318008543569_1.jpg": {
+    "itemId": "318008543569",
+    "grader": "BGS",
+    "cardName": "Starmie",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "336483857630_1.jpg": {
+    "itemId": "336483857630",
+    "grader": "CGC",
+    "cardName": "Haunter",
+    "predictedBbox": {
+      "x1": 0.10339066437080045,
+      "y1": 0.2863820190429687,
+      "x2": 0.8927056114014505,
+      "y2": 0.9322120361328124
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.95,
+    "annotated": true,
+    "skipped": false,
+    "annotations": [
+      {
+        "class": 1,
+        "cx": 0.49620173468296347,
+        "cy": 0.15782288472536965,
+        "w": 0.8067515533385841,
+        "h": 0.20121082621082623
+      }
+    ]
+  },
+  "267574452358_1.jpg": {
+    "itemId": "267574452358",
+    "grader": "CGC",
+    "cardName": "Pikachu",
+    "predictedBbox": {
+      "x1": 0.13261909484863282,
+      "y1": 0.10151910781860352,
+      "x2": 0.8051063537597656,
+      "y2": 0.8685196685791016
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.955,
+    "annotated": false,
+    "skipped": true
+  },
+  "377049533098_1.jpg": {
+    "itemId": "377049533098",
+    "grader": "CGC",
+    "cardName": "Lucario",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "389880095003_1.jpg": {
+    "itemId": "389880095003",
+    "grader": "CGC",
+    "cardName": "Snover",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "397633528831_1.jpg": {
+    "itemId": "397633528831",
+    "grader": "BGS",
+    "cardName": "Lucario",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "297926699638_1.jpg": {
+    "itemId": "297926699638",
+    "grader": "CGC",
+    "cardName": "Growlithe",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "267440903673_1.jpg": {
+    "itemId": "267440903673",
+    "grader": "CGC",
+    "cardName": "Turtonator",
+    "predictedBbox": {
+      "x1": 0.10724545031880978,
+      "y1": 0.27765827178955077,
+      "x2": 0.9072888948965528,
+      "y2": 0.9379569244384766
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.946,
+    "annotated": false,
+    "skipped": false
+  },
+  "177751061358_1.jpg": {
+    "itemId": "177751061358",
+    "grader": "CGC",
+    "cardName": "Maractus",
+    "predictedBbox": {
+      "x1": 0.09274098747654964,
+      "y1": 0.2990535888671875,
+      "x2": 0.8527298977500514,
+      "y2": 0.93699560546875
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.946,
+    "annotated": true,
+    "skipped": false,
+    "annotations": [
+      {
+        "class": 1,
+        "cx": 0.47437420340380876,
+        "cy": 0.1680614887139736,
+        "w": 0.7717025603538763,
+        "h": 0.19319800569800566
+      }
+    ]
+  },
+  "376870968965_1.jpg": {
+    "itemId": "376870968965",
+    "grader": "CGC",
+    "cardName": "Shroomish",
+    "predictedBbox": {
+      "x1": 0.10935518125824581,
+      "y1": 0.2929563598632812,
+      "x2": 0.8762220167955815,
+      "y2": 0.9327354736328125
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.953,
+    "annotated": true,
+    "skipped": false,
+    "annotations": [
+      {
+        "class": 1,
+        "cx": 0.4845226976849494,
+        "cy": 0.1591583548108397,
+        "w": 0.7827092885039906,
+        "h": 0.19675925925925924
+      }
+    ]
+  },
+  "287195444794_1.jpg": {
+    "itemId": "287195444794",
+    "grader": "CGC",
+    "cardName": "Pachirisu",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "406672963825_1.jpg": {
+    "itemId": "406672963825",
+    "grader": "BGS",
+    "cardName": "Umbreon VMAX",
+    "predictedBbox": {
+      "x1": 0,
+      "y1": 0,
+      "x2": 1,
+      "y2": 0.9365934753417968
+    },
+    "predictedCls": 3,
+    "predictedName": "TAG",
+    "predictedConf": 0.939,
+    "annotated": false,
+    "skipped": false
+  },
+  "377074596576_1.jpg": {
+    "itemId": "377074596576",
+    "grader": "CGC",
+    "cardName": "Jolteon-GX",
+    "predictedBbox": {
+      "x1": 0.25326574820059317,
+      "y1": 0.2751565933227539,
+      "x2": 0.7541705096209491,
+      "y2": 0.7417270236545139
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.956,
+    "annotated": true,
+    "skipped": false,
+    "annotations": [
+      {
+        "class": 0,
+        "cx": 0.5047483380816715,
+        "cy": 0.189429010081495,
+        "w": 0.4415954415954416,
+        "h": 0.07923789173789175
+      }
+    ]
+  },
+  "297944356415_1.jpg": {
+    "itemId": "297944356415",
+    "grader": "CGC",
+    "cardName": "Bruxish",
+    "predictedBbox": {
+      "x1": 0.10088486020085212,
+      "y1": 0.047981786727905276,
+      "x2": 0.8981447349126694,
+      "y2": 0.24964309692382813
+    },
+    "predictedCls": 6,
+    "predictedName": "?",
+    "predictedConf": 0.918,
+    "annotated": false,
+    "skipped": true
+  },
+  "257422641493_1.jpg": {
+    "itemId": "257422641493",
+    "grader": "CGC",
+    "cardName": "Gouging Fire",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "257342101242_1.jpg": {
+    "itemId": "257342101242",
+    "grader": "CGC",
+    "cardName": "Lucario-GX",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "327032244840_1.jpg": {
+    "itemId": "327032244840",
+    "grader": "CGC",
+    "cardName": "Litten",
+    "predictedBbox": {
+      "x1": 0.0780206308899933,
+      "y1": 0.019102476963271987,
+      "x2": 0.8783030158484598,
+      "y2": 0.8458003385961471
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.346,
+    "annotated": false,
+    "skipped": true
+  },
+  "406632336488_1.jpg": {
+    "itemId": "406632336488",
+    "grader": "BGS",
+    "cardName": "Jet Energy",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "227268393322_1.jpg": {
+    "itemId": "227268393322",
+    "grader": "CGC",
+    "cardName": "Dragonite-GX",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "277690626520_1.jpg": {
+    "itemId": "277690626520",
+    "grader": "CGC",
+    "cardName": "Regirock",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "177450362169_1.jpg": {
+    "itemId": "177450362169",
+    "grader": "CGC",
+    "cardName": "Copycat",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "406719170703_1.jpg": {
+    "itemId": "406719170703",
+    "grader": "CGC",
+    "cardName": "Charizard & Braixen-GX",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "336464153399_1.jpg": {
+    "itemId": "336464153399",
+    "grader": "CGC",
+    "cardName": "Leafeon V",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "326432038152_1.jpg": {
+    "itemId": "326432038152",
+    "grader": "CGC",
+    "cardName": "Nemona",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "376992007831_1.jpg": {
+    "itemId": "376992007831",
+    "grader": "BGS",
+    "cardName": "Vivillon",
+    "predictedBbox": {
+      "x1": 0.12781462316847034,
+      "y1": 0.25829229354858396,
+      "x2": 0.8520503062682393,
+      "y2": 0.9019501495361328
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.945,
+    "annotated": true,
+    "skipped": false,
+    "annotations": [
+      {
+        "class": 2,
+        "cx": 0.48129302604010776,
+        "cy": 0.1271070727595576,
+        "w": 0.7967785205139292,
+        "h": 0.12553418803418803
+      }
+    ]
+  },
+  "257378731019_1.jpg": {
+    "itemId": "257378731019",
+    "grader": "CGC",
+    "cardName": "Mewtwo & Mew-GX",
+    "predictedBbox": {
+      "x1": 0.13568058013916015,
+      "y1": 0.04879188537597656,
+      "x2": 0.8500346374511719,
+      "y2": 0.8798698425292969
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.965,
+    "annotated": false,
+    "skipped": true
+  },
+  "366233431728_1.jpg": {
+    "itemId": "366233431728",
+    "grader": "CGC",
+    "cardName": "Espeon-GX",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "306760777556_1.jpg": {
+    "itemId": "306760777556",
+    "grader": "CGC",
+    "cardName": "Spewpa",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "326765338501_1.jpg": {
+    "itemId": "326765338501",
+    "grader": "CGC",
+    "cardName": "Rowlet",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "376882028080_1.jpg": {
+    "itemId": "376882028080",
+    "grader": "CGC",
+    "cardName": "Latias ex",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "287004517296_1.jpg": {
+    "itemId": "287004517296",
+    "grader": "CGC",
+    "cardName": "Mewtwo",
+    "predictedBbox": {
+      "x1": 0.12539412180582682,
+      "y1": 0.09246692657470704,
+      "x2": 0.8465073649088541,
+      "y2": 0.904354476928711
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.945,
+    "annotated": false,
+    "skipped": true
+  },
+  "267604449419_1.jpg": {
+    "itemId": "267604449419",
+    "grader": "CGC",
+    "cardName": "Klefki",
+    "predictedBbox": {
+      "x1": 0.16100387573242186,
+      "y1": 0.08378162384033203,
+      "x2": 0.8516474405924479,
+      "y2": 0.9425535583496094
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.922,
+    "annotated": false,
+    "skipped": false
+  },
+  "406491376729_1.jpg": {
+    "itemId": "406491376729",
+    "grader": "CGC",
+    "cardName": "Lotad",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "389779563203_1.jpg": {
+    "itemId": "389779563203",
+    "grader": "CGC",
+    "cardName": "Eevee",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "236558518057_1.jpg": {
+    "itemId": "236558518057",
+    "grader": "BGS",
+    "cardName": "Starmie",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "326991099255_1.jpg": {
+    "itemId": "326991099255",
+    "grader": "CGC",
+    "cardName": "Green's Exploration",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "188298459495_1.jpg": {
+    "itemId": "188298459495",
+    "grader": "CGC",
+    "cardName": "Braviary",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "287193686173_1.jpg": {
+    "itemId": "287193686173",
+    "grader": "CGC",
+    "cardName": "Gardevoir & Sylveon-GX",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "389785131434_1.jpg": {
+    "itemId": "389785131434",
+    "grader": "CGC",
+    "cardName": "Shauna",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "297823295091_1.jpg": {
+    "itemId": "297823295091",
+    "grader": "CGC",
+    "cardName": "Lapras",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "257264178578_1.jpg": {
+    "itemId": "257264178578",
+    "grader": "CGC",
+    "cardName": "Eevee",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "306766409845_1.jpg": {
+    "itemId": "306766409845",
+    "grader": "CGC",
+    "cardName": "Maractus",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "336441039012_1.jpg": {
+    "itemId": "336441039012",
+    "grader": "CGC",
+    "cardName": "Team Rocket's Mimikyu",
+    "predictedBbox": {
+      "x1": 0.10206501689178264,
+      "y1": 0.2857125244140625,
+      "x2": 0.885337678012469,
+      "y2": 0.9364232788085938
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.95,
+    "annotated": true,
+    "skipped": false,
+    "annotations": [
+      {
+        "class": 1,
+        "cx": 0.493366870436407,
+        "cy": 0.14847459412707903,
+        "w": 0.7886054036716289,
+        "h": 0.19675925925925924
+      }
+    ]
+  },
+  "389642591403_1.jpg": {
+    "itemId": "389642591403",
+    "grader": "CGC",
+    "cardName": "Tyranitar V",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "366335204963_1.jpg": {
+    "itemId": "366335204963",
+    "grader": "CGC",
+    "cardName": "Bruxish",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "336498747345_1.jpg": {
+    "itemId": "336498747345",
+    "grader": "CGC",
+    "cardName": "Charcadet",
+    "predictedBbox": {
+      "x1": 0.10058375023330844,
+      "y1": 0.2872886657714844,
+      "x2": 0.8904866814206485,
+      "y2": 0.930799560546875
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.95,
+    "annotated": true,
+    "skipped": false,
+    "annotations": [
+      {
+        "class": 1,
+        "cx": 0.4901245101757048,
+        "cy": 0.15426163116411606,
+        "w": 0.8067515533385841,
+        "h": 0.19943019943019943
+      }
+    ]
+  },
+  "397507847802_1.jpg": {
+    "itemId": "397507847802",
+    "grader": "CGC",
+    "cardName": "Lisia's Appeal",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "336514347359_1.jpg": {
+    "itemId": "336514347359",
+    "grader": "CGC",
+    "cardName": "Toxtricity",
+    "predictedBbox": {
+      "x1": 0.14110560942279615,
+      "y1": 0.14398155212402344,
+      "x2": 0.8920102061100876,
+      "y2": 0.8654924011230469
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.95,
+    "annotated": false,
+    "skipped": false
+  },
+  "358359230451_1.jpg": {
+    "itemId": "358359230451",
+    "grader": "CGC",
+    "cardName": "Entei",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "298131439149_1.jpg": {
+    "itemId": "298131439149",
+    "grader": "CGC",
+    "cardName": "Skwovet",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "376960267570_1.jpg": {
+    "itemId": "376960267570",
+    "grader": "BGS",
+    "cardName": "Vivillon",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "236614955803_1.jpg": {
+    "itemId": "236614955803",
+    "grader": "CGC",
+    "cardName": "Dreepy",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "188020658259_1.jpg": {
+    "itemId": "188020658259",
+    "grader": "CGC",
+    "cardName": "Zekrom",
+    "predictedBbox": {
+      "x1": 0.19576280381944444,
+      "y1": 0.25298080444335935,
+      "x2": 0.8368893093532986,
+      "y2": 0.7549772644042969
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.885,
+    "annotated": false,
+    "skipped": true
+  },
+  "376882028095_1.jpg": {
+    "itemId": "376882028095",
+    "grader": "CGC",
+    "cardName": "Alakazam ex",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "377078361119_1.jpg": {
+    "itemId": "377078361119",
+    "grader": "BGS",
+    "cardName": "Lucario",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "167605746562_1.jpg": {
+    "itemId": "167605746562",
+    "grader": "CGC",
+    "cardName": "Mewtwo",
+    "predictedBbox": {
+      "x1": 0.29122295379638674,
+      "y1": 0.07494915008544922,
+      "x2": 0.7311613464355469,
+      "y2": 0.2588671875
+    },
+    "predictedCls": 5,
+    "predictedName": "?",
+    "predictedConf": 0.943,
+    "annotated": false,
+    "skipped": false
+  },
+  "287095471225_1.jpg": {
+    "itemId": "287095471225",
+    "grader": "CGC",
+    "cardName": "Hoppip",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "358207930126_1.jpg": {
+    "itemId": "358207930126",
+    "grader": "BGS",
+    "cardName": "Spewpa",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "177983418705_1.jpg": {
+    "itemId": "177983418705",
+    "grader": "CGC",
+    "cardName": "Milotic",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "376998993092_1.jpg": {
+    "itemId": "376998993092",
+    "grader": "CGC",
+    "cardName": "Regirock",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "366216180893_1.jpg": {
+    "itemId": "366216180893",
+    "grader": "CGC",
+    "cardName": "Exeggcute",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "358138697173_1.jpg": {
+    "itemId": "358138697173",
+    "grader": "CGC",
+    "cardName": "Black Kyurem ex",
+    "predictedBbox": {
+      "x1": 0,
+      "y1": 0.0068251608180351,
+      "x2": 1,
+      "y2": 0.9904019102758291
+    },
+    "predictedCls": 10,
+    "predictedName": "?",
+    "predictedConf": 0.636,
+    "annotated": false,
+    "skipped": true
+  },
+  "389619629419_1.jpg": {
+    "itemId": "389619629419",
+    "grader": "CGC",
+    "cardName": "Mewtwo & Mew-GX",
+    "predictedBbox": {
+      "x1": 0.13568058013916015,
+      "y1": 0.04879188537597656,
+      "x2": 0.8500346374511719,
+      "y2": 0.8798698425292969
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.965,
+    "annotated": false,
+    "skipped": true
+  },
+  "389770279430_1.jpg": {
+    "itemId": "389770279430",
+    "grader": "CGC",
+    "cardName": "Pupitar",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "336274978440_1.jpg": {
+    "itemId": "336274978440",
+    "grader": "CGC",
+    "cardName": "Hoppip",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "277844372800_1.jpg": {
+    "itemId": "277844372800",
+    "grader": "CGC",
+    "cardName": "Mimikyu",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "227249429067_1.jpg": {
+    "itemId": "227249429067",
+    "grader": "CGC",
+    "cardName": "Spewpa",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "389877652862_1.jpg": {
+    "itemId": "389877652862",
+    "grader": "CGC",
+    "cardName": "Eevee",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "358140375149_1.jpg": {
+    "itemId": "358140375149",
+    "grader": "CGC",
+    "cardName": "Reshiram & Charizard-GX",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "206089776036_1.jpg": {
+    "itemId": "206089776036",
+    "grader": "CGC",
+    "cardName": "Regirock",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "287198018200_1.jpg": {
+    "itemId": "287198018200",
+    "grader": "CGC",
+    "cardName": "Popplio",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "326987922474_1.jpg": {
+    "itemId": "326987922474",
+    "grader": "CGC",
+    "cardName": "Litten",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "317798390685_1.jpg": {
+    "itemId": "317798390685",
+    "grader": "CGC",
+    "cardName": "Shining Lugia",
+    "predictedBbox": {
+      "x1": 0.15218435355879248,
+      "y1": 0.03241929894614921,
+      "x2": 0.8694960440666701,
+      "y2": 0.9227370500117261
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.944,
+    "annotated": false,
+    "skipped": true
+  },
+  "257370297221_1.jpg": {
+    "itemId": "257370297221",
+    "grader": "CGC",
+    "cardName": "Litten",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "336495428006_1.jpg": {
+    "itemId": "336495428006",
+    "grader": "BGS",
+    "cardName": "Black Kyurem ex",
+    "predictedBbox": {
+      "x1": 0,
+      "y1": 0.0068251608180351,
+      "x2": 1,
+      "y2": 0.9904019102758291
+    },
+    "predictedCls": 10,
+    "predictedName": "?",
+    "predictedConf": 0.636,
+    "annotated": false,
+    "skipped": true
+  },
+  "316433802867_1.jpg": {
+    "itemId": "316433802867",
+    "grader": "CGC",
+    "cardName": "Katy",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "236668897339_1.jpg": {
+    "itemId": "236668897339",
+    "grader": "CGC",
+    "cardName": "Paldean Tauros",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "227237570048_1.jpg": {
+    "itemId": "227237570048",
+    "grader": "CGC",
+    "cardName": "Skarmory",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "366201549290_1.jpg": {
+    "itemId": "366201549290",
+    "grader": "CGC",
+    "cardName": "Breloom",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "406670214169_1.jpg": {
+    "itemId": "406670214169",
+    "grader": "CGC",
+    "cardName": "Pikachu",
+    "predictedBbox": {
+      "x1": 0.2437765121459961,
+      "y1": 0.11584882736206055,
+      "x2": 0.6792483520507813,
+      "y2": 0.30138139724731444
+    },
+    "predictedCls": 5,
+    "predictedName": "?",
+    "predictedConf": 0.944,
+    "annotated": false,
+    "skipped": false
+  },
+  "206079418966_1.jpg": {
+    "itemId": "206079418966",
+    "grader": "BGS",
+    "cardName": "Starmie",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "287136299543_1.jpg": {
+    "itemId": "287136299543",
+    "grader": "CGC",
+    "cardName": "Champions Festival",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "267564516440_1.jpg": {
+    "itemId": "267564516440",
+    "grader": "CGC",
+    "cardName": "Mesprit",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "177655483567_1.jpg": {
+    "itemId": "177655483567",
+    "grader": "CGC",
+    "cardName": "Houndoom",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "256558618611_1.jpg": {
+    "itemId": "256558618611",
+    "grader": "CGC",
+    "cardName": "Popplio",
+    "predictedBbox": {
+      "x1": 0.17703300298646438,
+      "y1": 0.0465221643447876,
+      "x2": 0.793028416427663,
+      "y2": 0.24328248977661132
+    },
+    "predictedCls": 6,
+    "predictedName": "?",
+    "predictedConf": 0.916,
+    "annotated": false,
+    "skipped": true
+  },
+  "277844078969_1.jpg": {
+    "itemId": "277844078969",
+    "grader": "CGC",
+    "cardName": "Mimikyu",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "287256816136_1.jpg": {
+    "itemId": "287256816136",
+    "grader": "CGC",
+    "cardName": "Spewpa",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "297949356835_1.jpg": {
+    "itemId": "297949356835",
+    "grader": "BGS",
+    "cardName": "Magneton",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "366214085117_1.jpg": {
+    "itemId": "366214085117",
+    "grader": "CGC",
+    "cardName": "Alolan Raichu",
+    "predictedBbox": {
+      "x1": 0.16423753102620442,
+      "y1": 0.09447431564331055,
+      "x2": 0.8185128953721789,
+      "y2": 0.8965604782104493
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.962,
+    "annotated": false,
+    "skipped": true
+  },
+  "406743247836_1.jpg": {
+    "itemId": "406743247836",
+    "grader": "CGC",
+    "cardName": "Magnezone ex",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "326962230077_1.jpg": {
+    "itemId": "326962230077",
+    "grader": "CGC",
+    "cardName": "Dhelmise",
+    "predictedBbox": {
+      "x1": 0.2640726979573568,
+      "y1": 0.2858157730102539,
+      "x2": 0.7063731892903646,
+      "y2": 0.7277268981933593
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.943,
+    "annotated": false,
+    "skipped": true
+  },
+  "198219864590_1.jpg": {
+    "itemId": "198219864590",
+    "grader": "CGC",
+    "cardName": "Toxtricity",
+    "predictedBbox": {
+      "x1": 0.1874497095743815,
+      "y1": 0.0725257396697998,
+      "x2": 0.7995423380533854,
+      "y2": 0.7601898956298828
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.939,
+    "annotated": false,
+    "skipped": false
+  },
+  "377118716794_1.jpg": {
+    "itemId": "377118716794",
+    "grader": "CGC",
+    "cardName": "Zorua",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "397718770278_1.jpg": {
+    "itemId": "397718770278",
+    "grader": "CGC",
+    "cardName": "Skwovet",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "406308821900_1.jpg": {
+    "itemId": "406308821900",
+    "grader": "CGC",
+    "cardName": "Flamigo",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "389646394713_1.jpg": {
+    "itemId": "389646394713",
+    "grader": "CGC",
+    "cardName": "Toxtricity",
+    "predictedBbox": {
+      "x1": 0.10636083209325396,
+      "y1": 0.28475772806215377,
+      "x2": 0.8815916999937996,
+      "y2": 0.9250792869023964
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.953,
+    "annotated": false,
+    "skipped": false
+  },
+  "287259126644_1.jpg": {
+    "itemId": "287259126644",
+    "grader": "BGS",
+    "cardName": "Typhlosion",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "227263853049_1.jpg": {
+    "itemId": "227263853049",
+    "grader": "CGC",
+    "cardName": "Cynthia's Garchomp ex",
+    "predictedBbox": {
+      "x1": 0.1702802022298177,
+      "y1": 0.1713818359375,
+      "x2": 0.7731791687011719,
+      "y2": 0.9338711547851563
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.909,
+    "annotated": true,
+    "skipped": false,
+    "annotations": [
+      {
+        "class": 3,
+        "cx": 0.4726970560303894,
+        "cy": 0.27489909555158043,
+        "w": 0.47720797720797725,
+        "h": 0.13443732193732197
+      }
+    ]
+  },
+  "236600752965_1.jpg": {
+    "itemId": "236600752965",
+    "grader": "BGS",
+    "cardName": "Umbreon-GX",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "198094240252_1.jpg": {
+    "itemId": "198094240252",
+    "grader": "BGS",
+    "cardName": "Pikachu & Zekrom-GX",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "389864110655_1.jpg": {
+    "itemId": "389864110655",
+    "grader": "CGC",
+    "cardName": "Pikachu-GX",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "326784836907_1.jpg": {
+    "itemId": "326784836907",
+    "grader": "CGC",
+    "cardName": "Oranguru",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "327034807177_1.jpg": {
+    "itemId": "327034807177",
+    "grader": "CGC",
+    "cardName": "Latias ex",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "336417174550_1.jpg": {
+    "itemId": "336417174550",
+    "grader": "CGC",
+    "cardName": "Rabsca",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "318092442869_1.jpg": {
+    "itemId": "318092442869",
+    "grader": "CGC",
+    "cardName": "Ceruledge",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "317924891776_1.jpg": {
+    "itemId": "317924891776",
+    "grader": "CGC",
+    "cardName": "Umbreon V",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "287139217909_1.jpg": {
+    "itemId": "287139217909",
+    "grader": "CGC",
+    "cardName": "Baxcalibur",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "366334610251_1.jpg": {
+    "itemId": "366334610251",
+    "grader": "CGC",
+    "cardName": "Wo-Chien",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "377042136895_1.jpg": {
+    "itemId": "377042136895",
+    "grader": "CGC",
+    "cardName": "Slaking ex",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "306748623563_1.jpg": {
+    "itemId": "306748623563",
+    "grader": "CGC",
+    "cardName": "Starmie",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "227181846111_1.jpg": {
+    "itemId": "227181846111",
+    "grader": "CGC",
+    "cardName": "Popplio",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "376790238222_1.jpg": {
+    "itemId": "376790238222",
+    "grader": "CGC",
+    "cardName": "Castform Sunny Form",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "306824985485_1.jpg": {
+    "itemId": "306824985485",
+    "grader": "BGS",
+    "cardName": "Magneton",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "236730347743_1.jpg": {
+    "itemId": "236730347743",
+    "grader": "CGC",
+    "cardName": "Dragonite-GX",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "297978624090_1.jpg": {
+    "itemId": "297978624090",
+    "grader": "BGS",
+    "cardName": "Starmie",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "336498286927_1.jpg": {
+    "itemId": "336498286927",
+    "grader": "CGC",
+    "cardName": "Starmie",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "168231145866_1.jpg": {
+    "itemId": "168231145866",
+    "grader": "CGC",
+    "cardName": "Barboach",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "336439906345_1.jpg": {
+    "itemId": "336439906345",
+    "grader": "CGC",
+    "cardName": "Hawlucha",
+    "predictedBbox": {
+      "x1": 0.2047443389892578,
+      "y1": 0.13896635055541992,
+      "x2": 0.8065681457519531,
+      "y2": 0.8906637573242188
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.796,
+    "annotated": false,
+    "skipped": true
+  },
+  "326982986088_1.jpg": {
+    "itemId": "326982986088",
+    "grader": "CGC",
+    "cardName": "Komala",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "198137462639_1.jpg": {
+    "itemId": "198137462639",
+    "grader": "CGC",
+    "cardName": "Toxtricity",
+    "predictedBbox": {
+      "x1": 0.1874497095743815,
+      "y1": 0.0725257396697998,
+      "x2": 0.7995423380533854,
+      "y2": 0.7601898956298828
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.939,
+    "annotated": false,
+    "skipped": false
+  },
+  "287077836433_1.jpg": {
+    "itemId": "287077836433",
+    "grader": "CGC",
+    "cardName": "Spewpa",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "287165136563_1.jpg": {
+    "itemId": "287165136563",
+    "grader": "CGC",
+    "cardName": "Mimikyu",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "358247030428_1.jpg": {
+    "itemId": "358247030428",
+    "grader": "CGC",
+    "cardName": "Technical Machine: Fluorite",
+    "predictedBbox": {
+      "x1": 0.064111328125,
+      "y1": 0.0011585712432861327,
+      "x2": 0.9380846941912616,
+      "y2": 0.7682646857367621
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.837,
+    "annotated": false,
+    "skipped": true
+  },
+  "397851005151_1.jpg": {
+    "itemId": "397851005151",
+    "grader": "BGS",
+    "cardName": "Magneton",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "206079415369_1.jpg": {
+    "itemId": "206079415369",
+    "grader": "BGS",
+    "cardName": "Starmie",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "168250836368_1.jpg": {
+    "itemId": "168250836368",
+    "grader": "BGS",
+    "cardName": "Squawkabilly",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "389704270811_1.jpg": {
+    "itemId": "389704270811",
+    "grader": "BGS",
+    "cardName": "Giratina",
+    "predictedBbox": {
+      "x1": 0.13568058013916015,
+      "y1": 0.04879188537597656,
+      "x2": 0.8500346374511719,
+      "y2": 0.8798698425292969
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.965,
+    "annotated": false,
+    "skipped": true
+  },
+  "287167121047_1.jpg": {
+    "itemId": "287167121047",
+    "grader": "BGS",
+    "cardName": "Kirlia",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "366145879931_1.jpg": {
+    "itemId": "366145879931",
+    "grader": "BGS",
+    "cardName": "Kirlia",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "358207922905_1.jpg": {
+    "itemId": "358207922905",
+    "grader": "BGS",
+    "cardName": "Spewpa",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "266671451484_1.jpg": {
+    "itemId": "266671451484",
+    "grader": "BGS",
+    "cardName": "Nemona",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "376989332969_1.jpg": {
+    "itemId": "376989332969",
+    "grader": "BGS",
+    "cardName": "Shiinotic",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "287264996193_1.jpg": {
+    "itemId": "287264996193",
+    "grader": "BGS",
+    "cardName": "Spewpa",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "287264962028_1.jpg": {
+    "itemId": "287264962028",
+    "grader": "BGS",
+    "cardName": "Mimikyu",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "277712076898_1.jpg": {
+    "itemId": "277712076898",
+    "grader": "BGS",
+    "cardName": "Buizel",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "377047687407_1.jpg": {
+    "itemId": "377047687407",
+    "grader": "BGS",
+    "cardName": "Spewpa",
+    "predictedBbox": {
+      "x1": 0.11922473907470703,
+      "y1": 0.03755264282226563,
+      "x2": 0.8992039362589518,
+      "y2": 0.9282670974731445
+    },
+    "predictedCls": 3,
+    "predictedName": "TAG",
+    "predictedConf": 0.959,
+    "annotated": false,
+    "skipped": false
+  },
+  "389664809246_1.jpg": {
+    "itemId": "389664809246",
+    "grader": "BGS",
+    "cardName": "Lilligant",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "389512179464_1.jpg": {
+    "itemId": "389512179464",
+    "grader": "BGS",
+    "cardName": "Zygarde",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "397551648848_1.jpg": {
+    "itemId": "397551648848",
+    "grader": "BGS",
+    "cardName": "Spewpa",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "297949356736_1.jpg": {
+    "itemId": "297949356736",
+    "grader": "BGS",
+    "cardName": "Magneton",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "206187689960_1.jpg": {
+    "itemId": "206187689960",
+    "grader": "BGS",
+    "cardName": "Mew ex",
+    "predictedBbox": {
+      "x1": 0.20041446685791015,
+      "y1": 0.2492382049560547,
+      "x2": 0.8261358133951823,
+      "y2": 0.87792236328125
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.943,
+    "annotated": true,
+    "skipped": false,
+    "annotations": [
+      {
+        "class": 2,
+        "cx": 0.5148385565052233,
+        "cy": 0.12977801293049776,
+        "w": 0.6896961063627731,
+        "h": 0.13443732193732194
+      }
+    ]
+  },
+  "397675900702_1.jpg": {
+    "itemId": "397675900702",
+    "grader": "BGS",
+    "cardName": "Zygarde",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "297949357034_1.jpg": {
+    "itemId": "297949357034",
+    "grader": "BGS",
+    "cardName": "Flittle",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "297949356621_1.jpg": {
+    "itemId": "297949356621",
+    "grader": "BGS",
+    "cardName": "Flittle",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "389864040265_1.jpg": {
+    "itemId": "389864040265",
+    "grader": "BGS",
+    "cardName": "Kirlia",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "137204398087_1.jpg": {
+    "itemId": "137204398087",
+    "grader": "BGS",
+    "cardName": "Cacnea",
+    "predictedBbox": {
+      "x1": 0.11374251512628304,
+      "y1": 0.20087213516235353,
+      "x2": 0.8844094378339427,
+      "y2": 0.7823281097412109
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.949,
+    "annotated": true,
+    "skipped": false,
+    "annotations": [
+      {
+        "class": 2,
+        "cx": 0.48397636192911786,
+        "cy": 0.0883784402809251,
+        "w": 0.8332291796858726,
+        "h": 0.11752136752136752
+      }
+    ]
+  },
+  "306777052536_1.jpg": {
+    "itemId": "306777052536",
+    "grader": "BGS",
+    "cardName": "Espathra",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "157747822587_1.jpg": {
+    "itemId": "157747822587",
+    "grader": "BGS",
+    "cardName": "Kirlia",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "306777052473_1.jpg": {
+    "itemId": "306777052473",
+    "grader": "BGS",
+    "cardName": "Poké Ball",
+    "predictedBbox": {
+      "x1": 0.1482302909895616,
+      "y1": 0.2793988101999785,
+      "x2": 0.8362443556479358,
+      "y2": 0.9816592981697545
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.944,
+    "annotated": true,
+    "skipped": false,
+    "annotations": [
+      {
+        "class": 1,
+        "cx": 0.5160289824854044,
+        "cy": 0.1511455342980192,
+        "w": 0.6494706236678714,
+        "h": 0.20744301994301992
+      }
+    ]
+  },
+  "297949356691_1.jpg": {
+    "itemId": "297949356691",
+    "grader": "BGS",
+    "cardName": "Magneton",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "236584125979_1.jpg": {
+    "itemId": "236584125979",
+    "grader": "BGS",
+    "cardName": "Zygarde",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "376932575434_1.jpg": {
+    "itemId": "376932575434",
+    "grader": "BGS",
+    "cardName": "Magnezone ex",
+    "predictedBbox": {
+      "x1": 0.009088261922200521,
+      "y1": 0.001628875732421875,
+      "x2": 1,
+      "y2": 0.915096664428711
+    },
+    "predictedCls": 10,
+    "predictedName": "?",
+    "predictedConf": 0.491,
+    "annotated": false,
+    "skipped": true
+  },
+  "297871939697_1.jpg": {
+    "itemId": "297871939697",
+    "grader": "BGS",
+    "cardName": "Spewpa",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "376972235614_1.jpg": {
+    "itemId": "376972235614",
+    "grader": "BGS",
+    "cardName": "Latias ex",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "287264996317_1.jpg": {
+    "itemId": "287264996317",
+    "grader": "BGS",
+    "cardName": "Spewpa",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "397543573588_1.jpg": {
+    "itemId": "397543573588",
+    "grader": "BGS",
+    "cardName": "Mienshao",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "306869603182_1.jpg": {
+    "itemId": "306869603182",
+    "grader": "BGS",
+    "cardName": "Breloom",
+    "predictedBbox": {
+      "x1": 0.11845776029776962,
+      "y1": 0.2297748565673828,
+      "x2": 0.8952079991362291,
+      "y2": 0.916290283203125
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.94,
+    "annotated": true,
+    "skipped": false,
+    "annotations": [
+      {
+        "class": 2,
+        "cx": 0.4824222430342865,
+        "cy": 0.10128798444046927,
+        "w": 0.8563883193695632,
+        "h": 0.13443732193732194
+      }
+    ]
+  },
+  "306720122720_1.jpg": {
+    "itemId": "306720122720",
+    "grader": "BGS",
+    "cardName": "Flittle",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "267573495923_1.jpg": {
+    "itemId": "267573495923",
+    "grader": "BGS",
+    "cardName": "Latias ex",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "297978623689_1.jpg": {
+    "itemId": "297978623689",
+    "grader": "BGS",
+    "cardName": "Varoom",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "306787126097_1.jpg": {
+    "itemId": "306787126097",
+    "grader": "BGS",
+    "cardName": "Leafeon VMAX",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "366170664449_1.jpg": {
+    "itemId": "366170664449",
+    "grader": "BGS",
+    "cardName": "Espathra",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "267620602457_1.jpg": {
+    "itemId": "267620602457",
+    "grader": "BGS",
+    "cardName": "Team Rocket's Mewtwo ex",
+    "predictedBbox": {
+      "x1": 0.17938296053188854,
+      "y1": 0.04486155554680171,
+      "x2": 0.8468998009408882,
+      "y2": 0.7799327246765556
+    },
+    "predictedCls": 3,
+    "predictedName": "TAG",
+    "predictedConf": 0.958,
+    "annotated": false,
+    "skipped": false
+  },
+  "297830980775_1.jpg": {
+    "itemId": "297830980775",
+    "grader": "BGS",
+    "cardName": "Growlithe",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "317794587547_1.jpg": {
+    "itemId": "317794587547",
+    "grader": "BGS",
+    "cardName": "Kirlia",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "396925339659_1.jpg": {
+    "itemId": "396925339659",
+    "grader": "BGS",
+    "cardName": "Mienshao",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "287079500046_1.jpg": {
+    "itemId": "287079500046",
+    "grader": "BGS",
+    "cardName": "Kirlia",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "267485367055_1.jpg": {
+    "itemId": "267485367055",
+    "grader": "BGS",
+    "cardName": "Breloom",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "306720122533_1.jpg": {
+    "itemId": "306720122533",
+    "grader": "BGS",
+    "cardName": "Pal Pad",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "306736276438_1.jpg": {
+    "itemId": "306736276438",
+    "grader": "BGS",
+    "cardName": "Starmie",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "306736681955_1.jpg": {
+    "itemId": "306736681955",
+    "grader": "BGS",
+    "cardName": "Spheal",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "306736275884_1.jpg": {
+    "itemId": "306736275884",
+    "grader": "BGS",
+    "cardName": "Flittle",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "298082844430_1.jpg": {
+    "itemId": "298082844430",
+    "grader": "BGS",
+    "cardName": "Toedscool",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "306777052540_1.jpg": {
+    "itemId": "306777052540",
+    "grader": "BGS",
+    "cardName": "Espathra",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "397227993133_1.jpg": {
+    "itemId": "397227993133",
+    "grader": "BGS",
+    "cardName": "Spewpa",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "297939077278_1.jpg": {
+    "itemId": "297939077278",
+    "grader": "BGS",
+    "cardName": "Growlithe",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "306847096888_1.jpg": {
+    "itemId": "306847096888",
+    "grader": "BGS",
+    "cardName": "Gardevoir ex",
+    "predictedBbox": {
+      "x1": 0.11532926084195261,
+      "y1": 0.03395366668701172,
+      "x2": 0.8558868712365033,
+      "y2": 0.9715170288085937
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.949,
+    "annotated": false,
+    "skipped": true
+  },
+  "236665088734_1.jpg": {
+    "itemId": "236665088734",
+    "grader": "BGS",
+    "cardName": "Rowlet",
+    "predictedBbox": {
+      "x1": 0.24028002421061198,
+      "y1": 0.3054559898376465,
+      "x2": 0.7622301228841146,
+      "y2": 0.8160978698730469
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.949,
+    "annotated": true,
+    "skipped": false,
+    "annotations": [
+      {
+        "class": 2,
+        "cx": 0.49169040835707506,
+        "cy": 0.19343542033790517,
+        "w": 0.6054131054131054,
+        "h": 0.12286324786324787
+      }
+    ]
+  },
+  "318128772175_1.jpg": {
+    "itemId": "318128772175",
+    "grader": "BGS",
+    "cardName": "Kirlia",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "287251480262_1.jpg": {
+    "itemId": "287251480262",
+    "grader": "BGS",
+    "cardName": "Kirlia",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "377079007804_1.jpg": {
+    "itemId": "377079007804",
+    "grader": "BGS",
+    "cardName": "Gardevoir ex",
+    "predictedBbox": {
+      "x1": 0.27887649536132814,
+      "y1": 0.29300201416015625,
+      "x2": 0.7014886474609375,
+      "y2": 0.8703041839599609
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.948,
+    "annotated": true,
+    "skipped": false,
+    "annotations": [
+      {
+        "class": 2,
+        "cx": 0.4777421652421653,
+        "cy": 0.17028727218975703,
+        "w": 0.4861111111111112,
+        "h": 0.11930199430199434
+      }
+    ]
+  },
+  "358124989929_1.jpg": {
+    "itemId": "358124989929",
+    "grader": "BGS",
+    "cardName": "Jet Energy",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "306803940981_1.jpg": {
+    "itemId": "306803940981",
+    "grader": "BGS",
+    "cardName": "Litten",
+    "predictedBbox": {
+      "x1": 0.13568058013916015,
+      "y1": 0.04879188537597656,
+      "x2": 0.8500346374511719,
+      "y2": 0.8798698425292969
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.965,
+    "annotated": false,
+    "skipped": true
+  },
+  "297978623928_1.jpg": {
+    "itemId": "297978623928",
+    "grader": "BGS",
+    "cardName": "Starmie",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "298141555690_1.jpg": {
+    "itemId": "298141555690",
+    "grader": "BGS",
+    "cardName": "Wattrel",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "389864040156_1.jpg": {
+    "itemId": "389864040156",
+    "grader": "BGS",
+    "cardName": "Kirlia",
+    "predictedBbox": {
+      "x1": 0.1303271767710348,
+      "y1": 0.23901815414428712,
+      "x2": 0.873647723022697,
+      "y2": 0.8935186767578125
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.949,
+    "annotated": false,
+    "skipped": false
+  },
+  "397542398656_1.jpg": {
+    "itemId": "397542398656",
+    "grader": "BGS",
+    "cardName": "Miriam",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "236558518624_1.jpg": {
+    "itemId": "236558518624",
+    "grader": "BGS",
+    "cardName": "Starmie",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "187682502772_1.jpg": {
+    "itemId": "187682502772",
+    "grader": "BGS",
+    "cardName": "Mewtwo & Mew-GX",
+    "predictedBbox": {
+      "x1": 0.13568058013916015,
+      "y1": 0.04879188537597656,
+      "x2": 0.8500346374511719,
+      "y2": 0.8798698425292969
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.965,
+    "annotated": false,
+    "skipped": true
+  },
+  "389828068252_1.jpg": {
+    "itemId": "389828068252",
+    "grader": "BGS",
+    "cardName": "Zygarde",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "376960266024_1.jpg": {
+    "itemId": "376960266024",
+    "grader": "BGS",
+    "cardName": "Lucario-GX",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "285587049115_1.jpg": {
+    "itemId": "285587049115",
+    "grader": "BGS",
+    "cardName": "Entei",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "389664809115_1.jpg": {
+    "itemId": "389664809115",
+    "grader": "BGS",
+    "cardName": "Lilligant",
+    "predictedBbox": {
+      "x1": 0.11665280406693539,
+      "y1": 0.24145097932870185,
+      "x2": 0.8678236273655379,
+      "y2": 0.9248746195695416
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.954,
+    "annotated": true,
+    "skipped": false,
+    "annotations": [
+      {
+        "class": 2,
+        "cx": 0.47910335155106065,
+        "cy": 0.10841049156297639,
+        "w": 0.8219348389916119,
+        "h": 0.12197293447293449
+      }
+    ]
+  },
+  "306772487291_1.jpg": {
+    "itemId": "306772487291",
+    "grader": "BGS",
+    "cardName": "Spewpa",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "376671933617_1.jpg": {
+    "itemId": "376671933617",
+    "grader": "BGS",
+    "cardName": "White Kyurem-GX",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "366165655042_1.jpg": {
+    "itemId": "366165655042",
+    "grader": "BGS",
+    "cardName": "Zygarde",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "397528814835_1.jpg": {
+    "itemId": "397528814835",
+    "grader": "BGS",
+    "cardName": "Starmie",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "376887172643_1.jpg": {
+    "itemId": "376887172643",
+    "grader": "BGS",
+    "cardName": "Zygarde",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "306736275690_1.jpg": {
+    "itemId": "306736275690",
+    "grader": "BGS",
+    "cardName": "Magneton",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "227249305243_1.jpg": {
+    "itemId": "227249305243",
+    "grader": "BGS",
+    "cardName": "Kirlia",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "358287397019_1.jpg": {
+    "itemId": "358287397019",
+    "grader": "BGS",
+    "cardName": "Latias ex",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "287237190734_1.jpg": {
+    "itemId": "287237190734",
+    "grader": "BGS",
+    "cardName": "Kirlia",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "366296751719_1.jpg": {
+    "itemId": "366296751719",
+    "grader": "BGS",
+    "cardName": "Entei",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "306720122946_1.jpg": {
+    "itemId": "306720122946",
+    "grader": "BGS",
+    "cardName": "Flittle",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "366127230157_1.jpg": {
+    "itemId": "366127230157",
+    "grader": "BGS",
+    "cardName": "Zygarde",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "236740955219_1.jpg": {
+    "itemId": "236740955219",
+    "grader": "BGS",
+    "cardName": "Gogoat",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "287149318716_1.jpg": {
+    "itemId": "287149318716",
+    "grader": "BGS",
+    "cardName": "Celebi",
+    "predictedBbox": {
+      "x1": 0.11752979889576569,
+      "y1": 0.07873334884643554,
+      "x2": 0.8720946208739178,
+      "y2": 0.9155693817138671
+    },
+    "predictedCls": 3,
+    "predictedName": "TAG",
+    "predictedConf": 0.951,
+    "annotated": true,
+    "skipped": false,
+    "annotations": [
+      {
+        "class": 2,
+        "cx": 0.47964997964997963,
+        "cy": 0.16806148871397356,
+        "w": 0.6203672870339537,
+        "h": 0.10594729344729348
+      }
+    ]
+  },
+  "389642149920_1.jpg": {
+    "itemId": "389642149920",
+    "grader": "BGS",
+    "cardName": "Espeon & Deoxys-GX",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "297743873699_1.jpg": {
+    "itemId": "297743873699",
+    "grader": "BGS",
+    "cardName": "Breloom",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "227280007096_1.jpg": {
+    "itemId": "227280007096",
+    "grader": "BGS",
+    "cardName": "Forretress ex",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "287201046873_1.jpg": {
+    "itemId": "287201046873",
+    "grader": "BGS",
+    "cardName": "Kirlia",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "397668816087_1.jpg": {
+    "itemId": "397668816087",
+    "grader": "BGS",
+    "cardName": "Spewpa",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "389670306952_1.jpg": {
+    "itemId": "389670306952",
+    "grader": "BGS",
+    "cardName": "Spewpa",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "287169690153_1.jpg": {
+    "itemId": "287169690153",
+    "grader": "BGS",
+    "cardName": "Alakazam ex",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "306727899790_1.jpg": {
+    "itemId": "306727899790",
+    "grader": "BGS",
+    "cardName": "Litten",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "257408938668_1.jpg": {
+    "itemId": "257408938668",
+    "grader": "BGS",
+    "cardName": "Mewtwo & Mew-GX",
+    "predictedBbox": {
+      "x1": 0.13568058013916015,
+      "y1": 0.04879188537597656,
+      "x2": 0.8500346374511719,
+      "y2": 0.8798698425292969
+    },
+    "predictedCls": 7,
+    "predictedName": "?",
+    "predictedConf": 0.965,
+    "annotated": false,
+    "skipped": true
+  },
+  "389864040157_1.jpg": {
+    "itemId": "389864040157",
+    "grader": "BGS",
+    "cardName": "Kirlia",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "376992008184_1.jpg": {
+    "itemId": "376992008184",
+    "grader": "BGS",
+    "cardName": "Regirock",
+    "predictedBbox": {
+      "x1": 0.12309397299458662,
+      "y1": 0.262083911895752,
+      "x2": 0.8448686374454047,
+      "y2": 0.8971139526367188
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.947,
+    "annotated": false,
+    "skipped": false
+  },
+  "306748675479_1.jpg": {
+    "itemId": "306748675479",
+    "grader": "BGS",
+    "cardName": "Scatterbug",
+    "predictedBbox": {
+      "x1": 0.330274762605366,
+      "y1": 0,
+      "x2": 0.99814453125,
+      "y2": 1
+    },
+    "predictedCls": 10,
+    "predictedName": "?",
+    "predictedConf": 0.395,
+    "annotated": false,
+    "skipped": true
+  },
+  "317912293397_1.jpg": {
+    "itemId": "317912293397",
+    "grader": "BGS",
+    "cardName": "Reshiram & Charizard-GX",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "366136037072_1.jpg": {
+    "itemId": "366136037072",
+    "grader": "BGS",
+    "cardName": "Latias ex",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "287237191034_1.jpg": {
+    "itemId": "287237191034",
+    "grader": "BGS",
+    "cardName": "Kirlia",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "306720122766_1.jpg": {
+    "itemId": "306720122766",
+    "grader": "BGS",
+    "cardName": "Judge",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "376981625350_1.jpg": {
+    "itemId": "376981625350",
+    "grader": "BGS",
+    "cardName": "Shiinotic",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "377047735574_1.jpg": {
+    "itemId": "377047735574",
+    "grader": "BGS",
+    "cardName": "Flareon VMAX",
+    "predictedBbox": {
+      "x1": 0.2495800018310547,
+      "y1": 0.3294410705566406,
+      "x2": 0.7307711791992187,
+      "y2": 0.8160912322998047
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.962,
+    "annotated": true,
+    "skipped": false,
+    "annotations": [
+      {
+        "class": 2,
+        "cx": 0.4792260208926876,
+        "cy": 0.2219254488279337,
+        "w": 0.5424976258309593,
+        "h": 0.09971509971509976
+      }
+    ]
+  },
+  "236027050239_1.jpg": {
+    "itemId": "236027050239",
+    "grader": "BGS",
+    "cardName": "Spewpa",
+    "predictedBbox": {
+      "x1": 0,
+      "y1": 0.0024516105651855467,
+      "x2": 1,
+      "y2": 1
+    },
+    "predictedCls": 10,
+    "predictedName": "?",
+    "predictedConf": 0.271,
+    "annotated": false,
+    "skipped": false
+  },
+  "377011437101_1.jpg": {
+    "itemId": "377011437101",
+    "grader": "BGS",
+    "cardName": "Zygarde",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "227161137959_1.jpg": {
+    "itemId": "227161137959",
+    "grader": "BGS",
+    "cardName": "Rowlet",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "358259488509_1.jpg": {
+    "itemId": "358259488509",
+    "grader": "BGS",
+    "cardName": "Pikachu",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "376890593248_1.jpg": {
+    "itemId": "376890593248",
+    "grader": "BGS",
+    "cardName": "Breloom",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "306800681591_1.jpg": {
+    "itemId": "306800681591",
+    "grader": "BGS",
+    "cardName": "Toedscool",
+    "predictedBbox": {
+      "x1": 0.11358139442391438,
+      "y1": 0.24064491271972657,
+      "x2": 0.8862358594900025,
+      "y2": 0.917448501586914
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.946,
+    "annotated": true,
+    "skipped": false,
+    "annotations": [
+      {
+        "class": 2,
+        "cx": 0.4797298619673497,
+        "cy": 0.09906220096468579,
+        "w": 0.8569375595872162,
+        "h": 0.13354700854700857
+      }
+    ]
+  },
+  "287251480203_1.jpg": {
+    "itemId": "287251480203",
+    "grader": "BGS",
+    "cardName": "Kirlia",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "177828735661_1.jpg": {
+    "itemId": "177828735661",
+    "grader": "BGS",
+    "cardName": "Rowlet",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "297743873781_1.jpg": {
+    "itemId": "297743873781",
+    "grader": "BGS",
+    "cardName": "Breloom",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": false
+  },
+  "267459368971_1.jpg": {
+    "itemId": "267459368971",
+    "grader": "BGS",
+    "cardName": "Rowlet",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "366248781590_1.jpg": {
+    "itemId": "366248781590",
+    "grader": "BGS",
+    "cardName": "Breloom",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "406248121341_1.jpg": {
+    "itemId": "406248121341",
+    "grader": "BGS",
+    "cardName": "Blaziken",
+    "predictedBbox": {
+      "x1": 0.10959801030001402,
+      "y1": 0.23091699018255488,
+      "x2": 0.8922824013109361,
+      "y2": 0.9462835874575568
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.883,
+    "annotated": false,
+    "skipped": true
+  },
+  "198284334278_1.jpg": {
+    "itemId": "198284334278",
+    "grader": "BGS",
+    "cardName": "Rayquaza VMAX",
+    "predictedBbox": {
+      "x1": 0.08984220100171639,
+      "y1": 0.20220572993440447,
+      "x2": 0.883690019087358,
+      "y2": 0.8810658580852004
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.951,
+    "annotated": false,
+    "skipped": false
+  },
+  "236720492521_1.jpg": {
+    "itemId": "236720492521",
+    "grader": "BGS",
+    "cardName": "Defiance Band",
+    "predictedBbox": {
+      "x1": 0.23448266983032226,
+      "y1": 0.3000819206237793,
+      "x2": 0.6936801147460937,
+      "y2": 0.9350088500976562
+    },
+    "predictedCls": 4,
+    "predictedName": "?",
+    "predictedConf": 0.947,
+    "annotated": true,
+    "skipped": false,
+    "annotations": [
+      {
+        "class": 1,
+        "cx": 0.4670584045584046,
+        "cy": 0.16984211549460035,
+        "w": 0.4611823361823363,
+        "h": 0.18963675213675218
+      }
+    ]
+  },
+  "297949356937_1.jpg": {
+    "itemId": "297949356937",
+    "grader": "BGS",
+    "cardName": "Starmie",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
+  },
+  "377039454546_1.jpg": {
+    "itemId": "377039454546",
+    "grader": "BGS",
+    "cardName": "Ting-Lu ex",
+    "predictedBbox": null,
+    "predictedCls": null,
+    "predictedName": null,
+    "predictedConf": null,
+    "annotated": false,
+    "skipped": true
   }
 }

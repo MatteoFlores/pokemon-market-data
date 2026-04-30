@@ -22,7 +22,7 @@ Usage:
   .\\venv\\Scripts\\activate
   python extract_certs.py                  # process all downloaded items
   python extract_certs.py --limit 20       # test on first 20 items
-  python extract_certs.py --recheck        # re-process verify_later items only
+  python extract_certs.py --recheck        # re-process verify_later + unextractable items
 
 Requirements:
   models/grading_labels.pt must exist (run train_label_detector.py first)
@@ -72,7 +72,7 @@ def suppress_c_stderr():
 _BASE        = Path(__file__).resolve().parent
 IMAGES_DIR   = _BASE / "data" / "images"
 RESULTS_DIR  = _BASE / "data" / "cert_results"
-MODEL_PATH        = _BASE / "models" / "grading_labels_v3.pt"
+MODEL_PATH        = _BASE / "models" / "grading_labels.pt"
 CERT_MODEL_PATH   = _BASE / "models" / "cert_detector_v1.pt"
 PROGRESS_F   = RESULTS_DIR / "_progress.json"
 CERT_JSON    = RESULTS_DIR / "cert_numbers.json"
@@ -81,10 +81,13 @@ CERT_JSON    = RESULTS_DIR / "cert_numbers.json"
 YOLO_CONF_THRESHOLD = 0.75   # minimum to even attempt OCR on this crop
 HIGH_CONF_THRESHOLD = 0.95   # cert_extracted — images deleted
 
-# Label class indices for grading_labels_v3:
-#   0=PSA, 1=CGC, 2=BGS, 3=TAG (ACE/TAG both use QR codes)
-LABEL_CLASSES = {0, 1, 2, 3}
-TAG_CLASS     = 3   # use QR code reading instead of OCR
+# Label class indices for grading_labels (v2 training):
+#   0=bgs_label  1=bgs_label_auto  2=bgs_label_black  3=bgs_slab
+#   4=card       5=cgc_label       6=cgc_label_old     7=cgc_slab
+#   8=psa_label  9=psa_label_old   10=psa_slab
+# Only process label crops (not whole slab or card detections)
+LABEL_CLASSES = {0, 1, 2, 5, 6, 8, 9}
+TAG_CLASS     = None   # TAG/ACE not in current model dataset
 
 # Cert number pattern: 8 digits (PSA) or 10 digits (CGC) — word-boundary anchored
 CERT_RE = re.compile(r'\b(\d{8,13})\b')
@@ -531,8 +534,20 @@ def process_item(item_id: str, image_dir: Path, model: YOLO, cert_model: YOLO,
             elif cert_region_detected is None:
                 cert_region_detected = False
 
-        # TAG/ACE: try QR code first, skip OCR
-        if cls_id == TAG_CLASS:
+        # Try barcode on the label crop first — already zoomed in, much less
+        # false-positive risk than scanning the full listing image.
+        crop_cert = try_qr_on_crop(crop)
+        if crop_cert:
+            route_result(item_id, crop_cert, 1.0, "barcode", "barcode_crop",
+                         meta, image_dir, progress, cert_db,
+                         yolo_detected=True,
+                         cert_region_detected=m2_found if m2_found else None)
+            if verbose:
+                print(f"    BARCODE_CROP → {crop_cert}")
+            return "cert_extracted"
+
+        # TAG/ACE: try QR code first, skip OCR (TAG_CLASS=None means disabled)
+        if TAG_CLASS is not None and cls_id == TAG_CLASS:
             img_cert   = try_qr_on_crop(crop)
             ocr_status = "qr" if img_cert else "none"
         else:
@@ -631,7 +646,7 @@ def main():
     parser.add_argument("--limit",       type=int, default=0,
                         help="Process only first N items (0 = no limit)")
     parser.add_argument("--recheck",     action="store_true",
-                        help="Re-process items currently in verify_later/")
+                        help="Re-process items currently in verify_later/ and unextractable/")
     parser.add_argument("--recheck-all", action="store_true",
                         help="Re-process every item that still has images on disk, regardless of prior result")
     parser.add_argument("--watch",       action="store_true",
@@ -709,11 +724,12 @@ def main():
 
     # ── --recheck mode ────────────────────────────────────────────────────────
     if args.recheck:
-        recheck_dir = RESULTS_DIR / "verify_later"
-        item_ids = [p.stem for p in recheck_dir.glob("*.json")]
+        item_ids = []
+        for folder in ("verify_later", "unextractable"):
+            item_ids += [p.stem for p in (RESULTS_DIR / folder).glob("*.json")]
         for iid in item_ids:
             progress.pop(iid, None)
-        print(f"  Re-checking {len(item_ids)} items from verify_later/\n")
+        print(f"  Re-checking {len(item_ids)} items from verify_later/ + unextractable/\n")
         counts = run_batch(item_ids, model, cert_model, progress, cert_db)
         print_summary(counts)
         return
